@@ -1,23 +1,9 @@
 import { Component, signal } from '@angular/core';
-import { HeroSectionComponent } from './hero-section/hero-section.component';
-import { ImpactSectionComponent } from './impact-section/impact-section.component';
-import { ProgramsSectionComponent } from './programs-section/programs-section.component';
-import { EventsSectionComponent } from './events-section/events-section.component';
-import { NewsSectionComponent } from './news-section/news-section.component';
-import { GallerySectionComponent } from './gallery-section/gallery-section.component';
-import { HighlightItem } from './highlights-section/highlights-section.component';
 
 @Component({
   selector: 'app-home-page',
   standalone: true,
-  imports: [
-    HeroSectionComponent,
-    ImpactSectionComponent,
-    ProgramsSectionComponent,
-    EventsSectionComponent,
-    NewsSectionComponent,
-    GallerySectionComponent
-  ],
+  imports: [],
   templateUrl: './home-page.component.html',
   styleUrl: './home-page.component.css'
 })
@@ -40,7 +26,7 @@ export class HomePageComponent {
     }
   ]);
 
-  protected readonly highlights = signal<HighlightItem[]>([
+  protected readonly highlights = signal([
     { label: 'Departamentos impactados', value: '11', icon: '🗺️' },
     { label: 'Docentes formados', value: '800+', icon: '👩‍🏫' },
     { label: 'Estudiantes inspirados', value: '15.000+', icon: '🚀' },
