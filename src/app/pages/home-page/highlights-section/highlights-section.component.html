@@ -1,0 +1,11 @@
+<div class="microcards">
+  @for (item of items; track item.label) {
+    <article class="micro">
+      <div class="micro__icon" aria-hidden="true">{{ item.icon }}</div>
+      <div>
+        <p class="micro__value">{{ item.value }}</p>
+        <p class="micro__label">{{ item.label }}</p>
+      </div>
+    </article>
+  }
+</div>

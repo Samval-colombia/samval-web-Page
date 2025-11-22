@@ -1,0 +1,15 @@
+<section class="section spotlight">
+  <div class="section__head">
+    <p class="eyebrow">Dónde estamos</p>
+    <h2>Territorios que ya vibran con ciencia y tecnología</h2>
+    <p class="muted">Programas en comunidades indígenas, afro y rurales de Colombia con aliados locales y globales.</p>
+  </div>
+  <div class="timeline">
+    @for (territory of territories; track territory.region) {
+      <article class="node">
+        <div class="badge">{{ territory.region }}</div>
+        <p class="muted">{{ territory.description }}</p>
+      </article>
+    }
+  </div>
+</section>

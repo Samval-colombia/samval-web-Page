@@ -1,0 +1,17 @@
+<section class="section news">
+  <div class="section__head">
+    <p class="eyebrow">Historias</p>
+    <h2>Últimas crónicas del laboratorio Samval</h2>
+  </div>
+  <div class="posts">
+    @for (item of news; track item.title) {
+      <article class="post">
+        <img [ngSrc]="item.image" width="320" height="200" [alt]="item.title" />
+        <div>
+          <h4>{{ item.title }}</h4>
+          <p>{{ item.desc }}</p>
+        </div>
+      </article>
+    }
+  </div>
+</section>

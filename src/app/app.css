@@ -1,18 +1,3 @@
-:root {
-  color-scheme: dark;
-  --bg: #060810;
-  --surface: rgba(255, 255, 255, 0.04);
-  --panel: rgba(255, 255, 255, 0.08);
-  --border: rgba(255, 255, 255, 0.08);
-  --text: #e9ecf5;
-  --muted: #b9c3d9;
-  --primary: #5cf0d3;
-  --accent: #74a6ff;
-  --hot: #ff8fb1;
-  --radius: 18px;
-  --shadow: 0 20px 70px rgba(0, 0, 0, 0.35);
-}
-
 * {
   box-sizing: border-box;
 }
@@ -33,10 +18,8 @@ body {
 .gradient {
   position: fixed;
   inset: 0;
-  background: radial-gradient(circle at 20% 20%, rgba(116, 166, 255, 0.16), transparent 38%),
-    radial-gradient(circle at 80% 12%, rgba(92, 240, 211, 0.22), transparent 40%),
-    radial-gradient(circle at 60% 80%, rgba(255, 143, 177, 0.1), transparent 38%);
-  filter: blur(60px);
+  background: var(--background-glow);
+  filter: blur(80px);
   z-index: 0;
   pointer-events: none;
 }
@@ -44,9 +27,8 @@ body {
 .mesh {
   position: fixed;
   inset: 0;
-  background: linear-gradient(120deg, rgba(255, 255, 255, 0.04), transparent),
-    linear-gradient(240deg, rgba(255, 255, 255, 0.03), transparent);
-  mask-image: radial-gradient(circle at 40% 40%, rgba(255, 255, 255, 0.2), transparent 60%);
+  background: var(--mesh-overlay);
+  mask-image: var(--mesh-mask);
   z-index: 0;
   pointer-events: none;
 }
@@ -57,6 +39,9 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px 20px 64px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: clamp(32px, 5vw, 56px);
 }
 
 .nav {
@@ -69,7 +54,7 @@ body {
   gap: 16px;
   padding: 14px 18px;
   border-radius: calc(var(--radius) + 6px);
-  background: rgba(6, 8, 16, 0.85);
+  background: var(--surface-nav);
   border: 1px solid var(--border);
   box-shadow: var(--shadow);
   backdrop-filter: blur(12px);
@@ -88,7 +73,7 @@ body {
   width: 58px;
   height: 58px;
   object-fit: contain;
-  filter: drop-shadow(0 6px 20px rgba(0, 0, 0, 0.35));
+  filter: drop-shadow(var(--logo-shadow));
 }
 
 .brand__eyebrow {
@@ -121,13 +106,19 @@ body {
   text-decoration: none;
   color: var(--muted);
   font-weight: 700;
-  transition: color 0.2s ease, background 0.2s ease;
+  transition: color 0.2s ease, background-position 0.2s ease;
+  background-image: var(--cta-gradient);
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: currentColor;
 }
 
 .nav__links a:hover,
 .nav__links .active {
-  color: #0c1224;
-  background: linear-gradient(135deg, var(--primary), var(--accent));
+  color: transparent;
+  background-position: 0 0;
+  -webkit-text-fill-color: transparent;
 }
 
 .nav__cta {
@@ -140,10 +131,10 @@ body {
   align-items: center;
   gap: 8px;
   padding: 10px 14px;
-  background: rgba(92, 240, 211, 0.15);
-  border: 1px solid var(--primary);
+  background: var(--cta-gradient);
+  border: 1px solid transparent;
   border-radius: 999px;
-  color: var(--text);
+  color: #fffdf9;
   text-decoration: none;
   font-weight: 700;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -151,7 +142,7 @@ body {
 
 .pill:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 35px rgba(92, 240, 211, 0.25);
+  box-shadow: var(--pill-shadow);
 }
 
 .nav__toggle {
@@ -177,7 +168,7 @@ body {
   padding: 28px;
   border-radius: var(--radius);
   border: 1px solid var(--border);
-  background: rgba(255, 255, 255, 0.04);
+  background: var(--surface);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 22px;
@@ -221,7 +212,7 @@ body {
   display: grid;
   place-items: center;
   border-radius: 50%;
-  background: var(--surface);
+  background: var(--panel);
   border: 1px solid var(--border);
   color: var(--text);
 }

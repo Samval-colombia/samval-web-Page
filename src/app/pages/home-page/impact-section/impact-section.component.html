@@ -1,0 +1,18 @@
+<section class="section ribbon">
+  <div class="section__head">
+    <p class="eyebrow">Impacto vivo</p>
+    <h2>Los territorios cuentan la historia</h2>
+    <p class="muted">Procesos cocreados con comunidades indígenas, afro y rurales que combinan robótica, cultura y sostenibilidad.</p>
+  </div>
+  <div class="ribbon__grid">
+    @for (card of cards; track card.title) {
+      <article class="ribbon__card">
+        <img [ngSrc]="card.image" width="480" height="260" [alt]="card.title" />
+        <div>
+          <h3>{{ card.title }}</h3>
+          <p class="muted">{{ card.description }}</p>
+        </div>
+      </article>
+    }
+  </div>
+</section>

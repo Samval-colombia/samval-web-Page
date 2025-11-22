@@ -1,0 +1,32 @@
+.section.ribbon {
+  display: grid;
+  gap: 18px;
+}
+
+.ribbon__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.ribbon__card {
+  display: grid;
+  gap: 12px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.92);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.ribbon__card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.ribbon__card div {
+  padding: 16px 18px 20px;
+  display: grid;
+  gap: 6px;
+}

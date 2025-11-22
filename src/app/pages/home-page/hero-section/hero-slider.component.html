@@ -1,0 +1,14 @@
+<div class="hero__slider">
+  @for (slide of slides; track slide.title) {
+    <article class="slide">
+      <div class="slide__image">
+        <img [ngSrc]="slide.image" width="520" height="340" [alt]="slide.title" />
+        <span class="badge">Experiencia</span>
+      </div>
+      <div class="slide__text">
+        <h3>{{ slide.title }}</h3>
+        <p>{{ slide.copy }}</p>
+      </div>
+    </article>
+  }
+</div>

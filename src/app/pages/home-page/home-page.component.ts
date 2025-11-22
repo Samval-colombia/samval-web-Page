@@ -1,11 +1,23 @@
-import { NgOptimizedImage } from '@angular/common';
 import { Component, signal } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { HeroSectionComponent } from './hero-section/hero-section.component';
+import { ImpactSectionComponent } from './impact-section/impact-section.component';
+import { ProgramsSectionComponent } from './programs-section/programs-section.component';
+import { EventsSectionComponent } from './events-section/events-section.component';
+import { NewsSectionComponent } from './news-section/news-section.component';
+import { GallerySectionComponent } from './gallery-section/gallery-section.component';
+import { HighlightItem } from './highlights-section/highlights-section.component';
 
 @Component({
   selector: 'app-home-page',
   standalone: true,
-  imports: [NgOptimizedImage, RouterLink],
+  imports: [
+    HeroSectionComponent,
+    ImpactSectionComponent,
+    ProgramsSectionComponent,
+    EventsSectionComponent,
+    NewsSectionComponent,
+    GallerySectionComponent
+  ],
   templateUrl: './home-page.component.html',
   styleUrl: './home-page.component.css'
 })
@@ -28,11 +40,29 @@ export class HomePageComponent {
     }
   ]);
 
-  protected readonly highlights = signal([
+  protected readonly highlights = signal<HighlightItem[]>([
     { label: 'Departamentos impactados', value: '11', icon: '🗺️' },
     { label: 'Docentes formados', value: '800+', icon: '👩‍🏫' },
     { label: 'Estudiantes inspirados', value: '15.000+', icon: '🚀' },
     { label: 'Aliados estratégicos', value: '25', icon: '🤝' }
+  ]);
+
+  protected readonly impactCards = signal([
+    {
+      title: 'Laboratorios inmersivos',
+      description: 'Módulos móviles que llegan donde más se necesitan con kits STEAM y facilitadores locales.',
+      image: 'assets/img/page-header.jpg'
+    },
+    {
+      title: 'Docentes empoderados',
+      description: 'Acompañamiento continuo, mentorías y contenidos bilingües para aulas diversas.',
+      image: 'assets/img/event-2.jpg'
+    },
+    {
+      title: 'Robots con propósito',
+      description: 'Thymio y tecnologías abiertas que inspiran creatividad, curiosidad y pensamiento crítico.',
+      image: 'assets/img/blog-1.jpg'
+    }
   ]);
 
   protected readonly programPreview = signal([
@@ -101,6 +131,21 @@ export class HomePageComponent {
       title: 'Historias Samval',
       image: 'assets/img/blog-3.jpg',
       tag: 'Comunidad'
+    }
+  ]);
+
+  protected readonly territories = signal([
+    {
+      region: 'Caribe',
+      description: 'San Basilio de Palenque · Robótica bilingüe y preservación de lengua.'
+    },
+    {
+      region: 'Sierra Nevada',
+      description: 'Arahuacos · Robots móviles integrados a su cosmovisión.'
+    },
+    {
+      region: 'Andina',
+      description: 'Antioquia y Cundinamarca · Formación docente y clubes STEAM.'
     }
   ]);
 }

@@ -3,7 +3,7 @@
 <div class="app-shell">
   <nav class="nav" [class.open]="menuOpen()">
     <a class="brand" routerLink="/" (click)="closeMenu()">
-      <img src="assets/img/logo_blanco.png" alt="Fundación Samval" class="brand__logo" />
+      <img src="/assets/logo/onlyLogo.svg" alt="Fundación Samval" class="brand__logo" />
       <div>
         <p class="brand__eyebrow">Fundación Samval</p>
         <span class="brand__title">Tecnología que respeta el territorio</span>
@@ -13,7 +13,15 @@
       <span></span><span></span><span></span>
     </button>
     <ul class="nav__links" [class.open]="menuOpen()">
-      <li><a routerLink="/" routerLinkActive="active" (click)="closeMenu()">Inicio</a></li>
+      <li>
+        <a
+          routerLink="/"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          (click)="closeMenu()"
+          >Inicio</a
+        >
+      </li>
       <li><a routerLink="/programas" routerLinkActive="active" (click)="closeMenu()">Programas</a></li>
       <li><a routerLink="/fundacion" routerLinkActive="active" (click)="closeMenu()">Fundación</a></li>
       <li><a routerLink="/contacto" routerLinkActive="active" (click)="closeMenu()">Contacto</a></li>
@@ -27,7 +35,7 @@
 
   <footer class="footer">
     <div>
-      <img src="assets/img/logo_blanco.png" alt="Samval" class="footer__logo" />
+      <img src="/assets/logo/withName.svg" alt="Samval" class="footer__logo" />
       <p>Educación, ciencia e innovación para la paz con enfoque territorial.</p>
       <div class="social">
         <a href="https://www.samval.org/" aria-label="Facebook"><span class="social__icon" aria-hidden="true">FB</span></a>

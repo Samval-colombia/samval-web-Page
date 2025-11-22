@@ -1,0 +1,19 @@
+<section class="section">
+  <div class="section__head">
+    <p class="eyebrow">Programas</p>
+    <h2>Rutas que combinan tecnología, cultura y sostenibilidad</h2>
+    <p class="muted">Expande cómo aprenden tus estudiantes con módulos listos para implementar y acompañamiento experto.</p>
+  </div>
+  <div class="cards">
+    @for (program of programs; track program.name) {
+      <article class="card">
+        <img [ngSrc]="program.image" width="360" height="200" [alt]="program.name" />
+        <div>
+          <h3>{{ program.name }}</h3>
+          <p>{{ program.desc }}</p>
+          <a class="link" routerLink="/programas">Descubre más</a>
+        </div>
+      </article>
+    }
+  </div>
+</section>

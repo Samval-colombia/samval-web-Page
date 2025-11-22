@@ -1,0 +1,32 @@
+.section.news {
+  display: grid;
+  gap: 18px;
+}
+
+.posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.post {
+  display: grid;
+  gap: 10px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.95);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.post img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.post div {
+  padding: 14px 16px 18px;
+  display: grid;
+  gap: 6px;
+}
