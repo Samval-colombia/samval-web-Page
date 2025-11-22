@@ -30,7 +30,7 @@
   <section class="extras">
     @for (extra of extras(); track extra.title) {
       <article class="extra">
-        <div class="icon"><i class="fas" [class]="'fas ' + extra.icon"></i></div>
+        <div class="extra__icon" aria-hidden="true">{{ extra.icon }}</div>
         <div>
           <h3>{{ extra.title }}</h3>
           <p class="muted">{{ extra.desc }}</p>

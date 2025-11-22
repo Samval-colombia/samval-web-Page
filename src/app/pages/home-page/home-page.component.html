@@ -13,7 +13,7 @@
     <div class="microcards">
       @for (item of highlights(); track item.label) {
         <div class="micro">
-          <i class="fas" [class]="'fas ' + item.icon"></i>
+          <div class="micro__icon" aria-hidden="true">{{ item.icon }}</div>
           <div>
             <p class="micro__value">{{ item.value }}</p>
             <p class="micro__label">{{ item.label }}</p>
@@ -47,21 +47,21 @@
   </div>
   <div class="ribbon__grid">
     <div class="ribbon__card">
-      <img ngSrc="/resource-web/www.samval.org/img/page-header.jpg" width="480" height="260" alt="Territorio" />
+      <img ngSrc="assets/img/page-header.jpg" width="480" height="260" alt="Territorio" />
       <div>
         <h3>Laboratorios inmersivos</h3>
         <p class="muted">Módulos móviles que llegan donde más se necesitan con kits STEAM y facilitadores locales.</p>
       </div>
     </div>
     <div class="ribbon__card">
-      <img ngSrc="/resource-web/www.samval.org/img/event-2.jpg" width="480" height="260" alt="Docentes" />
+      <img ngSrc="assets/img/event-2.jpg" width="480" height="260" alt="Docentes" />
       <div>
         <h3>Docentes empoderados</h3>
         <p class="muted">Acompañamiento continuo, mentorías y contenidos bilingües para aulas diversas.</p>
       </div>
     </div>
     <div class="ribbon__card">
-      <img ngSrc="/resource-web/www.samval.org/img/blog-1.jpg" width="480" height="260" alt="Thymio" />
+      <img ngSrc="assets/img/blog-1.jpg" width="480" height="260" alt="Thymio" />
       <div>
         <h3>Robots con propósito</h3>
         <p class="muted">Thymio y tecnologías abiertas que inspiran creatividad, curiosidad y pensamiento crítico.</p>

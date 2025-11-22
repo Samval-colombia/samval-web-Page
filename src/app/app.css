@@ -226,6 +226,12 @@ body {
   color: var(--text);
 }
 
+.social__icon {
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+}
+
 @media (max-width: 900px) {
   .nav {
     grid-template-columns: 1fr auto;

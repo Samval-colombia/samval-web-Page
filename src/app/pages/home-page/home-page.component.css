@@ -104,6 +104,17 @@ h4 {
   background: rgba(255, 255, 255, 0.03);
 }
 
+.micro__icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  background: rgba(92, 240, 211, 0.12);
+  color: var(--primary);
+  font-size: 20px;
+}
+
 .micro__value {
   margin: 0;
   font-weight: 800;
@@ -220,7 +231,7 @@ h4 {
 
 .ribbon {
   background: linear-gradient(120deg, rgba(92, 240, 211, 0.12), rgba(116, 166, 255, 0.1), rgba(6, 8, 16, 0.9)),
-    url('/resource-web/www.samval.org/img/carousel-3.jpg') center/cover;
+    url('/assets/img/carousel-3.jpg') center/cover;
   border: 1px solid rgba(255, 255, 255, 0.12);
 }
 

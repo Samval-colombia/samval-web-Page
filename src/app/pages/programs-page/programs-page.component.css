@@ -110,7 +110,7 @@ h3 {
   align-items: center;
 }
 
-.icon {
+.extra__icon {
   width: 46px;
   height: 46px;
   border-radius: 12px;
@@ -118,4 +118,5 @@ h3 {
   place-items: center;
   background: rgba(92, 240, 211, 0.12);
   color: var(--primary);
+  font-size: 20px;
 }
