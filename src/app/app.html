@@ -1,71 +1,22 @@
 <div class="gradient"></div>
 <div class="mesh"></div>
 <div class="app-shell">
-  <nav class="nav" [class.open]="menuOpen()">
-    <a class="brand" routerLink="/" (click)="closeMenu()">
-      <img src="/assets/logo/onlyLogo.svg" alt="Fundación Samval" class="brand__logo" />
-      <div>
-        <p class="brand__eyebrow">Fundación Samval</p>
-        <span class="brand__title">Tecnología que respeta el territorio</span>
-      </div>
-    </a>
-    <button class="nav__toggle" type="button" (click)="toggleMenu()" aria-label="Abrir menú">
-      <span></span><span></span><span></span>
-    </button>
-    <ul class="nav__links" [class.open]="menuOpen()">
-      <li>
-        <a
-          routerLink="/"
-          routerLinkActive="active"
-          [routerLinkActiveOptions]="{ exact: true }"
-          (click)="closeMenu()"
-          >Inicio</a
-        >
-      </li>
-      <li><a routerLink="/programas" routerLinkActive="active" (click)="closeMenu()">Programas</a></li>
-      <li><a routerLink="/fundacion" routerLinkActive="active" (click)="closeMenu()">Fundación</a></li>
-      <li><a routerLink="/contacto" routerLinkActive="active" (click)="closeMenu()">Contacto</a></li>
-    </ul>
-    <div class="nav__cta">
-      <a class="pill" href="mailto:contacto@samval.org">Escríbenos</a>
-    </div>
-  </nav>
+  <app-header [links]="navLinks"></app-header>
 
   <router-outlet></router-outlet>
 
-  <footer class="footer">
-    <div>
-      <img src="/assets/logo/withName.svg" alt="Samval" class="footer__logo" />
-      <p>Educación, ciencia e innovación para la paz con enfoque territorial.</p>
-      <div class="social">
-        <a href="https://www.samval.org/" aria-label="Facebook"><span class="social__icon" aria-hidden="true">FB</span></a>
-        <a href="https://www.samval.org/" aria-label="YouTube"><span class="social__icon" aria-hidden="true">YT</span></a>
-        <a href="https://www.instagram.com/samvalfundacion/" aria-label="Instagram"><span class="social__icon" aria-hidden="true">IG</span></a>
-        <a href="https://www.samval.org/" aria-label="LinkedIn"><span class="social__icon" aria-hidden="true">IN</span></a>
-      </div>
-    </div>
-    <div class="footer__grid">
-      <div>
-        <h4>Ubicación</h4>
-        <p>Colombia · Operamos en zonas urbanas y rurales</p>
-        <p><a href="tel:+573233207532">+57 323 320 7532</a></p>
-        <p><a href="mailto:contacto@samval.org">contacto@samval.org</a></p>
-      </div>
-      <div>
-        <h4>Recursos</h4>
-        <ul>
-          <li><a href="https://www.samval.org/producto.html" target="_blank" rel="noreferrer">Thymio</a></li>
-          <li><a href="https://www.samval.org/etnoeducacion.html" target="_blank" rel="noreferrer">Etnoeducación</a></li>
-          <li><a href="https://www.samval.org/aliados.html" target="_blank" rel="noreferrer">Aliados</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Legal</h4>
-        <ul>
-          <li><a href="https://www.samval.org/" target="_blank" rel="noreferrer">Términos</a></li>
-          <li><a href="https://www.samval.org/" target="_blank" rel="noreferrer">Política y privacidad</a></li>
-        </ul>
-      </div>
-    </div>
-  </footer>
+  <app-footer
+    [brandLogoSrc]="footerData.brandLogoSrc"
+    [brandAlt]="footerData.brandAlt"
+    [tagline]="footerData.tagline"
+    [socialLinks]="footerData.socialLinks"
+    [locationHeading]="footerData.locationHeading"
+    [locationText]="footerData.locationText"
+    [phone]="footerData.phone"
+    [email]="footerData.email"
+    [resourcesHeading]="footerData.resourcesHeading"
+    [resources]="footerData.resources"
+    [legalHeading]="footerData.legalHeading"
+    [legalLinks]="footerData.legalLinks"
+  ></app-footer>
 </div>
