@@ -1,0 +1,152 @@
+{
+  "meta": {
+    "source": "https://www.samval.org",
+    "scraped_at": "2025-11-21"
+  },
+  "top_bar": {
+    "phone": "+57 3233207532",
+    "email_protected": "[email protected]",
+    "social": ["facebook", "linkedin", "instagram"]
+  },
+  "nav": [
+    { "label": "Sobre nosotros", "href": "https://www.samval.org/sobrenosotros.html" },
+    { "label": "Contacto", "href": "https://www.samval.org/contacto.html" },
+    { "label": "Productos", "href": "https://www.samval.org/producto.html" },
+    { "label": "Proyectos", "href": "https://www.samval.org/" },
+    { "label": "Etnoeducación", "href": "https://www.samval.org/etnoeducacion.html" },
+    { "label": "Aliados", "href": "https://www.samval.org/aliados.html" }
+  ],
+  "hero_carousel": [
+    {
+      "title": "Innovación en la Educación",
+      "body": "Desarrollar en niños y jóvenes competencias y habilidades en el uso del pensamiento computacional.",
+      "image": "img/carousel-1.jpg"
+    },
+    {
+      "title": "Futuro Sostenible",
+      "body": "Formamos líderes comprometidos con la dignidad humana y la conservación del planeta",
+      "image": "img/carousel-2.jpg"
+    },
+    {
+      "title": "Innovación en Procesos Académicos",
+      "body": "Basado en el desarrollo de competencias computacionales",
+      "image": "img/carousel-3.jpg"
+    }
+  ],
+  "about": {
+    "eyebrow": "Aprende sobre nosotros",
+    "title": "Transformamos vidas a través de la educación",
+    "tabs": {
+      "Funsaval": "La Fundación Samval, es una entidad sin ánimo de lucro tiene como sustento filosófico el fortalecimiento de la dignidad humana, la conservación del planeta tierra, el incentivo de la prosperidad como base fundamental del ascenso social, usando para ello la educación, la ciencia e innovación. Siendo la educación el pilar de la PAZ, de tal manera que los grupos sociales o territorios logren la articulación entre los diversos actores que intervienen en la vida cotidiana; los gobiernos, la academia, la empresa.",
+      "Misión": "Contribuir con el incentivo de la educación como base fundamental de la sociedad, usando para ello el pensamiento computacional, la ciencia e innovación y la paz.",
+      "Visión": "Ser reconocida como una institución líder en el fortalecimiento de la educación, pilar de la PAZ de tal manera que las naciones logren la articulación entre los diversos actores que intervienen en la sociedad; los gobiernos, la academia, las empresas."
+    }
+  },
+  "services": {
+    "eyebrow": "¿Qué hacemos?",
+    "title": "Creemos que podemos contribuir en la educación contigo",
+    "items": [
+      {
+        "icon": "fas fa-keyboard",
+        "title": "Cerrando la brecha de habilidades digitales",
+        "body": "Samval se enfoca en llevar habilidades digitales esenciales, como el pensamiento computacional y la robótica, a comunidades marginadas, incluyendo grupos étnicos, cerrando así la brecha digital y brindando igualdad de oportunidades."
+      },
+      {
+        "icon": "fas fa-piggy-bank",
+        "title": "Formación para la Economía Digital",
+        "body": "Al preparar a los jóvenes en áreas de alta demanda tecnológica, Samval contribuye a formar el capital humano necesario para impulsar la economía digital de Colombia, reduciendo el déficit de profesionales en tecnología."
+      },
+      {
+        "icon": "fas fa-chart-line",
+        "title": "Impulso al Desarrollo Económico",
+        "body": "La formación de talento digital fomenta el emprendimiento, la creación de empleo en el sector tecnológico y atrae inversión, contribuyendo al crecimiento económico sostenible del país."
+      },
+      {
+        "icon": "fas fa-chalkboard",
+        "title": "Desarrollo de Habilidades Cognitivas",
+        "body": "El pensamiento computacional fortalece habilidades cruciales como el pensamiento crítico y la resolución de problemas, preparando a los estudiantes para los desafíos de un mundo en constante cambio."
+      },
+      {
+        "icon": "fas fa-landmark",
+        "title": "Adaptación cultural",
+        "body": "La fundación tiene en cuenta la cosmovisión indígena y la implementa en la manera de educar, respetando las lenguas maternas."
+      },
+      {
+        "icon": "fas fa-laptop",
+        "title": "Preparación para la Sociedad Digital",
+        "body": "Samval prepara a las nuevas generaciones para que participen activamente en la transformación digital, asegurando que Colombia no se quede rezagada."
+      }
+    ]
+  },
+  "events": {
+    "eyebrow": "Próximos eventos",
+    "title": "Únete a nuestra aventura",
+    "items": [
+      {
+        "title": "Arahuacos",
+        "date": "2024-12-01",
+        "time": "08:00-10:00",
+        "location": "Barranquilla",
+        "body": "Los Arahuacos tienen una visión del mundo basada en la armonía con la naturaleza y el conocimiento ancestral. La enseñanza del pensamiento computacional mediante robots móviles se integrará con su cosmovisión sin imponer paradigmas occidentales y a su lengua materna.",
+        "cta": "https://www.samval.org/contacto.html",
+        "image": "img/event-1.jpg"
+      },
+      {
+        "title": "San Basilio de Palenque",
+        "date": "2025-02-01",
+        "time": "08:00-10:00",
+        "location": "Medellín",
+        "body": "Consejo comunitario Ma kankamana de San Basilio de Palenque, se fortalecerá la identidad cultural y el idioma (el palenquero) ya que se adaptará el lenguaje de programación a la lengua nativa la cual juega un papel clave en la educación. Se diseñará la estrategias que respeten y fortalezcan su herencia cultural.",
+        "cta": "https://www.samval.org/contacto.html",
+        "image": "img/event-2.jpg"
+      }
+    ]
+  },
+  "blog": {
+    "eyebrow": "Thymio en Acción",
+    "title": "\"Thymio: Transformando la Educación con Tecnología\"",
+    "items": [
+      {
+        "title": "Qué es Thymio",
+        "body": "Thymio es un robot educativo diseñado para enseñar habilidades de programación y robótica a estudiantes de todas las edades.",
+        "image": "img/blog-1.jpg"
+      },
+      {
+        "title": "Impacto Global",
+        "body": "Thymio está transformando la educación en países de todo el mundo al promover el aprendizaje STEM y cerrar la brecha digital.",
+        "image": "img/blog-2.jpg"
+      },
+      {
+        "title": "Historias de Éxito",
+        "body": "Descubre cómo Thymio ha sido implementado en escuelas y comunidades para fomentar el pensamiento crítico y la creatividad.",
+        "image": "img/blog-3.jpg"
+      }
+    ]
+  },
+  "footer": {
+    "office": {
+      "title": "Nuestra oficina",
+      "location": "Colombia",
+      "phone": "3233207532",
+      "email_protected": "[email protected]",
+      "social": {
+        "facebook": "https://www.samval.org/",
+        "youtube": "https://www.samval.org/",
+        "instagram": "https://www.instagram.com/samvalfundacion/",
+        "linkedin": "https://www.samval.org/"
+      }
+    },
+    "links": [
+      "https://www.samval.org/sobrenosotros.html",
+      "https://www.samval.org/contacto.html",
+      "https://www.samval.org/producto.html",
+      "https://www.samval.org/",
+      "https://www.samval.org/etnoeducacion.html",
+      "https://www.samval.org/aliados.html"
+    ],
+    "legal": [
+      { "label": "Términos", "href": "https://www.samval.org/" },
+      { "label": "Política y privacidad", "href": "https://www.samval.org/" }
+    ]
+  }
+}
