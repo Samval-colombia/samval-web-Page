@@ -1,0 +1,150 @@
+<section class="hero">
+  <div class="hero__copy glass">
+    <p class="eyebrow">Agenda 2025</p>
+    <h1>Educación, ciencia e innovación con identidad</h1>
+    <p class="lede">
+      Somos Fundación Samval: diseñamos experiencias STEAM que hablan la lengua del territorio y activan oportunidades reales
+      para niñas, niños, docentes y comunidades completas.
+    </p>
+    <div class="actions">
+      <a class="btn primary" href="mailto:contacto@samval.org">Agenda una llamada</a>
+      <a class="btn ghost" routerLink="/programas">Ver programas</a>
+    </div>
+    <div class="microcards">
+      @for (item of highlights(); track item.label) {
+        <div class="micro">
+          <i class="fas" [class]="'fas ' + item.icon"></i>
+          <div>
+            <p class="micro__value">{{ item.value }}</p>
+            <p class="micro__label">{{ item.label }}</p>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+
+  <div class="hero__slider">
+    @for (slide of heroSlides(); track slide.title) {
+      <article class="slide">
+        <div class="slide__image">
+          <img [ngSrc]="slide.image" width="540" height="360" [alt]="slide.title" />
+          <span class="badge">Experiencia</span>
+        </div>
+        <div class="slide__text">
+          <h3>{{ slide.title }}</h3>
+          <p>{{ slide.copy }}</p>
+        </div>
+      </article>
+    }
+  </div>
+</section>
+
+<section class="section ribbon">
+  <div class="section__head">
+    <p class="eyebrow">Impacto vivo</p>
+    <h2>Los territorios cuentan la historia</h2>
+    <p class="muted">Procesos cocreados con comunidades indígenas, afro y rurales que combinan robótica, cultura y sostenibilidad.</p>
+  </div>
+  <div class="ribbon__grid">
+    <div class="ribbon__card">
+      <img ngSrc="/resource-web/www.samval.org/img/page-header.jpg" width="480" height="260" alt="Territorio" />
+      <div>
+        <h3>Laboratorios inmersivos</h3>
+        <p class="muted">Módulos móviles que llegan donde más se necesitan con kits STEAM y facilitadores locales.</p>
+      </div>
+    </div>
+    <div class="ribbon__card">
+      <img ngSrc="/resource-web/www.samval.org/img/event-2.jpg" width="480" height="260" alt="Docentes" />
+      <div>
+        <h3>Docentes empoderados</h3>
+        <p class="muted">Acompañamiento continuo, mentorías y contenidos bilingües para aulas diversas.</p>
+      </div>
+    </div>
+    <div class="ribbon__card">
+      <img ngSrc="/resource-web/www.samval.org/img/blog-1.jpg" width="480" height="260" alt="Thymio" />
+      <div>
+        <h3>Robots con propósito</h3>
+        <p class="muted">Thymio y tecnologías abiertas que inspiran creatividad, curiosidad y pensamiento crítico.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section__head">
+    <p class="eyebrow">Programas</p>
+    <h2>Rutas que combinan tecnología, cultura y sostenibilidad</h2>
+    <p class="muted">Expande cómo aprenden tus estudiantes con módulos listos para implementar y acompañamiento experto.</p>
+  </div>
+  <div class="cards">
+    @for (program of programPreview(); track program.name) {
+      <article class="card">
+        <img [ngSrc]="program.image" width="360" height="200" [alt]="program.name" />
+        <div>
+          <h3>{{ program.name }}</h3>
+          <p>{{ program.desc }}</p>
+          <a class="link" routerLink="/programas">Descubre más</a>
+        </div>
+      </article>
+    }
+  </div>
+</section>
+
+<section class="section spotlight">
+  <div class="section__head">
+    <p class="eyebrow">Dónde estamos</p>
+    <h2>Territorios que ya vibran con ciencia y tecnología</h2>
+    <p class="muted">Programas en comunidades indígenas, afro y rurales de Colombia con aliados locales y globales.</p>
+  </div>
+  <div class="timeline">
+    <div class="node">
+      <div class="badge">Caribe</div>
+      <p class="muted">San Basilio de Palenque · Robótica bilingüe y preservación de lengua.</p>
+    </div>
+    <div class="node">
+      <div class="badge">Sierra Nevada</div>
+      <p class="muted">Arahuacos · Robots móviles integrados a su cosmovisión.</p>
+    </div>
+    <div class="node">
+      <div class="badge">Andina</div>
+      <p class="muted">Antioquia y Cundinamarca · Formación docente y clubes STEAM.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section news">
+  <div class="section__head">
+    <p class="eyebrow">Historias</p>
+    <h2>Últimas crónicas del laboratorio Samval</h2>
+  </div>
+  <div class="posts">
+    @for (item of news(); track item.title) {
+      <article class="post">
+        <img [ngSrc]="item.image" width="320" height="200" [alt]="item.title" />
+        <div>
+          <h4>{{ item.title }}</h4>
+          <p>{{ item.desc }}</p>
+        </div>
+      </article>
+    }
+  </div>
+</section>
+
+<section class="section gallery">
+  <div class="section__head">
+    <p class="eyebrow">Galería</p>
+    <h2>Momentos que inspiran</h2>
+    <p class="muted">Explora escenas reales de nuestros procesos en territorio.</p>
+  </div>
+  <div class="gallery__grid">
+    @for (item of gallery(); track item.title) {
+      <figure class="gallery__item">
+        <img [ngSrc]="item.image" width="360" height="260" [alt]="item.title" />
+        <figcaption>
+          <span class="tag">{{ item.tag }}</span>
+          <strong>{{ item.title }}</strong>
+        </figcaption>
+      </figure>
+    }
+  </div>
+</section>

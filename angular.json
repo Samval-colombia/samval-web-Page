@@ -30,7 +30,9 @@
               }
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "resource-web/fonts.googleapis.com/quicksand.css",
+              "resource-web/cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all-local.min.css"
             ],
             "server": "src/main.server.ts",
             "outputMode": "server",
@@ -48,7 +50,7 @@
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "4kB",
+                  "maximumWarning": "6kB",
                   "maximumError": "8kB"
                 }
               ],
