@@ -1,0 +1,25 @@
+<main class="page">
+  <header class="intro">
+    <p class="eyebrow">Contacto</p>
+    <h1>Conversemos y activemos tu proyecto</h1>
+    <p class="muted">Cuéntanos tu reto educativo. Resolvemos en menos de 24 horas.</p>
+  </header>
+
+  <section class="channels">
+    @for (channel of channels(); track channel.title) {
+      <article class="channel">
+        <h3>{{ channel.title }}</h3>
+        <p class="muted">{{ channel.info }}</p>
+        <a class="pill" [href]="channel.link">{{ channel.label }}</a>
+      </article>
+    }
+  </section>
+
+  <section class="cta">
+    <div>
+      <h2>¿Listo para llevar innovación a tu comunidad?</h2>
+      <p class="muted">Programemos una sesión estratégica con nuestro equipo de campo y diseño curricular.</p>
+    </div>
+    <a class="btn" href="mailto:contacto@samval.org?subject=Quiero%20impulsar%20un%20programa%20Samval">Agendar ahora</a>
+  </section>
+</main>

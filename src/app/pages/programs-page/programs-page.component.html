@@ -1,0 +1,41 @@
+<main class="page">
+  <header class="page__header">
+    <p class="eyebrow">Portafolio</p>
+    <h1>Programas listos para desplegar en tu territorio</h1>
+    <p class="muted">
+      Diseñamos experiencias que combinan ciencia, tecnología y cultura local. Selecciona el programa y activemos juntos la
+      siguiente cohorte.
+    </p>
+  </header>
+
+  <section class="grid">
+    @for (program of programs(); track program.name) {
+      <article class="program">
+        <img [ngSrc]="program.image" width="420" height="240" [alt]="program.name" />
+        <div class="program__body">
+          <h2>{{ program.name }}</h2>
+          <p class="muted">{{ program.summary }}</p>
+          <ul>
+            @for (item of program.bullets; track item) {
+              <li>{{ item }}</li>
+            }
+          </ul>
+          <a class="btn" href="mailto:contacto@samval.org?subject=Quiero%20sumarme%20a%20{{ program.name }}">Agendar
+            demo</a>
+        </div>
+      </article>
+    }
+  </section>
+
+  <section class="extras">
+    @for (extra of extras(); track extra.title) {
+      <article class="extra">
+        <div class="icon"><i class="fas" [class]="'fas ' + extra.icon"></i></div>
+        <div>
+          <h3>{{ extra.title }}</h3>
+          <p class="muted">{{ extra.desc }}</p>
+        </div>
+      </article>
+    }
+  </section>
+</main>
