@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
+import { FooterComponent, type FooterData } from './footer/footer.component';
 
 @Component({
   selector: 'app-root',
@@ -22,25 +22,14 @@ export class App {
     brandAlt: 'Samval',
     tagline: 'Educación, ciencia e innovación para la paz con enfoque territorial.',
     socialLinks: [
-      { label: 'FB', url: 'https://www.samval.org/', aria: 'Facebook' },
-      { label: 'YT', url: 'https://www.samval.org/', aria: 'YouTube' },
-      { label: 'IG', url: 'https://www.instagram.com/samvalfundacion/', aria: 'Instagram' },
-      { label: 'IN', url: 'https://www.samval.org/', aria: 'LinkedIn' }
+      { label: 'FB', url: 'https://www.samval.org/', aria: 'Facebook', icon: 'facebook' },
+      { label: 'YT', url: 'https://www.samval.org/', aria: 'YouTube', icon: 'youtube' },
+      { label: 'IG', url: 'https://www.instagram.com/samvalfundacion/', aria: 'Instagram', icon: 'instagram' },
+      { label: 'IN', url: 'https://www.samval.org/', aria: 'LinkedIn', icon: 'linkedin' }
     ],
     locationHeading: 'Ubicación',
-    locationText: 'Colombia · Operamos en zonas urbanas y rurales',
-    phone: '+57 323 320 7532',
-    email: 'contacto@samval.org',
-    resourcesHeading: 'Recursos',
-    resources: [
-      { label: 'Thymio', url: 'https://www.samval.org/producto.html' },
-      { label: 'Etnoeducación', url: 'https://www.samval.org/etnoeducacion.html' },
-      { label: 'Aliados', url: 'https://www.samval.org/aliados.html' }
-    ],
-    legalHeading: 'Legal',
-    legalLinks: [
-      { label: 'Términos', url: 'https://www.samval.org/' },
-      { label: 'Política y privacidad', url: 'https://www.samval.org/' }
-    ]
-  };
+    locationText: 'Calle 104 #51B-154 Ofi 17 · Castellana Campestre · Barranquilla, Colombia',
+    phone: '3233207532',
+    email: 'fundacionsamval@gmail.com'
+  } satisfies FooterData;
 }
