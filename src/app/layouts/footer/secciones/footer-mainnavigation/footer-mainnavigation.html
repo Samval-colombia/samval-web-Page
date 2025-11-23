@@ -1,0 +1,16 @@
+
+<div class="footer-section">
+  <h2 class="footer-title">Enlaces Útiles</h2>
+
+  <nav class="footer-nav">
+    @for (link of UsefulLink(); track link.route) {
+      <a
+        class="footer-link"
+      >
+        {{ link.label }}
+      </a>
+    } @empty {
+
+    }
+  </nav>
+</div>

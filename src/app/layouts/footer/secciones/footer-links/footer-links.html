@@ -1,0 +1,11 @@
+<div class="footer-section">
+  <h2 class="footer-title"> Links</h2>
+    <nav class="footer-nav">
+      @for (link of menu(); track $index) {
+        <a href="" class="footer-link">
+          {{link.label}}
+        </a>
+      }
+    </nav>
+
+</div>

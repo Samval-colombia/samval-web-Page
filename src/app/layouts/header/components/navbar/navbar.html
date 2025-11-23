@@ -6,9 +6,10 @@
     </div>
 
     <div class="social">
-      <a href="#"><i class="fab fa-facebook-f"></i></a>
-      <a href="#"><i class="fab fa-linkedin-in"></i></a>
-      <a href="#"><i class="fab fa-instagram"></i></a>
+    @for (social of socialNetworks(); track $index) {
+      <a href=""><i [className]="social.icon"></i></a>
+
+    }
     </div>
   </div>
 </header>
@@ -21,12 +22,9 @@
     </div>
     <!-- TODO implementar @for y utilizar la signal navigationItems para el menu -->
     <ul class="menu">
-       <li><a href="#">Sobre nosotros</a></li>
-      <li><a href="#">Contacto</a></li>
-      <li><a href="#">Productos</a></li>
-      <li><a href="#">Proyectos</a></li>
-      <li><a href="#">Etnoeducación</a></li>
-      <li><a href="#">Aliados</a></li>
+       @for (item of navigationItems(); track $index) {
+        <li><a href="">{{item.label}}</a></li>
+       }
     </ul>
       <!-- TODO implementar funcionalidad para traduccion con i18n -->
      <button class="translate-btn">EN</button>

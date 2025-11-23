@@ -1,0 +1,23 @@
+<div class="footer-section">
+  <h2 class="footer-title">Nuestra Oficina</h2>
+  <div class="footer-content">
+      <p class="contact-item">
+        <i class="fa fa-map-marker-alt"> {{ContactInfo().address}}</i>
+      </p>
+
+      <p class="contact-item">
+        <i class="fa fa-phone-alt"> {{ContactInfo().phone}}</i>
+      </p>
+
+      <p class="contact-item">
+        <i class="fa fa-envelope"> {{ContactInfo().email}}</i>
+      </p>
+
+
+      <div class="footer-social">
+        @for (social of SocialMedia(); track $index) {
+          <a href=""><i [className]="social.icon"></i></a>
+        }
+      </div>
+  </div>
+</div>

@@ -1,11 +1,11 @@
 import { Component, signal } from '@angular/core';
-import { RouterLink } from '@angular/router';
+
 import { CONTACT_INFO, ContactInfo, NAVIGATION_MENU, NavigationItem, SOCIAL_MEDIA, SocialMedia } from './navigation.model';
 
 
 @Component({
   selector: 'app-navbar',
-  imports: [RouterLink],
+  imports: [],
   templateUrl: './navbar.html',
   styleUrl: './navbar.css',
 })

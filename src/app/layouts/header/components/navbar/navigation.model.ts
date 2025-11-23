@@ -25,7 +25,7 @@ export interface ContactInfo {
 
 export const CONTACT_INFO: ContactInfo = {
   phone: '+57 3233207532',
-  email: 'fundacionsamval@gmail.com',
+  email: 'info@samval.org',
   address: 'Colombia',
 
 };
@@ -57,3 +57,17 @@ export const SOCIAL_MEDIA: SocialMedia[] = [
     active: true
   }
 ];
+
+export interface UsefulLink {
+  label: string;
+  route: string;
+}
+
+export const USE_FUL_LINK: UsefulLink[] = [
+  {
+    label:'Terminos' , route: '/terminos'
+  },
+  {
+    label:'Politica y Privacidad' , route: '/politica-privacidad'
+  },
+]
