@@ -1,0 +1,36 @@
+<header class="topbar">
+  <div class="container">
+    <div class="contact">
+      <span><i class="fa fa-phone-alt"></i> {{contactInfo().phone}}</span>
+      <span><i class="fa fa-envelope"></i> {{contactInfo().email}} </span>
+    </div>
+
+    <div class="social">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+</header>
+
+<nav class="navbar">
+  <div class="container">
+    <div class="logo">
+      <img src="https://samval.org/img/logo_blanco.png" alt="Samval">
+
+    </div>
+    <!-- TODO implementar @for y utilizar la signal navigationItems para el menu -->
+    <ul class="menu">
+       <li><a href="#">Sobre nosotros</a></li>
+      <li><a href="#">Contacto</a></li>
+      <li><a href="#">Productos</a></li>
+      <li><a href="#">Proyectos</a></li>
+      <li><a href="#">Etnoeducación</a></li>
+      <li><a href="#">Aliados</a></li>
+    </ul>
+      <!-- TODO implementar funcionalidad para traduccion con i18n -->
+     <button class="translate-btn">EN</button>
+
+    <button class="mobile-btn"><i class="fa-solid fa-bars"></i></button>
+  </div>
+</nav>
