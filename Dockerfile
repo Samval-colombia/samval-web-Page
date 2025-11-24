@@ -1,30 +1,38 @@
-# ----------------------------
-# Etapa 1: Build
-
-FROM node:20-alpine as build
+# Stage 1: Build Angular SSR bundle
+FROM node:20-alpine AS build
 
 WORKDIR /app
 
 COPY package*.json ./
 
-# Usamos npm ci para una instalación limpia basada en package-lock.json
+# Install full dependency tree (includes devDeps for build tooling)
 RUN npm ci
 
 COPY . .
 
-# Esto generará la carpeta dist/
+# Builds browser + server bundles into dist/samval-webPage
 RUN npm run build
 
-# ----------------------------
-# Etapa 2: Servidor Nginx
-# ----------------------------
-FROM nginx:alpine
 
-COPY nginx.conf /etc/nginx/conf.d/default.conf
+# Stage 2: Runtime image executing SSR server
+FROM node:20-alpine AS runtime
 
+ENV NODE_ENV=production \
+    PORT=4000
 
-COPY --from=build /app/dist/samval-webPage/browser /usr/share/nginx/html
+WORKDIR /app
 
-EXPOSE 80
+COPY package*.json ./
+# Only prod deps needed at runtime
+RUN npm ci --omit=dev
 
-CMD ["nginx", "-g", "daemon off;"]
+# Bring in compiled assets
+COPY --from=build /app/dist ./dist
+
+# Run as non-root user provided by base image
+USER node
+
+EXPOSE 4000
+
+# Start the Angular SSR Express server
+CMD ["npm", "run", "start:ssr"]
