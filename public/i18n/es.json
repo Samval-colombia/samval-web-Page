@@ -1,0 +1,176 @@
+{
+  "navbar": {
+    "home": "Inicio",
+    "about": "Nosotros",
+    "programs": "Programas",
+    "projects": "Proyectos",
+    "ethno": "Etnoeducación",
+    "allies": "Aliados",
+    "contact": "Contacto",
+    "phone": "Teléfono",
+    "email": "Correo Electrónico"
+  },
+  "hero": {
+    "slide1": {
+      "title": "Fundación SAMVAL",
+      "subtitle": "Transformando vidas a través de la educación",
+      "description": "Promovemos el pensamiento computacional, ciencia e innovación en comunidades vulnerables de Colombia",
+      "button": "Conoce Nuestros Programas"
+    },
+    "slide2": {
+      "title": "Robótica Educativa",
+      "subtitle": "Aprendizaje práctico con tecnología",
+      "description": "Desarrollamos competencias del siglo XXI a través de la programación y robótica educativa",
+      "button": "Ver Proyectos"
+    },
+    "slide3": {
+      "title": "Etnoeducación y Cultura",
+      "subtitle": "Preservando nuestras raíces",
+      "description": "Programas educativos que integran tecnología con el respeto y valoración de la diversidad cultural",
+      "button": "Conocer Más"
+    },
+    "slide4": {
+      "title": "Alianzas Estratégicas",
+      "subtitle": "Construyendo juntos el futuro",
+      "description": "Trabajamos con instituciones educativas, empresas y organizaciones para ampliar nuestro impacto",
+      "button": "Nuestros Aliados"
+    }
+  },
+  "about": {
+    "title": "Sobre Nosotros",
+    "subtitle": "Educación con Propósito",
+    "description": "SAMVAL es una fundación dedicada al desarrollo de competencias en pensamiento computacional, ciencias y tecnología en comunidades vulnerables de Colombia.",
+    "mission": {
+      "title": "Misión",
+      "text": "Transformar vidas a través de la educación en tecnología, promoviendo el pensamiento computacional y la innovación en comunidades vulnerables."
+    },
+    "vision": {
+      "title": "Visión",
+      "text": "Ser referentes en educación tecnológica en Colombia, formando líderes innovadores que transformen sus comunidades."
+    },
+    "values": {
+      "title": "Valores",
+      "innovation": "Innovación",
+      "inclusion": "Inclusión",
+      "excellence": "Excelencia",
+      "commitment": "Compromiso"
+    }
+  },
+  "facts": {
+    "students": "Estudiantes",
+    "projects": "Proyectos",
+    "allies": "Aliados",
+    "years": "Años de Experiencia",
+    "trained": "Capacitados",
+    "communities": "Comunidades Impactadas"
+  },
+  "services": {
+    "title": "Nuestros Programas",
+    "subtitle": "Transformando Vidas a través de la Educación",
+    "robotics": {
+      "title": "Robótica Educativa",
+      "description": "Aprendizaje de programación y pensamiento computacional a través de robots educativos como Thymio."
+    },
+    "stem": {
+      "title": "Educación STEM",
+      "description": "Ciencia, Tecnología, Ingeniería y Matemáticas aplicadas a proyectos prácticos e innovadores."
+    },
+    "innovation": {
+      "title": "Innovación Social",
+      "description": "Proyectos de innovación social y tecnológica que resuelven problemas reales de las comunidades."
+    },
+    "ethno": {
+      "title": "Etnoeducación",
+      "description": "Integración de tecnología con el respeto y valoración de la diversidad cultural colombiana."
+    },
+    "training": {
+      "title": "Formación Docente",
+      "description": "Capacitación de educadores en metodologías innovadoras y uso de tecnología educativa."
+    },
+    "community": {
+      "title": "Proyectos Comunitarios",
+      "description": "Desarrollo de proyectos tecnológicos que benefician directamente a las comunidades."
+    }
+  },
+  "footer": {
+    "about": "Sobre SAMVAL",
+    "aboutDesc": "Fundación dedicada a la educación en tecnología, pensamiento computacional y innovación social en comunidades vulnerables de Colombia.",
+    "quickLinks": "Enlaces Rápidos",
+    "contact": "Contacto",
+    "address": "Dirección",
+    "addressValue": "Cota, Cundinamarca, Colombia",
+    "phone": "Teléfono",
+    "email": "Correo Electrónico",
+    "followUs": "Síguenos",
+    "copyright": "© {{year}} Fundación SAMVAL. Todos los derechos reservados.",
+    "developedBy": "Desarrollado con",
+    "and": "y",
+    "by": "por"
+  },
+  "contact": {
+    "title": "Contáctanos",
+    "subtitle": "Estamos aquí para ayudarte",
+    "form": {
+      "name": "Nombre Completo",
+      "namePlaceholder": "Tu nombre completo",
+      "email": "Correo Electrónico",
+      "emailPlaceholder": "tu@email.com",
+      "phone": "Teléfono",
+      "phonePlaceholder": "+57 300 123 4567",
+      "subject": "Asunto",
+      "subjectPlaceholder": "¿En qué podemos ayudarte?",
+      "message": "Mensaje",
+      "messagePlaceholder": "Escribe tu mensaje aquí...",
+      "send": "Enviar Mensaje",
+      "sending": "Enviando...",
+      "success": "¡Mensaje enviado exitosamente!",
+      "error": "Error al enviar el mensaje. Por favor, intenta de nuevo.",
+      "required": "Este campo es obligatorio",
+      "invalidEmail": "Correo electrónico inválido"
+    },
+    "info": {
+      "title": "Información de Contacto",
+      "address": "Dirección",
+      "phone": "Teléfono",
+      "email": "Correo",
+      "hours": "Horario de Atención",
+      "hoursValue": "Lunes - Viernes: 8:00 AM - 5:00 PM"
+    }
+  },
+  "common": {
+    "learnMore": "Conocer Más",
+    "readMore": "Leer Más",
+    "viewAll": "Ver Todo",
+    "back": "Volver",
+    "next": "Siguiente",
+    "previous": "Anterior",
+    "close": "Cerrar",
+    "open": "Abrir",
+    "menu": "Menú",
+    "search": "Buscar",
+    "loading": "Cargando...",
+    "error": "Error",
+    "success": "Éxito",
+    "welcome": "Bienvenido",
+    "language": "Idioma"
+  },
+  "projects": {
+    "title": "Nuestros Proyectos",
+    "subtitle": "Innovación que Transforma Comunidades",
+    "filter": {
+      "all": "Todos",
+      "active": "Activos",
+      "completed": "Completados"
+    }
+  },
+  "allies": {
+    "title": "Nuestros Aliados",
+    "subtitle": "Juntos Construimos el Futuro",
+    "description": "Trabajamos con instituciones educativas, empresas y organizaciones comprometidas con la educación y el desarrollo social."
+  },
+  "ethnoEducation": {
+    "title": "Etnoeducación",
+    "subtitle": "Tecnología con Identidad Cultural",
+    "description": "Programas que integran la tecnología respetando y fortaleciendo la identidad cultural de las comunidades indígenas y afrocolombianas."
+  }
+}

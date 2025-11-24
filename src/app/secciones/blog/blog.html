@@ -1,0 +1,30 @@
+<section class="blog-section">
+  <div class="container">
+
+    <!-- Header -->
+    <div class="section-header">
+      <h2 class="section-title">"Thymio: Transformando la Educación con Tecnología"</h2>
+      <p class="section-subtitle">Thymio en Acción</p>
+    </div>
+
+    <!-- Blog Grid -->
+    <div class="blog-grid">
+      @for (post of blogPosts(); track post.id) {
+        <article class="blog-card">
+          <!-- Imagen -->
+          <div class="blog-image">
+            <img [src]="post.image" [alt]="post.title">
+          </div>
+
+          <!-- Contenido -->
+          <div class="blog-content">
+            <h3 class="blog-title">{{ post.title }}</h3>
+            <p class="blog-description">{{ post.description }}</p>
+
+          </div>
+        </article>
+      }
+    </div>
+
+  </div>
+</section>

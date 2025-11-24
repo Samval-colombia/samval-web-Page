@@ -1,0 +1,96 @@
+<section
+  class="hero-carousel"
+  (mouseenter)="onMouseEnter()"
+  (mouseleave)="onMouseLeave()"
+  (keydown)="onKeydown($event)"
+  tabindex="0"
+  role="region"
+  aria-label="Hero Carousel"
+>
+  <div class="carousel-container">
+
+    <!-- Slides -->
+    <div class="carousel-slides">
+      @for (slide of slides; track slide.id; let i = $index) {
+        <div
+          class="carousel-slide"
+          [class.active]="i === currentIndex()"
+          [class.prev]="i === (currentIndex() - 1 + totalSlides()) % totalSlides()"
+          [class.next]="i === (currentIndex() + 1) % totalSlides()"
+        >
+          <!-- Background Image -->
+          <div class="slide-background">
+            <img
+              [src]="slide.imageUrl"
+              [alt]="slide.title"
+              loading="lazy"
+            />
+            <div class="slide-overlay"></div>
+          </div>
+
+          <!-- Content -->
+          <div class="slide-content container">
+            <div class="slide-text">
+              <h1 class="slide-title" [class.animate]="i === currentIndex()">
+                {{ slide.title }}
+              </h1>
+              <h2 class="slide-subtitle" [class.animate]="i === currentIndex()">
+                {{ slide.subtitle }}
+              </h2>
+              <p class="slide-description" [class.animate]="i === currentIndex()">
+                {{ slide.description }}
+              </p>
+
+
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+
+
+    <button
+      class="carousel-control prev"
+      (click)="prevSlide()"
+      [disabled]="isTransitioning()"
+      aria-label="Previous slide"
+    >
+      <i class="fas fa-chevron-left"></i>
+    </button>
+
+    <button
+      class="carousel-control next"
+      (click)="nextSlide()"
+      [disabled]="isTransitioning()"
+      aria-label="Next slide"
+    >
+      <i class="fas fa-chevron-right"></i>
+    </button>
+
+    <!-- Indicators (Dots) -->
+    <div class="carousel-indicators">
+      @for (slide of slides; track slide.id; let i = $index) {
+        <button
+          class="indicator-dot"
+          [class.active]="i === currentIndex()"
+          (click)="goToSlide(i)"
+          [attr.aria-label]="'Go to slide ' + (i + 1)"
+          [attr.aria-current]="i === currentIndex() ? 'true' : 'false'"
+        >
+          <span class="sr-only">Slide {{ i + 1 }}</span>
+        </button>
+      }
+    </div>
+
+    <!-- Progress Bar -->
+    @if (!isPaused()) {
+      <div class="carousel-progress">
+        <div
+          class="progress-bar"
+          [class.active]="!isPaused()"
+        ></div>
+      </div>
+    }
+
+  </div>
+</section>
