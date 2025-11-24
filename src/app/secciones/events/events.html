@@ -1,0 +1,45 @@
+<section class="events-section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Únete a nuestra aventura</h2>
+      <p class="section-subtitle">Próximos eventos</p>
+    </div>
+
+
+    <div class="events-grid">
+      @for (event of events(); track event.id) {
+        <div class="event-card">
+
+          <div class="event-image">
+            <img [src]="event.image" [alt]="event.title">
+            <div class="event-overlay">
+              <div class="event-meta">
+                <span class="event-date">
+                  <i class="fa fa-calendar"></i> {{ event.date }}
+                </span>
+                <span class="event-location">
+                  <i class="fa fa-map-marker-alt"></i> {{ event.location }}
+                </span>
+                <span class="event-location">
+                  <i class="far fa-clock"></i> {{ event.schedule }}
+                </span>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="event-content">
+            <h3 class="event-title">{{ event.title }}</h3>
+            <p class="event-description">{{ event.description }}</p>
+            <button class="event-btn">
+              Únete
+              <i class="fa fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      } @empty {
+        <p class="no-events">No hay eventos próximos</p>
+      }
+    </div>
+  </div>
+</section>
