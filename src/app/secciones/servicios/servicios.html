@@ -1,0 +1,26 @@
+<section class="services-section">
+  <div class="container">
+
+    <!-- Header -->
+    <div class="section-header">
+      <h2 class="section-title">¿Qué hacemos?</h2>
+      <p class="section-subtitle">Creemos que podemos contribuir en la educación contigo</p>
+    </div>
+
+    <!-- Services Grid -->
+    <div class="services-grid">
+      @for (service of services(); track service.id) {
+        <div class="service-card">
+          <div class="service-icon">
+            <i [class]="service.icon"></i>
+          </div>
+          <h3 class="service-title">{{ service.title }}</h3>
+          <p class="service-description">{{ service.description }}</p>
+        </div>
+      } @empty {
+        <p class="no-services">No hay servicios disponibles</p>
+      }
+    </div>
+
+  </div>
+</section>
