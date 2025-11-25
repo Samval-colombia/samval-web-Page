@@ -1,9 +1,10 @@
 import { Component, signal } from '@angular/core';
 import { SOCIAL_MEDIA, SocialMedia, NAVIGATION_MENU, NavigationItem } from '../../../header/components/navbar/navigation.model';
+import { TranslocoModule } from '@ngneat/transloco';
 
 @Component({
   selector: 'app-footer-links',
-  imports: [],
+  imports: [TranslocoModule],
   templateUrl: './footer-links.html',
   styleUrl: './footer-links.css',
 })

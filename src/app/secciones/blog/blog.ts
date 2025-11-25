@@ -1,15 +1,16 @@
 import { Component, signal } from '@angular/core';
+import { TranslocoModule } from '@ngneat/transloco';
 
 interface BlogPost {
   id: number;
   image: string;
-  title: string;
-  description: string;
+  titleKey: string;
+  descriptionKey: string;
 }
 
 @Component({
   selector: 'app-blog',
-  imports: [],
+  imports: [TranslocoModule],
   templateUrl: './blog.html',
   styleUrl: './blog.css',
 })
@@ -17,23 +18,23 @@ export class Blog {
 
   blogPosts = signal<BlogPost[]>([
     {
-      id: 1,
-      image: 'assets/blog-1.jpg',
-      title: 'Qué es Thymio',
-      description: 'Thymio es un robot educativo diseñado para enseñar habilidades de programación y robótica a estudiantes de todas las edades.'
-    },
-    {
-      id: 2,
-      image: 'assets/blog-2.jpg',
-      title: 'Impacto Global',
-      description: 'Thymio está transformando la educación en países de todo el mundo al promover el aprendizaje STEM y cerrar la brecha digital.'
-    },
-    {
-      id: 3,
-      image: 'assets/blog-3.jpg',
-      title: 'Historias de Éxito',
-      description: 'Descubre cómo Thymio ha sido implementado en escuelas y comunidades para fomentar el pensamiento crítico y la creatividad.'
-    }
+    id: 1,
+    image: 'assets/blog-1.jpg',
+    titleKey: 'blog.post1.title',
+    descriptionKey: 'blog.post1.description'
+  },
+  {
+    id: 2,
+    image: 'assets/blog-2.jpg',
+    titleKey: 'blog.post2.title',
+    descriptionKey: 'blog.post2.description'
+  },
+  {
+    id: 3,
+    image: 'assets/blog-3.jpg',
+    titleKey: 'blog.post3.title',
+    descriptionKey: 'blog.post3.description'
+  }
   ]);
 }
 

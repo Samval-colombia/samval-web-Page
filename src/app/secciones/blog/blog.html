@@ -3,8 +3,8 @@
 
     <!-- Header -->
     <div class="section-header">
-      <h2 class="section-title">"Thymio: Transformando la Educación con Tecnología"</h2>
-      <p class="section-subtitle">Thymio en Acción</p>
+      <h2 class="section-title">"Thymio: Transformando la Educación con Tecnología | transloco"</h2>
+      <p class="section-subtitle">Thymio en Acción | transloco</p>
     </div>
 
     <!-- Blog Grid -->
@@ -13,13 +13,13 @@
         <article class="blog-card">
           <!-- Imagen -->
           <div class="blog-image">
-            <img [src]="post.image" [alt]="post.title">
+            <img [src]="post.image" [alt]="post.titleKey">
           </div>
 
           <!-- Contenido -->
           <div class="blog-content">
-            <h3 class="blog-title">{{ post.title }}</h3>
-            <p class="blog-description">{{ post.description }}</p>
+            <h3 class="blog-title">{{ post.titleKey | transloco }}</h3>
+            <p class="blog-description">{{ post.descriptionKey | transloco }}</p>
 
           </div>
         </article>

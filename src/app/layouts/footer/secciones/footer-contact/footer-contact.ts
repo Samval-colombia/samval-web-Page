@@ -1,9 +1,10 @@
 import { Component, signal } from '@angular/core';
 import { CONTACT_INFO, ContactInfo, SOCIAL_MEDIA, SocialMedia } from '../../../header/components/navbar/navigation.model';
+import { TranslocoModule } from '@ngneat/transloco';
 
 @Component({
   selector: 'app-footer-contact',
-  imports: [],
+  imports: [TranslocoModule],
   templateUrl: './footer-contact.html',
   styleUrl: './footer-contact.css',
 })

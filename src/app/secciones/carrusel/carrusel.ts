@@ -1,11 +1,13 @@
 import { Component, computed, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { TranslocoModule } from '@ngneat/transloco';
 
 interface CarouselSlide {
   id: number;
-  title: string;
-  subtitle: string;
-  description: string;
+  titleKey: string;
+  subtitleKey: string;
+  descriptionKey: string;
+  buttonKey:string,
   imageUrl: string;
   buttonText?: string;
   buttonLink?: string;
@@ -13,7 +15,7 @@ interface CarouselSlide {
 
 @Component({
   selector: 'app-carrusel',
-  imports: [RouterLink],
+  imports: [RouterLink , TranslocoModule],
   templateUrl: './carrusel.html',
   styleUrl: './carrusel.css',
 })
@@ -29,32 +31,32 @@ export class Carrusel {
 
   slides: CarouselSlide[] = [
     {
-      id: 1,
-      title: 'Fundación SAMVAL',
-      subtitle: 'Transformando vidas a través de la educación',
-      description: 'Promovemos el pensamiento computacional, ciencia e innovación en comunidades vulnerables de Colombia',
-      imageUrl: '/assets/carousel-1.jpg',
-      buttonText: 'Conoce Nuestros Programas',
-      buttonLink: '/programas'
-    },
-    {
-      id: 2,
-      title: 'Robótica Educativa',
-      subtitle: 'Aprendizaje práctico con tecnología',
-      description: 'Desarrollamos competencias del siglo XXI a través de la programación y robótica educativa',
-      imageUrl: '/assets/carousel-2.jpg',
-      buttonText: 'Ver Proyectos',
-      buttonLink: '/proyectos'
-    },
-    {
-      id: 3,
-      title: 'Etnoeducación y Cultura',
-      subtitle: 'Preservando nuestras raíces',
-      description: 'Programas educativos que integran tecnología con el respeto y valoración de la diversidad cultural',
-      imageUrl: '/assets/carousel-3.jpg',
-      buttonText: 'Conocer Más',
-      buttonLink: '/etnoeducacion'
-    }
+    id: 1,
+    titleKey: 'hero.slide1.title',
+    subtitleKey: 'hero.slide1.subtitle',
+    descriptionKey: 'hero.slide1.description',
+    buttonKey: 'hero.slide1.button',
+    imageUrl: '/assets/carousel-1.jpg',
+    buttonLink: '/programas'
+  },
+  {
+    id: 2,
+    titleKey: 'hero.slide2.title',
+    subtitleKey: 'hero.slide2.subtitle',
+    descriptionKey: 'hero.slide2.description',
+    buttonKey: 'hero.slide2.button',
+    imageUrl: '/assets/carousel-2.jpg',
+    buttonLink: '/proyectos'
+  },
+  {
+    id: 3,
+    titleKey: 'hero.slide3.title',
+    subtitleKey: 'hero.slide3.subtitle',
+    descriptionKey: 'hero.slide3.description',
+    buttonKey: 'hero.slide3.button',
+    imageUrl: '/assets/carousel-3.jpg',
+    buttonLink: '/etnoeducacion'
+  }
   ];
 
   totalSlides = computed(() => this.slides.length);

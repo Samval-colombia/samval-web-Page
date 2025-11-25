@@ -22,7 +22,7 @@
           <div class="slide-background">
             <img
               [src]="slide.imageUrl"
-              [alt]="slide.title"
+              [alt]="slide.titleKey"
               loading="lazy"
             />
             <div class="slide-overlay"></div>
@@ -32,13 +32,13 @@
           <div class="slide-content container">
             <div class="slide-text">
               <h1 class="slide-title" [class.animate]="i === currentIndex()">
-                {{ slide.title }}
+                {{ slide.titleKey | transloco }}
               </h1>
               <h2 class="slide-subtitle" [class.animate]="i === currentIndex()">
-                {{ slide.subtitle }}
+                {{ slide.subtitleKey | transloco}}
               </h2>
               <p class="slide-description" [class.animate]="i === currentIndex()">
-                {{ slide.description }}
+                {{ slide.descriptionKey | transloco}}
               </p>
 
 

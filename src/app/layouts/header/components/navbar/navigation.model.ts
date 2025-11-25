@@ -1,5 +1,5 @@
 export interface NavigationItem{
-  label:string,
+  labelKey:string,
   route : string
 }
 
@@ -7,13 +7,13 @@ export interface NavigationItem{
 
 export const NAVIGATION_MENU: NavigationItem[] =
 [
-  { label: 'Sobre nosotros', route: '/sobre-nosotros' },
-  { label: 'Contacto', route: '/contacto' },
-  { label: 'Productos', route: '/productos' },
-  { label: 'Proyectos', route: '/proyectos' },
-  { label: 'Etnoeducación', route: '/etnoeducacion' },
-  { label: 'Aliados', route: '/aliados' }
-
+   { labelKey: 'navbar.home', route: '/' },
+  { labelKey: 'navbar.about', route: '/sobre-nosotros' },
+  { labelKey: 'navbar.programs', route: '/programas' },
+  { labelKey: 'navbar.projects', route: '/proyectos' },
+  { labelKey: 'navbar.ethno', route: '/etnoeducacion' },
+  { labelKey: 'navbar.contact', route: '/contacto' },
+  { labelKey: 'navbar.allies', route: '/aliados' },
 ]
 
 export interface ContactInfo {
@@ -59,15 +59,11 @@ export const SOCIAL_MEDIA: SocialMedia[] = [
 ];
 
 export interface UsefulLink {
-  label: string;
+  labelKey: string;
   route: string;
 }
 
 export const USE_FUL_LINK: UsefulLink[] = [
-  {
-    label:'Terminos' , route: '/terminos'
-  },
-  {
-    label:'Politica y Privacidad' , route: '/politica-privacidad'
-  },
+   { labelKey: 'footer.terms', route: '/terminos' },
+    { labelKey: 'footer.privacy', route: '/politica-privacidad' }
 ]

@@ -3,7 +3,7 @@
     <nav class="footer-nav">
       @for (link of menu(); track $index) {
         <a href="" class="footer-link">
-          {{link.label}}
+          {{link.labelKey  | transloco}}
         </a>
       }
     </nav>

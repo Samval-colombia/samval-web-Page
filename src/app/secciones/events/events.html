@@ -11,17 +11,17 @@
         <div class="event-card">
 
           <div class="event-image">
-            <img [src]="event.image" [alt]="event.title">
+            <img [src]="event.image" [alt]="event.titleKey">
             <div class="event-overlay">
               <div class="event-meta">
                 <span class="event-date">
-                  <i class="fa fa-calendar"></i> {{ event.date }}
+                  <i class="fa fa-calendar"></i> {{ event.dateKey }}
                 </span>
                 <span class="event-location">
-                  <i class="fa fa-map-marker-alt"></i> {{ event.location }}
+                  <i class="fa fa-map-marker-alt"></i> {{ event.locationKey }}
                 </span>
                 <span class="event-location">
-                  <i class="far fa-clock"></i> {{ event.schedule }}
+                  <i class="far fa-clock"></i> {{ event.scheduleKey }}
                 </span>
               </div>
             </div>
@@ -29,8 +29,8 @@
 
 
           <div class="event-content">
-            <h3 class="event-title">{{ event.title }}</h3>
-            <p class="event-description">{{ event.description }}</p>
+            <h3 class="event-title">{{ event.titleKey  | transloco }}</h3>
+            <p class="event-description">{{ event.descriptionKey | transloco  }}</p>
             <button class="event-btn">
               Únete
               <i class="fa fa-arrow-right"></i>

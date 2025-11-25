@@ -1,0 +1,182 @@
+{
+  "navbar": {
+    "home": "Inicio",
+    "about": "Sobre Nosotros",
+    "programs": "Programas",
+    "projects": "Proyectos",
+    "ethno": "Etnoeducación",
+    "contact": "Contacto",
+    "allies": "Aliados"
+  },
+  "footer": {
+    "usefulLinks": "Enlaces Útiles",
+    "terms": "Términos",
+    "privacy": "Política y Privacidad",
+    "about": "Sobre SAMVAL",
+    "aboutDesc": "Fundación dedicada a la educación en tecnología, pensamiento computacional y innovación social en comunidades vulnerables de Colombia.",
+    "quickLinks": "Enlaces Rápidos",
+    "contact": "Contacto",
+    "address": "Dirección",
+    "addressValue": "Cota, Cundinamarca, Colombia",
+    "phone": "Teléfono",
+    "email": "Correo Electrónico",
+    "followUs": "Síguenos",
+    "copyright": "© {{year}} Fundación SAMVAL. Todos los derechos reservados.",
+    "developedBy": "Desarrollado con",
+    "and": "y",
+    "by": "por"
+  },
+  "about": {
+    "title": "Aprende sobre nosotros",
+    "subtitle": "Transformamos vidas a través de la educación",
+    "description": "La Fundación Samval, es una entidad sin ánimo de lucro tiene como sustento filosófico el fortalecimiento de la dignidad humana, la conservación del planeta tierra, el incentivo de la prosperidad como base fundamental del ascenso social, usando para ello la educación, la ciencia e innovación. Siendo la educación el pilar de la PAZ, de tal manera que los grupos sociales o territorios logren la articulación entre los diversos actores que intervienen en la vida cotidiana; los gobiernos, la academia, la empresa.",
+    "mission": {
+      "title": "Nuestra Misión",
+      "text": "Contribuir con el incentivo de la educación como base fundamental de la sociedad, usando para ello el pensamiento computacional, la ciencia e innovación y la paz."
+    },
+    "vision": {
+      "title": "Nuestra Visión",
+      "text": "Ser reconocida como una institución líder en el fortalecimiento de la educación, pilar de la PAZ de tal manera que las naciones logren la articulación entre los diversos actores que intervienen en la sociedad; los gobiernos, la academia, las empresas."
+    }
+  },
+  "hero": {
+    "slide1": {
+      "title": "Fundación SAMVAL",
+      "subtitle": "Transformando vidas a través de la educación",
+      "description": "Promovemos el pensamiento computacional, ciencia e innovación en comunidades vulnerables de Colombia",
+      "button": "Conoce Nuestros Programas"
+    },
+    "slide2": {
+      "title": "Robótica Educativa",
+      "subtitle": "Aprendizaje práctico con tecnología",
+      "description": "Desarrollamos competencias del siglo XXI a través de la programación y robótica educativa",
+      "button": "Ver Proyectos"
+    },
+    "slide3": {
+      "title": "Etnoeducación y Cultura",
+      "subtitle": "Preservando nuestras raíces",
+      "description": "Programas educativos que integran tecnología con el respeto y valoración de la diversidad cultural",
+      "button": "Conocer Más"
+    }
+  },
+  "services": {
+    "title": "Nuestros Programas",
+    "subtitle": "Impacto Social a través de la Educación",
+    "service1": {
+      "title": "Cerrando la brecha de habilidades digitales",
+      "description": "Samval se enfoca en llevar habilidades digitales esenciales, como el pensamiento computacional y la robótica, a comunidades marginadas, incluyendo grupos étnicos, cerrando así la brecha digital y brindando igualdad de oportunidades."
+    },
+    "service2": {
+      "title": "Formación para la Economía Digital",
+      "description": "Al preparar a los jóvenes en áreas de alta demanda tecnológica, Samval contribuye a formar el capital humano necesario para impulsar la economía digital de Colombia, reduciendo el déficit de profesionales en tecnología."
+    },
+    "service3": {
+      "title": "Ciencias y Tecnología",
+      "description": "La formación de talento digital fomenta el emprendimiento, la creación de empleo en el sector tecnológico y atrae inversión, contribuyendo al crecimiento económico sostenible del país."
+    },
+    "service4": {
+      "title": "Desarrollo de Habilidades Cognitivas",
+      "description": "El pensamiento computacional fortalece habilidades cruciales como el pensamiento crítico y la resolución de problemas, preparando a los estudiantes para los desafíos de un mundo en constante cambio."
+    },
+    "service5": {
+      "title": "Adaptación cultural",
+      "description": "La fundación tiene en cuenta la cosmovision indígena y la implementa en la manera de educar, respetando las lenguas maternas."
+    },
+    "service6": {
+      "title": "Preparación para la Sociedad Digital",
+      "description": "Samval prepara a las nuevas generaciones para que participen activamente en la transformación digital, asegurando que Colombia no se quede rezagada."
+    }
+  },
+  "blog": {
+    "title": "Nuestro Blog",
+    "subtitle": "Últimas Noticias y Artículos",
+    "post1": {
+      "title": "Qué es Thymio",
+      "description": "Thymio es un robot educativo diseñado para enseñar habilidades de programación y robótica a estudiantes de todas las edades."
+    },
+    "post2": {
+      "title": "Impacto Global",
+      "description": "Thymio está transformando la educación en países de todo el mundo al promover el aprendizaje STEM y cerrar la brecha digital."
+    },
+    "post3": {
+      "title": "Historias de Éxito",
+      "description": "Descubre cómo Thymio ha sido implementado en escuelas y comunidades para fomentar el pensamiento crítico y la creatividad."
+    }
+  },
+  "events": {
+    "title": "Próximos Eventos",
+    "subtitle": "Únete a Nuestras Actividades",
+    "event1": {
+      "date": "01 Dic 2024",
+      "location": "Barranquilla",
+      "schedule": "8:00 AM - 10:00 AM",
+      "title": "Arahuacos",
+      "description": "Los Arahuacos tienen una visión del mundo basada en la armonía con la naturaleza y el conocimiento ancestral. La enseñanza del pensamiento computacional mediante robots móviles se integrará con su cosmovisión sin imponer paradigmas occidentales y a su lengua materna."
+    },
+    "event2": {
+      "date": "01 Feb 2025",
+      "location": "Medellín",
+      "schedule": "8:00 AM - 10:00 AM",
+      "title": "Formación Docente en Pensamiento Computacional",
+      "description": "Consejo comunitario Ma kankamana de san basilio de palenque, se fortalecerá la identidad cultural y el idioma (el palenquero) ya que se adaptará el lenguaje de programación a la lengua nativa la cual juegan un papel clave en la educación. Se diseñará la estrategias que respeten y fortalezcan su herencia cultural."
+    }
+  },
+  "contact": {
+    "title": "Contáctanos",
+    "subtitle": "Estamos aquí para ayudarte",
+    "description": "¿Tienes alguna pregunta o propuesta? Escríbenos y nos pondremos en contacto contigo lo antes posible.",
+    "form": {
+      "name": "Nombre Completo",
+      "namePlaceholder": "Tu nombre completo",
+      "email": "Correo Electrónico",
+      "emailPlaceholder": "tu@email.com",
+      "phone": "Teléfono",
+      "phonePlaceholder": "+57 300 123 4567",
+      "subject": "Asunto",
+      "subjectPlaceholder": "¿En qué podemos ayudarte?",
+      "message": "Mensaje",
+      "messagePlaceholder": "Escribe tu mensaje aquí...",
+      "send": "Enviar Mensaje",
+      "sending": "Enviando...",
+      "success": "¡Mensaje enviado exitosamente!",
+      "error": "Error al enviar el mensaje. Por favor, intenta de nuevo.",
+      "required": "Este campo es obligatorio",
+      "invalidEmail": "Correo electrónico inválido",
+      "invalidPhone": "Teléfono inválido"
+    },
+    "info": {
+      "title": "Información de Contacto",
+      "address": "Dirección",
+      "phone": "Teléfono",
+      "email": "Correo",
+      "hours": "Horario de Atención",
+      "hoursValue": "Lunes - Viernes: 8:00 AM - 5:00 PM"
+    }
+  },
+  "common": {
+    "learnMore": "Conocer Más",
+    "readMore": "Leer Más",
+    "viewAll": "Ver Todo",
+    "viewDetails": "Ver Detalles",
+    "back": "Volver",
+    "next": "Siguiente",
+    "previous": "Anterior",
+    "close": "Cerrar",
+    "open": "Abrir",
+    "menu": "Menú",
+    "search": "Buscar",
+    "loading": "Cargando...",
+    "error": "Error",
+    "success": "Éxito",
+    "welcome": "Bienvenido",
+    "language": "Idioma",
+    "yes": "Sí",
+    "no": "No",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "register": "Registrarse",
+    "download": "Descargar"
+  }
+}

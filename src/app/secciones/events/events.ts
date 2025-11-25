@@ -1,44 +1,43 @@
 import { Component, signal } from '@angular/core';
+import { TranslocoModule } from '@ngneat/transloco';
 
 interface Event {
   id: number;
   image: string;
-  date: string;
-  location: string;
-  schedule : string,
-  title: string;
-  description: string;
+  dateKey: string;
+  locationKey: string;
+  scheduleKey : string,
+  titleKey: string;
+  descriptionKey: string;
 }
 
 @Component({
   selector: 'app-events',
-  imports: [],
+  imports: [TranslocoModule],
   templateUrl: './events.html',
   styleUrl: './events.css',
 })
 export class Events {
 
   events = signal<Event[]>([
-    {
-      id: 1,
-      image: '/assets/event-1.jpg',
-      date: '01 Dic 2024',
-      location: 'Barranquilla',
-      schedule: '8:00 AM - 10:00',
-      title: 'Arahuacos',
-      description: `Los Arahuacos tienen una visión del mundo basada en la armonía con la naturaleza y el conocimiento ancestral. La enseñanza del pensamiento computacional mediante
-      robots móviles se integrará con su cosmovisión sin imponer paradigmas occidentales y a su lengua materna.`
-    },
-    {
-      id: 2,
-      image: '/assets/event-2.jpg',
-      date: '01 Feb 2025',
-      location: 'Medellín',
-      schedule: '8:00 - 10:00',
-      title: 'Formación Docente en Pensamiento Computacional',
-      description: `Consejo comunitario Ma kankamana de san basilio de palenque, se fortalecerá la identidad cultural y el idioma (el palenquero) ya que se adaptará el lenguaje de programación a la lengua nativa la cual juegan un papel clave en la educación.
-      Se diseñará la estrategias que respeten y fortalezcan su herencia cultural.`
-    }
+     {
+    id: 1,
+    image: '/assets/event-1.jpg',
+    dateKey: 'events.event1.date',
+    locationKey: 'events.event1.location',
+    scheduleKey: 'events.event1.schedule',
+    titleKey: 'events.event1.title',
+    descriptionKey: 'events.event1.description'
+  },
+  {
+    id: 2,
+    image: '/assets/event-2.jpg',
+    dateKey: 'events.event2.date',
+    locationKey: 'events.event2.location',
+    scheduleKey: 'events.event2.schedule',
+    titleKey: 'events.event2.title',
+    descriptionKey: 'events.event2.description'
+  }
   ]);
 
 }

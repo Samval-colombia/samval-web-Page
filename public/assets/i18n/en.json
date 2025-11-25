@@ -1,0 +1,182 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About Us",
+    "programs": "Programs",
+    "projects": "Projects",
+    "ethno": "Ethno-education",
+    "contact": "Contact",
+    "allies": "Allies"
+  },
+  "footer": {
+    "usefulLinks": "Useful Links",
+    "terms": "Terms",
+    "privacy": "Privacy Policy",
+    "about": "About SAMVAL",
+    "aboutDesc": "Foundation dedicated to education in technology, computational thinking and social innovation in vulnerable communities in Colombia.",
+    "quickLinks": "Quick Links",
+    "contact": "Contact",
+    "address": "Address",
+    "addressValue": "Cota, Cundinamarca, Colombia",
+    "phone": "Phone",
+    "email": "Email",
+    "followUs": "Follow Us",
+    "copyright": "© {{year}} SAMVAL Foundation. All rights reserved.",
+    "developedBy": "Developed with",
+    "and": "and",
+    "by": "by"
+  },
+  "about": {
+    "title": "Learn about us",
+    "subtitle": "We transform lives through education",
+    "description": "The Samval Foundation is a non-profit entity whose philosophical foundation is the strengthening of human dignity, the conservation of planet Earth, and the encouragement of prosperity as a fundamental basis for social advancement, using education, science and innovation for this purpose. Education being the pillar of PEACE, so that social groups or territories achieve articulation between the various actors involved in daily life: governments, academia, and business.",
+    "mission": {
+      "title": "Our Mission",
+      "text": "To contribute to the promotion of education as the fundamental basis of society, using computational thinking, science, innovation and peace."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "text": "To be recognized as a leading institution in strengthening education, the pillar of PEACE so that nations achieve articulation between the various actors involved in society: governments, academia, and businesses."
+    }
+  },
+  "hero": {
+    "slide1": {
+      "title": "SAMVAL Foundation",
+      "subtitle": "Transforming lives through education",
+      "description": "We promote computational thinking, science and innovation in vulnerable communities in Colombia",
+      "button": "Learn About Our Programs"
+    },
+    "slide2": {
+      "title": "Educational Robotics",
+      "subtitle": "Hands-on learning with technology",
+      "description": "We develop 21st century skills through programming and educational robotics",
+      "button": "View Projects"
+    },
+    "slide3": {
+      "title": "Ethno-education and Culture",
+      "subtitle": "Preserving our roots",
+      "description": "Educational programs that integrate technology with respect and appreciation for cultural diversity",
+      "button": "Learn More"
+    }
+  },
+  "services": {
+    "title": "Our Programs",
+    "subtitle": "Social Impact through Education",
+    "service1": {
+      "title": "Closing the digital skills gap",
+      "description": "Samval focuses on bringing essential digital skills, such as computational thinking and robotics, to marginalized communities, including ethnic groups, thereby closing the digital divide and providing equal opportunities."
+    },
+    "service2": {
+      "title": "Training for the Digital Economy",
+      "description": "By preparing young people in high-demand technology areas, Samval contributes to building the human capital needed to drive Colombia's digital economy, reducing the shortage of technology professionals."
+    },
+    "service3": {
+      "title": "Science and Technology",
+      "description": "Digital talent development fosters entrepreneurship, job creation in the technology sector and attracts investment, contributing to the country's sustainable economic growth."
+    },
+    "service4": {
+      "title": "Cognitive Skills Development",
+      "description": "Computational thinking strengthens crucial skills such as critical thinking and problem-solving, preparing students for the challenges of an ever-changing world."
+    },
+    "service5": {
+      "title": "Cultural adaptation",
+      "description": "The foundation takes into account the indigenous worldview and implements it in the way of educating, respecting native languages."
+    },
+    "service6": {
+      "title": "Preparation for the Digital Society",
+      "description": "Samval prepares new generations to actively participate in the digital transformation, ensuring that Colombia does not fall behind."
+    }
+  },
+  "blog": {
+    "title": "Our Blog",
+    "subtitle": "Latest News and Articles",
+    "post1": {
+      "title": "What is Thymio",
+      "description": "Thymio is an educational robot designed to teach programming and robotics skills to students of all ages."
+    },
+    "post2": {
+      "title": "Global Impact",
+      "description": "Thymio is transforming education in countries around the world by promoting STEM learning and closing the digital divide."
+    },
+    "post3": {
+      "title": "Success Stories",
+      "description": "Discover how Thymio has been implemented in schools and communities to foster critical thinking and creativity."
+    }
+  },
+  "events": {
+    "title": "Upcoming Events",
+    "subtitle": "Join Our Activities",
+    "event1": {
+      "date": "Dec 01, 2024",
+      "location": "Barranquilla",
+      "schedule": "8:00 AM - 10:00 AM",
+      "title": "Arahuacos",
+      "description": "The Arahuacos have a worldview based on harmony with nature and ancestral knowledge. Teaching computational thinking through mobile robots will be integrated with their cosmovision without imposing Western paradigms and in their native language."
+    },
+    "event2": {
+      "date": "Feb 01, 2025",
+      "location": "Medellín",
+      "schedule": "8:00 AM - 10:00 AM",
+      "title": "Teacher Training in Computational Thinking",
+      "description": "Ma kankamana community council of San Basilio de Palenque, cultural identity and language (Palenquero) will be strengthened as the programming language will be adapted to the native language which plays a key role in education. Strategies will be designed that respect and strengthen their cultural heritage."
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "We're here to help you",
+    "description": "Have any questions or proposals? Write to us and we will get in touch with you as soon as possible.",
+    "form": {
+      "name": "Full Name",
+      "namePlaceholder": "Your full name",
+      "email": "Email Address",
+      "emailPlaceholder": "your@email.com",
+      "phone": "Phone",
+      "phonePlaceholder": "+57 300 123 4567",
+      "subject": "Subject",
+      "subjectPlaceholder": "How can we help you?",
+      "message": "Message",
+      "messagePlaceholder": "Write your message here...",
+      "send": "Send Message",
+      "sending": "Sending...",
+      "success": "Message sent successfully!",
+      "error": "Error sending message. Please try again.",
+      "required": "This field is required",
+      "invalidEmail": "Invalid email address",
+      "invalidPhone": "Invalid phone number"
+    },
+    "info": {
+      "title": "Contact Information",
+      "address": "Address",
+      "phone": "Phone",
+      "email": "Email",
+      "hours": "Business Hours",
+      "hoursValue": "Monday - Friday: 8:00 AM - 5:00 PM"
+    }
+  },
+  "common": {
+    "learnMore": "Learn More",
+    "readMore": "Read More",
+    "viewAll": "View All",
+    "viewDetails": "View Details",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "close": "Close",
+    "open": "Open",
+    "menu": "Menu",
+    "search": "Search",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "welcome": "Welcome",
+    "language": "Language",
+    "yes": "Yes",
+    "no": "No",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "register": "Register",
+    "download": "Download"
+  }
+}

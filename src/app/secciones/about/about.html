@@ -3,8 +3,8 @@
 
     <!-- Header -->
     <div class="section-header">
-      <h2 class="section-title">{{ contenido().title }}</h2>
-      <p class="section-subtitle">{{ contenido().subtitle }}</p>
+      <h2 class="section-title">{{ contenido().titleKey | transloco}}</h2>
+      <p class="section-subtitle">{{ contenido().subtitleKey | transloco}}</p>
     </div>
 
     <!-- contenido Grid -->
@@ -12,13 +12,13 @@
 
       <!-- Imagen -->
       <div class="about-image">
-        <img [src]="contenido().image" [alt]="contenido().title">
+        <img [src]="contenido().image" [alt]="contenido().titleKey |transloco">
       </div>
 
       <!-- Contenido -->
       <div class="about-contenido">
         <p class="about-description">
-          {{ contenido().description }}
+          {{ contenido().descriptionKey | transloco}}
         </p>
 
         <!-- Misión -->
@@ -27,8 +27,8 @@
             <i class="fa fa-bullseye"></i>
           </div>
           <div class="item-contenido">
-            <h3>{{ contenido().mission.title }}</h3>
-            <p>{{ contenido().mission.text }}</p>
+            <h3>{{ contenido().mission.titleKey | transloco }}</h3>
+            <p>{{ contenido().mission.textKey | transloco }}</p>
           </div>
         </div>
 
@@ -38,8 +38,8 @@
             <i class="fa fa-eye"></i>
           </div>
           <div class="item-contenido">
-            <h3>{{ contenido().vision.title }}</h3>
-            <p>{{ contenido().vision.text }}</p>
+            <h3>{{ contenido().vision.titleKey | transloco }}</h3>
+            <p>{{ contenido().vision.textKey | transloco }}</p>
           </div>
         </div>
       </div>
