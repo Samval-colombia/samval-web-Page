@@ -9,10 +9,10 @@ export const NAVIGATION_MENU: NavigationItem[] =
 [
    { labelKey: 'navbar.home', route: '/' },
   { labelKey: 'navbar.about', route: '/sobre-nosotros' },
-  { labelKey: 'navbar.programs', route: '/programas' },
+  { labelKey: 'navbar.contact', route: '/contacto' },
+  { labelKey: 'navbar.programs', route: '/productos' },
   { labelKey: 'navbar.projects', route: '/proyectos' },
   { labelKey: 'navbar.ethno', route: '/etnoeducacion' },
-  { labelKey: 'navbar.contact', route: '/contacto' },
   { labelKey: 'navbar.allies', route: '/aliados' },
 ]
 

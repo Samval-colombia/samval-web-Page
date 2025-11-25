@@ -7,7 +7,7 @@
 
     <div class="social">
       @for (social of socialNetworks(); track $index) {
-        <a [href]="social.url" target="_blank" rel="noopener noreferrer">
+        <a [href]="social.url" target="_blank" >
           <i [className]="social.icon"></i>
         </a>
       }
@@ -25,7 +25,7 @@
     <ul class="menu">
       @for (item of navigationItems(); track $index) {
         <li>
-          <a [href]="item.route">
+          <a [routerLink]="item.route">
             {{item.labelKey |transloco}}
           </a>
         </li>

@@ -4,11 +4,12 @@ import { CONTACT_INFO, ContactInfo, NAVIGATION_MENU, NavigationItem, SOCIAL_MEDI
 import { TranslocoModule } from '@ngneat/transloco';
 import { LanguageService } from '../../../../services/language.service';
 import { UpperCasePipe } from '@angular/common';
+import { RouterLink } from "@angular/router";
 
 
 @Component({
   selector: 'app-navbar',
-  imports: [TranslocoModule , UpperCasePipe],
+  imports: [TranslocoModule, UpperCasePipe, RouterLink],
   templateUrl: './navbar.html',
   styleUrl: './navbar.css',
 })

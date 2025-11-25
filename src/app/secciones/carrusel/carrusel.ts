@@ -15,7 +15,7 @@ interface CarouselSlide {
 
 @Component({
   selector: 'app-carrusel',
-  imports: [RouterLink , TranslocoModule],
+  imports: [ TranslocoModule],
   templateUrl: './carrusel.html',
   styleUrl: './carrusel.css',
 })

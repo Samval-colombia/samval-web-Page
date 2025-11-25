@@ -5,6 +5,7 @@
   <nav class="footer-nav">
     @for (link of UsefulLink(); track link.route) {
       <a
+        [routerLink]="link.route"
         class="footer-link"
       >
         {{ link.labelKey | transloco}}

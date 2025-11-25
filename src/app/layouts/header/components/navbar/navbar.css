@@ -63,11 +63,11 @@
 .menu a {
   text-decoration: none;
   font-weight: 600;
-  color: #444;
+  color: #fff;
 }
 
 .menu a:hover {
-  color: #000;
+  color: #fff;
 }
 
 

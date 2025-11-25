@@ -2,7 +2,7 @@
   "navbar": {
     "home": "Inicio",
     "about": "Sobre Nosotros",
-    "programs": "Programas",
+    "programs": "Productos",
     "projects": "Proyectos",
     "ethno": "Etnoeducación",
     "contact": "Contacto",
@@ -178,5 +178,20 @@
     "edit": "Editar",
     "register": "Registrarse",
     "download": "Descargar"
+  },
+
+  "allies": {
+    "title": "Aliados",
+    "subtitle": "Construyendo el Futuro Juntos",
+    "description": "Trabajamos con instituciones educativas, organizaciones comunitarias y empresas comprometidas con la educación y el desarrollo social de Colombia.",
+    "ally1": {
+      "title": "Consejo comunitario ma-kankamana de palenque",
+      "description": "Como máxima autoridad administrativa de San Basilio de Palenque, el Consejo Comunitario trabaja por mejorar la calidad de vida de su comunidad, priorizando la autonomía, la identidad cultural y el respeto por sus tradiciones. Junto con la Fundación SAMVAL, se buscará implementar proyectos que respeten los intereses de la comunidad y garanticen un desarrollo alineado con su cosmovisión."
+    },
+    "ally2": {
+      "title": "Universidad de la Costa",
+      "description": "La Universidad de la Costa (CUC) es una institución educativa comprometida con la formación integral de profesionales líderes, impulsando el desarrollo de la Región Caribe a través de la excelencia académica, la innovación y la investigación. Con una trayectoria destacada, la CUC se alinea con los valores de la Fundación SAMVAL para promover la inclusión, el respeto por la diversidad cultural y el acceso a tecnologías que transformen vidas y comunidades."
+    },
+    "conclusion": "Estas alianzas fortalecen el compromiso de la Fundación SAMVAL con la creación de oportunidades que respeten y enriquezcan la identidad cultural, asegurando un futuro donde la innovación y la tradición caminen de la mano."
   }
 }
