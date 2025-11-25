@@ -193,5 +193,48 @@
       "description": "La Universidad de la Costa (CUC) es una institución educativa comprometida con la formación integral de profesionales líderes, impulsando el desarrollo de la Región Caribe a través de la excelencia académica, la innovación y la investigación. Con una trayectoria destacada, la CUC se alinea con los valores de la Fundación SAMVAL para promover la inclusión, el respeto por la diversidad cultural y el acceso a tecnologías que transformen vidas y comunidades."
     },
     "conclusion": "Estas alianzas fortalecen el compromiso de la Fundación SAMVAL con la creación de oportunidades que respeten y enriquezcan la identidad cultural, asegurando un futuro donde la innovación y la tradición caminen de la mano."
+  },
+
+  "etnoeducacion": {
+    "pageTitle": "Etnoeducación",
+    "breadcrumb": {
+      "home": "Inicio",
+      "current": "Etnoeducación"
+    },
+    "mainTitle": "Etnoeducación: Construyendo Futuros con Identidad",
+    "intro": "La Fundación Samval tiene el compromiso de fortalecer la educación en comunidades indígenas y afrodescendientes de Colombia, asegurando que los avances tecnológicos respeten y enriquezcan su identidad cultural.",
+    "whatIs": {
+      "title": "¿Qué es la Etnoeducación?",
+      "description": "Es un modelo educativo que reconoce la diversidad cultural y lingüística de los pueblos indígenas y afrodescendientes, integrando sus saberes ancestrales con el conocimiento moderno."
+    },
+    "initiative": {
+      "title": "Nuestra Iniciativa: Pensamiento Computacional para Comunidades Indígenas",
+      "description": "Implementamos robótica educativa y pensamiento computacional en comunidades como los Palenqueros y los Arhuacos, adaptando el contenido a su cosmovisión, idioma y necesidades específicas."
+    },
+    "focus": {
+      "title": "Enfoque del Proyecto",
+      "items": {
+        "culturalIntegration": {
+          "title": "Integración Cultural",
+          "description": "Adaptamos el lenguaje de programación al idioma palenquero y respetamos la cosmovisión de los Arhuacos."
+        },
+        "localEmpowerment": {
+          "title": "Empoderamiento Local",
+          "description": "Capacitación de docentes y jóvenes como multiplicadores del aprendizaje."
+        },
+        "accessibleTechnology": {
+          "title": "Tecnología Accesible",
+          "description": "Uso de herramientas autónomas y offline para superar la falta de conectividad."
+        },
+        "sustainableDevelopment": {
+          "title": "Desarrollo Sostenible",
+          "description": "Alianzas con líderes comunitarios para asegurar la apropiación del conocimiento."
+        }
+      }
+    },
+    "impact": {
+      "title": "Impacto Esperado",
+      "description": "Con este proyecto, buscamos cerrar la brecha digital y generar oportunidades laborales en sectores tecnológicos, respetando siempre la identidad cultural de cada comunidad."
+    }
   }
 }

@@ -196,5 +196,47 @@
     },
     "conclusion": "These alliances strengthen the SAMVAL Foundation's commitment to creating opportunities that respect and enrich cultural identity, ensuring a future where innovation and tradition go hand in hand."
 
+  },
+   "etnoeducacion": {
+    "pageTitle": "Ethnoeducation",
+    "breadcrumb": {
+      "home": "Home",
+      "current": "Ethnoeducation"
+    },
+    "mainTitle": "Ethnoeducation: Building Futures with Identity",
+    "intro": "The Samval Foundation is committed to strengthening education in indigenous and Afro-descendant communities in Colombia, ensuring that technological advances respect and enrich their cultural identity.",
+    "whatIs": {
+      "title": "What is Ethnoeducation?",
+      "description": "It is an educational model that recognizes the cultural and linguistic diversity of indigenous and Afro-descendant peoples, integrating their ancestral knowledge with modern understanding."
+    },
+    "initiative": {
+      "title": "Our Initiative: Computational Thinking for Indigenous Communities",
+      "description": "We implement educational robotics and computational thinking in communities such as the Palenqueros and the Arhuacos, adapting content to their worldview, language, and specific needs."
+    },
+    "focus": {
+      "title": "Project Focus",
+      "items": {
+        "culturalIntegration": {
+          "title": "Cultural Integration",
+          "description": "We adapt the programming language to Palenquero and respect the Arhuacos' worldview."
+        },
+        "localEmpowerment": {
+          "title": "Local Empowerment",
+          "description": "Training teachers and youth as learning multipliers."
+        },
+        "accessibleTechnology": {
+          "title": "Accessible Technology",
+          "description": "Use of autonomous and offline tools to overcome lack of connectivity."
+        },
+        "sustainableDevelopment": {
+          "title": "Sustainable Development",
+          "description": "Partnerships with community leaders to ensure knowledge appropriation."
+        }
+      }
+    },
+    "impact": {
+      "title": "Expected Impact",
+      "description": "With this project, we seek to close the digital gap and generate job opportunities in technological sectors, always respecting the cultural identity of each community."
+    }
   }
 }

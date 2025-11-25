@@ -1,11 +1,11 @@
 import { Component, signal } from '@angular/core';
 import { TranslocoModule } from '@ngneat/transloco';
 import { Ally } from '../../models/aliados.model';
-import { RouterLink } from '@angular/router';
+
 
 @Component({
   selector: 'app-aliados',
-  imports: [TranslocoModule,RouterLink],
+  imports: [TranslocoModule],
   templateUrl: './aliados.html',
   styleUrl: './aliados.css',
 })
