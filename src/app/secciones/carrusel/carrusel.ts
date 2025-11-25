@@ -36,7 +36,7 @@ export class Carrusel {
     subtitleKey: 'hero.slide1.subtitle',
     descriptionKey: 'hero.slide1.description',
     buttonKey: 'hero.slide1.button',
-    imageUrl: '/assets/carousel-1.jpg',
+    imageUrl: '/assets/img/carousel-1.jpg',
     buttonLink: '/programas'
   },
   {
@@ -45,7 +45,7 @@ export class Carrusel {
     subtitleKey: 'hero.slide2.subtitle',
     descriptionKey: 'hero.slide2.description',
     buttonKey: 'hero.slide2.button',
-    imageUrl: '/assets/carousel-2.jpg',
+    imageUrl: '/assets/img/carousel-2.jpg',
     buttonLink: '/proyectos'
   },
   {
@@ -54,7 +54,7 @@ export class Carrusel {
     subtitleKey: 'hero.slide3.subtitle',
     descriptionKey: 'hero.slide3.description',
     buttonKey: 'hero.slide3.button',
-    imageUrl: '/assets/carousel-3.jpg',
+    imageUrl: '/assets/img/carousel-3.jpg',
     buttonLink: '/etnoeducacion'
   }
   ];

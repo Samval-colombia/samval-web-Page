@@ -1,0 +1,55 @@
+<nav class="nav" [class.open]="menuOpen()" [class.scrolled]="scrolled()">
+  <div class="nav__inner">
+    <a class="brand" routerLink="/" (click)="closeMenu()">
+      <img src="/assets/logo/onlyLogo.svg" alt="Fundación Samval" class="brand__logo" />
+      <div>
+        <p class="brand__eyebrow">Fundación Samval</p>
+        <span class="brand__title">Tecnología que respeta el territorio</span>
+      </div>
+    </a>
+
+    <div class="nav__cta">
+
+       <button
+        class="lang-btn"
+        (click)="toggleLanguageMenu()"
+        [attr.aria-label]="'Cambiar idioma a ' + (currentLang() === 'es' ? 'inglés' : 'español')"
+        type="button">
+        <span class="lang-icon">🌐</span>
+        <span class="lang-text">{{ currentLang() === 'es' ? 'ES' : 'EN' }}</span>
+      </button>
+
+      <a class="pill" href="mailto:contacto@samval.org">
+        <monitor-icon aria-hidden="true"></monitor-icon>
+        <span>Plataforma</span>
+      </a>
+    </div>
+
+    <ul class="nav__links" [class.open]="menuOpen()">
+      <li>
+        <a
+          routerLink="/"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          (click)="closeMenu()"
+          >Inicio</a
+        >
+      </li>
+      @for (link of links; track link.path) {
+        <li>
+          <a
+            [routerLink]="link.path"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="link.exact ? { exact: true } : { exact: false }"
+            (click)="closeMenu()"
+            >{{ link.label }}</a
+          >
+        </li>
+      }
+    </ul>
+
+    <button class="nav__toggle" type="button" (click)="toggleMenu()" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>

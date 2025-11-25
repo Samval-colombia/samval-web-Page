@@ -1,6 +1,11 @@
+<div class="gradient"></div>
+<div class="mesh"></div>
+<div class="app-shell">
+  <app-header [links]="navLinks"></app-header>
 
-<app-header/>
-<router-outlet/>
+  <router-outlet></router-outlet>
 
-  <app-footer/>
-
+  <app-footer
+    [footerData]="footerData"
+  ></app-footer>
+</div>

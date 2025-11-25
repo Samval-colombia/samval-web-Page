@@ -21,7 +21,7 @@ export class About {
     titleKey: 'about.vision.title',
     textKey: 'about.vision.text'
   },
-  image: '/assets/about.jpg'
+  image: 'assets/img/about.jpg'
   })
 
 }

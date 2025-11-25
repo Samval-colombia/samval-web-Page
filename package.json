@@ -33,7 +33,9 @@
     "@angular/router": "^21.0.0",
     "@angular/ssr": "^21.0.0",
     "@ngneat/transloco": "^6.0.4",
+    "@ngverse/icons-lu": "^0.0.12",
     "express": "^5.1.0",
+    "playwright-chromium": "^1.57.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0"
   },

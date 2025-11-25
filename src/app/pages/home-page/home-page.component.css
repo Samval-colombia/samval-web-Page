@@ -1,0 +1,4 @@
+.page-grid {
+  display: grid;
+  gap: clamp(32px, 4vw, 56px);
+}

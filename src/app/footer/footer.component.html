@@ -1,0 +1,57 @@
+@if (footerData(); as data) {
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <div class="footer__brand-logo">
+          <img [src]="data.brandLogoSrc" [alt]="data.brandAlt" class="footer__logo" />
+          <div>
+            <p class="footer__eyebrow">{{ data.brandAlt }}</p>
+            <p class="footer__tagline">{{ data.tagline }}</p>
+          </div>
+        </div>
+        <div class="social">
+          @for (social of data.socialLinks; track social.label) {
+            <a [href]="social.url" [aria-label]="social.aria">
+              @switch (social.icon) {
+                @case ('facebook') {
+                  <facebook-icon aria-hidden="true"></facebook-icon>
+                }
+                @case ('youtube') {
+                  <youtube-icon aria-hidden="true"></youtube-icon>
+                }
+                @case ('instagram') {
+                  <instagram-icon aria-hidden="true"></instagram-icon>
+                }
+                @case ('linkedin') {
+                  <linkedin-icon aria-hidden="true"></linkedin-icon>
+                }
+                @default {
+                  <span class="social__icon" aria-hidden="true">{{ social.label }}</span>
+                }
+              }
+            </a>
+          }
+        </div>
+      </div>
+
+      <div class="footer__links">
+        <section>
+          <h4>{{ data.locationHeading }}</h4>
+          <p>{{ data.locationText }}</p>
+          <p><a [href]="'tel:' + data.phone">{{ data.phone }}</a></p>
+          <p><a [href]="'mailto:' + data.email">{{ data.email }}</a></p>
+        </section>
+      </div>
+    </div>
+
+    <div class="footer__meta">
+      <span>© {{ currentYear }} {{ data.brandAlt }}</span>
+      <span class="footer__divider" aria-hidden="true">·</span>
+      <span>Educación, ciencia e innovación con enfoque territorial</span>
+    </div>
+  </footer>
+} @else {
+  <footer class="footer">
+    <p class="muted">Configura los datos del footer.</p>
+  </footer>
+}
