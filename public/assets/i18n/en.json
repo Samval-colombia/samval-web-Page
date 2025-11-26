@@ -1,242 +1,185 @@
 {
-  "navbar": {
-    "home": "Home",
-    "about": "About Us",
-    "programs": "Products",
-    "projects": "Projects",
-    "ethno": "Ethno-education",
-    "contact": "Contact",
-    "allies": "Allies"
-  },
-  "footer": {
-    "usefulLinks": "Useful Links",
-    "terms": "Terms",
-    "privacy": "Privacy Policy",
-    "about": "About SAMVAL",
-    "aboutDesc": "Foundation dedicated to education in technology, computational thinking and social innovation in vulnerable communities in Colombia.",
-    "quickLinks": "Quick Links",
-    "contact": "Contact",
-    "address": "Address",
-    "addressValue": "Cota, Cundinamarca, Colombia",
-    "phone": "Phone",
-    "email": "Email",
-    "followUs": "Follow Us",
-    "copyright": "© {{year}} SAMVAL Foundation. All rights reserved.",
-    "developedBy": "Developed with",
-    "and": "and",
-    "by": "by"
-  },
-  "about": {
-    "title": "Learn about us",
-    "subtitle": "We transform lives through education",
-    "description": "The Samval Foundation is a non-profit entity whose philosophical foundation is the strengthening of human dignity, the conservation of planet Earth, and the encouragement of prosperity as a fundamental basis for social advancement, using education, science and innovation for this purpose. Education being the pillar of PEACE, so that social groups or territories achieve articulation between the various actors involved in daily life: governments, academia, and business.",
-    "mission": {
-      "title": "Our Mission",
-      "text": "To contribute to the promotion of education as the fundamental basis of society, using computational thinking, science, innovation and peace."
+  "header": {
+    "brand": {
+      "name": "Samval Foundation",
+      "tagline": "Technology that respects the territory"
     },
-    "vision": {
-      "title": "Our Vision",
-      "text": "To be recognized as a leading institution in strengthening education, the pillar of PEACE so that nations achieve articulation between the various actors involved in society: governments, academia, and businesses."
-    }
+    "platform": "Platform",
+    "nav": {
+      "home": "Home",
+      "programs": "Programs",
+      "foundation": "Foundation",
+      "contact": "Contact"
+    },
+    "language": {
+      "changeToEnglish": "Switch to English",
+      "changeToSpanish": "Switch to Spanish"
+    },
+    "menu": "Open menu"
   },
   "hero": {
     "slide1": {
-      "title": "SAMVAL Foundation",
-      "subtitle": "Transforming lives through education",
-      "description": "We promote computational thinking, science and innovation in vulnerable communities in Colombia",
-      "button": "Learn About Our Programs"
+      "title": "Technology with territorial approach",
+      "subtitle": "We transform education in vulnerable communities",
+      "description": "Computational thinking, robotics, and innovation programs that respect the cultural identity of each territory.",
+      "button": "Learn about our programs"
     },
     "slide2": {
-      "title": "Educational Robotics",
-      "subtitle": "Hands-on learning with technology",
-      "description": "We develop 21st century skills through programming and educational robotics",
-      "button": "View Projects"
+      "title": "Open and collaborative science",
+      "subtitle": "We build with evidence and experimentation",
+      "description": "We work with data, applied research, and participatory design alongside communities, governments, and academia.",
+      "button": "Explore our projects"
     },
     "slide3": {
-      "title": "Ethno-education and Culture",
-      "subtitle": "Preserving our roots",
-      "description": "Educational programs that integrate technology with respect and appreciation for cultural diversity",
-      "button": "Learn More"
+      "title": "Education that protects ancestral knowledge",
+      "subtitle": "Digital ethno-education with cultural relevance",
+      "description": "We design bilingual content and learning experiences that value and strengthen local languages and traditions.",
+      "button": "Discover ethno-education"
     }
   },
-  "services": {
-    "title": "Our Programs",
-    "subtitle": "Social Impact through Education",
-    "service1": {
-      "title": "Closing the digital skills gap",
-      "description": "Samval focuses on bringing essential digital skills, such as computational thinking and robotics, to marginalized communities, including ethnic groups, thereby closing the digital divide and providing equal opportunities."
+  "about": {
+    "title": "Who are we?",
+    "subtitle": "A foundation that connects governments, academia, and businesses to make innovation a driver of peace",
+    "description": "We are a non-profit organization dedicated to bringing education in science, technology, and innovation to vulnerable communities. We work with a territorial approach that respects and enhances Colombia's cultural diversity.",
+    "mission": {
+      "title": "Our Mission",
+      "text": "To democratize access to STEM education through contextualized programs that strengthen local capacities and generate sustainable development opportunities in vulnerable territories."
     },
-    "service2": {
-      "title": "Training for the Digital Economy",
-      "description": "By preparing young people in high-demand technology areas, Samval contributes to building the human capital needed to drive Colombia's digital economy, reducing the shortage of technology professionals."
-    },
-    "service3": {
-      "title": "Science and Technology",
-      "description": "Digital talent development fosters entrepreneurship, job creation in the technology sector and attracts investment, contributing to the country's sustainable economic growth."
-    },
-    "service4": {
-      "title": "Cognitive Skills Development",
-      "description": "Computational thinking strengthens crucial skills such as critical thinking and problem-solving, preparing students for the challenges of an ever-changing world."
-    },
-    "service5": {
-      "title": "Cultural adaptation",
-      "description": "The foundation takes into account the indigenous worldview and implements it in the way of educating, respecting native languages."
-    },
-    "service6": {
-      "title": "Preparation for the Digital Society",
-      "description": "Samval prepares new generations to actively participate in the digital transformation, ensuring that Colombia does not fall behind."
+    "vision": {
+      "title": "Our Vision",
+      "text": "To be recognized as leaders in transformative education that connects innovation, territory, and peace, positively impacting over 100,000 people by 2030."
     }
   },
-  "blog": {
-    "title": "Our Blog",
-    "subtitle": "Latest News and Articles",
-    "post1": {
-      "title": "What is Thymio",
-      "description": "Thymio is an educational robot designed to teach programming and robotics skills to students of all ages."
+  "aboutPage": {
+    "hero": {
+      "eyebrow": "Samval Foundation",
+      "title": "We transform lives through education and technology",
+      "description": "We are a non-profit foundation that connects governments, academia, and businesses to make innovation a driver of peace, prosperity, and planet conservation.",
+      "chip1": "+11 territories",
+      "chip2": "Computational thinking",
+      "chip3": "Inclusive robotics"
     },
-    "post2": {
-      "title": "Global Impact",
-      "description": "Thymio is transforming education in countries around the world by promoting STEM learning and closing the digital divide."
+    "values": {
+      "peace": {
+        "title": "Peace and dignity",
+        "description": "Technology as a bridge to protect life and cultural diversity."
+      },
+      "science": {
+        "title": "Open science",
+        "description": "We work with data, evidence, and collaborative experimentation."
+      },
+      "innovation": {
+        "title": "Sustainable innovation",
+        "description": "Every project cares for the territory and reduces the climate gap."
+      }
     },
-    "post3": {
-      "title": "Success Stories",
-      "description": "Discover how Thymio has been implemented in schools and communities to foster critical thinking and creativity."
+    "milestones": {
+      "2019": {
+        "label": "First pilots",
+        "detail": "We started with STEAM clubs in public schools in Antioquia."
+      },
+      "2021": {
+        "label": "Community scaling",
+        "detail": "We co-created bilingual content with Afro and Indigenous communities."
+      },
+      "2024": {
+        "label": "Mobile labs",
+        "detail": "We deployed robotics and computational thinking kits in 11 departments."
+      }
     }
   },
-  "events": {
-    "title": "Upcoming Events",
-    "subtitle": "Join Our Activities",
-    "event1": {
-      "date": "Dec 01, 2024",
-      "location": "Barranquilla",
-      "schedule": "8:00 AM - 10:00 AM",
-      "title": "Arahuacos",
-      "description": "The Arahuacos have a worldview based on harmony with nature and ancestral knowledge. Teaching computational thinking through mobile robots will be integrated with their cosmovision without imposing Western paradigms and in their native language."
+  "programsPage": {
+    "hero": {
+      "eyebrow": "Portfolio",
+      "title": "Programs ready to deploy in your territory",
+      "description": "We design experiences that combine science, technology, and local culture. Select the program and let's activate the next cohort together."
     },
-    "event2": {
-      "date": "Feb 01, 2025",
-      "location": "Medellín",
-      "schedule": "8:00 AM - 10:00 AM",
-      "title": "Teacher Training in Computational Thinking",
-      "description": "Ma kankamana community council of San Basilio de Palenque, cultural identity and language (Palenquero) will be strengthened as the programming language will be adapted to the native language which plays a key role in education. Strategies will be designed that respect and strengthen their cultural heritage."
+    "programs": {
+      "science": {
+        "name": "Science and Technology",
+        "summary": "Mobile labs, robotics, and computational thinking for elementary, middle, and high school.",
+        "bullet1": "Thymio educational robots",
+        "bullet2": "STEAM clubs with weekly challenges",
+        "bullet3": "Classroom-ready kits with teacher guides"
+      },
+      "ethno": {
+        "name": "Digital ethno-education",
+        "summary": "Technology that speaks the territory's language and protects ancestral knowledge.",
+        "bullet1": "Bilingual content design",
+        "bullet2": "Projects with community leaders",
+        "bullet3": "Assessment with differential approach"
+      },
+      "talent": {
+        "name": "Talent and employability",
+        "summary": "Pathways for youth and adults connecting with the digital economy and entrepreneurship.",
+        "bullet1": "Computational thinking and data",
+        "bullet2": "Challenges with partner companies",
+        "bullet3": "Mentorships and career guidance"
+      }
+    },
+    "extras": {
+      "training": {
+        "title": "Teacher training",
+        "description": "We support teachers so that technology stays in the classroom."
+      },
+      "research": {
+        "title": "Research + innovation",
+        "description": "We measure impact and iterate with communities to maintain cultural relevance."
+      },
+      "partners": {
+        "title": "Partners and funding",
+        "description": "We connect companies, governments, and academia to ensure sustainability."
+      }
+    },
+    "cta": {
+      "button": "Schedule demo"
     }
   },
-  "contact": {
-    "title": "Contact Us",
-    "subtitle": "We're here to help you",
-    "description": "Have any questions or proposals? Write to us and we will get in touch with you as soon as possible.",
-    "form": {
-      "name": "Full Name",
-      "namePlaceholder": "Your full name",
-      "email": "Email Address",
-      "emailPlaceholder": "your@email.com",
-      "phone": "Phone",
-      "phonePlaceholder": "+57 300 123 4567",
-      "subject": "Subject",
-      "subjectPlaceholder": "How can we help you?",
-      "message": "Message",
-      "messagePlaceholder": "Write your message here...",
-      "send": "Send Message",
-      "sending": "Sending...",
-      "success": "Message sent successfully!",
-      "error": "Error sending message. Please try again.",
-      "required": "This field is required",
-      "invalidEmail": "Invalid email address",
-      "invalidPhone": "Invalid phone number"
+  "contactPage": {
+    "hero": {
+      "eyebrow": "Contact",
+      "title": "Let's talk and activate your project",
+      "description": "Tell us your educational challenge. We respond in less than 24 hours."
     },
-    "info": {
-      "title": "Contact Information",
-      "address": "Address",
-      "phone": "Phone",
-      "email": "Email",
-      "hours": "Business Hours",
-      "hoursValue": "Monday - Friday: 8:00 AM - 5:00 PM"
+    "channels": {
+      "talk": {
+        "title": "Let's talk about your territory",
+        "info": "Schedule a video call to learn about your educational goals and adapt the program.",
+        "label": "contacto@samval.org"
+      },
+      "call": {
+        "title": "Call us",
+        "info": "We serve partners, teachers, and public entities.",
+        "label": "+57 323 320 7532"
+      },
+      "follow": {
+        "title": "Follow us",
+        "info": "Field stories and launches from our social media.",
+        "label": "@samvalfundacion"
+      }
+    },
+    "cta": {
+      "title": "Ready to bring innovation to your community?",
+      "description": "Let's schedule a strategic session with our field team and curricular design.",
+      "button": "Schedule now"
+    }
+  },
+  "footer": {
+    "tagline": "Education, science, and innovation for peace with territorial approach.",
+    "location": "Location",
+    "copyright": "Education, science and innovation with territorial approach",
+    "social": {
+      "facebook": "Facebook",
+      "youtube": "YouTube",
+      "instagram": "Instagram",
+      "linkedin": "LinkedIn"
     }
   },
   "common": {
-    "learnMore": "Learn More",
-    "readMore": "Read More",
-    "viewAll": "View All",
-    "viewDetails": "View Details",
-    "back": "Back",
-    "next": "Next",
-    "previous": "Previous",
-    "close": "Close",
-    "open": "Open",
-    "menu": "Menu",
-    "search": "Search",
     "loading": "Loading...",
-    "error": "Error",
-    "success": "Success",
-    "welcome": "Welcome",
-    "language": "Language",
-    "yes": "Yes",
-    "no": "No",
-    "save": "Save",
-    "cancel": "Cancel",
-    "delete": "Delete",
-    "edit": "Edit",
-    "register": "Register",
-    "download": "Download"
-  },
-
-
-
-  "allies": {
-    "title": "Allies",
-    "subtitle": "Building the Future Together",
-    "description": "We work with educational institutions, community organizations and companies committed to education and social development in Colombia.",
-    "ally1": {
-      "title": "Ma-Kankamana Community Council of Palenque",
-      "description": "As the highest administrative authority of San Basilio de Palenque, the Community Council works to improve the quality of life of its community, prioritizing autonomy, cultural identity and respect for its traditions. Together with the SAMVAL Foundation, projects will be implemented that respect the community's interests and ensure development aligned with their worldview."
-    },
-    "ally2": {
-      "title": "Universidad de la Costa",
-      "description": "The Universidad de la Costa (CUC) is an educational institution committed to the comprehensive training of leading professionals, driving the development of the Caribbean Region through academic excellence, innovation and research. With an outstanding track record, CUC aligns with the values of the SAMVAL Foundation to promote inclusion, respect for cultural diversity and access to technologies that transform lives and communities."
-    },
-    "conclusion": "These alliances strengthen the SAMVAL Foundation's commitment to creating opportunities that respect and enrich cultural identity, ensuring a future where innovation and tradition go hand in hand."
-
-  },
-   "etnoeducacion": {
-    "pageTitle": "Ethnoeducation",
-    "breadcrumb": {
-      "home": "Home",
-      "current": "Ethnoeducation"
-    },
-    "mainTitle": "Ethnoeducation: Building Futures with Identity",
-    "intro": "The Samval Foundation is committed to strengthening education in indigenous and Afro-descendant communities in Colombia, ensuring that technological advances respect and enrich their cultural identity.",
-    "whatIs": {
-      "title": "What is Ethnoeducation?",
-      "description": "It is an educational model that recognizes the cultural and linguistic diversity of indigenous and Afro-descendant peoples, integrating their ancestral knowledge with modern understanding."
-    },
-    "initiative": {
-      "title": "Our Initiative: Computational Thinking for Indigenous Communities",
-      "description": "We implement educational robotics and computational thinking in communities such as the Palenqueros and the Arhuacos, adapting content to their worldview, language, and specific needs."
-    },
-    "focus": {
-      "title": "Project Focus",
-      "items": {
-        "culturalIntegration": {
-          "title": "Cultural Integration",
-          "description": "We adapt the programming language to Palenquero and respect the Arhuacos' worldview."
-        },
-        "localEmpowerment": {
-          "title": "Local Empowerment",
-          "description": "Training teachers and youth as learning multipliers."
-        },
-        "accessibleTechnology": {
-          "title": "Accessible Technology",
-          "description": "Use of autonomous and offline tools to overcome lack of connectivity."
-        },
-        "sustainableDevelopment": {
-          "title": "Sustainable Development",
-          "description": "Partnerships with community leaders to ensure knowledge appropriation."
-        }
-      }
-    },
-    "impact": {
-      "title": "Expected Impact",
-      "description": "With this project, we seek to close the digital gap and generate job opportunities in technological sectors, always respecting the cultural identity of each community."
-    }
+    "error": "An error occurred",
+    "readMore": "Read more",
+    "learnMore": "Learn more",
+    "contact": "Contact"
   }
 }

@@ -5,8 +5,8 @@
         <div class="footer__brand-logo">
           <img [src]="data.brandLogoSrc" [alt]="data.brandAlt" class="footer__logo" />
           <div>
-            <p class="footer__eyebrow">{{ data.brandAlt }}</p>
-            <p class="footer__tagline">{{ data.tagline }}</p>
+            <p class="footer__eyebrow">{{ data.brandAlt |transloco}}</p>
+            <p class="footer__tagline">{{ data.taglineKey | transloco }}</p>
           </div>
         </div>
         <div class="social">
@@ -26,7 +26,7 @@
                   <linkedin-icon aria-hidden="true"></linkedin-icon>
                 }
                 @default {
-                  <span class="social__icon" aria-hidden="true">{{ social.label }}</span>
+                  <span class="social__icon" aria-hidden="true">{{ social.label |transloco}}</span>
                 }
               }
             </a>
@@ -36,8 +36,8 @@
 
       <div class="footer__links">
         <section>
-          <h4>{{ data.locationHeading }}</h4>
-          <p>{{ data.locationText }}</p>
+          <h4>{{ data.locationHeadingKey |transloco}}</h4>
+          <p>{{ data.locationText |transloco}}</p>
           <p><a [href]="'tel:' + data.phone">{{ data.phone }}</a></p>
           <p><a [href]="'mailto:' + data.email">{{ data.email }}</a></p>
         </section>
@@ -47,7 +47,7 @@
     <div class="footer__meta">
       <span>© {{ currentYear }} {{ data.brandAlt }}</span>
       <span class="footer__divider" aria-hidden="true">·</span>
-      <span>Educación, ciencia e innovación con enfoque territorial</span>
+      <span>{{ data.copyrightKey | transloco }}</span>
     </div>
   </footer>
 } @else {

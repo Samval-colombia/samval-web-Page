@@ -1,25 +1,26 @@
 <main class="page">
   <header class="hero">
     <div>
-      <p class="eyebrow">Fundación Samval</p>
-      <h1>Transformamos vidas a través de educación y tecnología</h1>
+      <p class="eyebrow">{{ hero().eyebrowKey | transloco }}</p>
+      <h1>{{ hero().titleKey | transloco }}</h1>
       <p class="muted">
-        Somos una fundación sin ánimo de lucro que articula gobiernos, academia y empresas para que la innovación sea motor
-        de paz, prosperidad y conservación del planeta.
+        {{ hero().descriptionKey | transloco }}
       </p>
     </div>
     <div class="hero__panel">
-      <p class="chip">+11 territorios</p>
-      <p class="chip">Pensamiento computacional</p>
-      <p class="chip">Robótica inclusiva</p>
+      @for ( chip of hero().chips; track chip.key) {
+
+        <p class="chip">{{ chip.key | transloco }}</p>
+      }
+
     </div>
   </header>
 
   <section class="values">
-    @for (value of values(); track value.title) {
+    @for (value of values(); track value.titleKey) {
       <article class="value">
-        <h3>{{ value.title }}</h3>
-        <p class="muted">{{ value.desc }}</p>
+        <h3>{{ value.titleKey |transloco}}</h3>
+        <p class="muted">{{ value.descKey |transloco}}</p>
       </article>
     }
   </section>
@@ -29,8 +30,8 @@
       <article class="milestone">
         <div class="year">{{ item.year }}</div>
         <div>
-          <h4>{{ item.label }}</h4>
-          <p class="muted">{{ item.detail }}</p>
+          <h4>{{ item.labelKey | transloco}}</h4>
+          <p class="muted">{{ item.detailKey |transloco}}</p>
         </div>
       </article>
     }

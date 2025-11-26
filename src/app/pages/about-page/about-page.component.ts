@@ -1,33 +1,47 @@
 import { Component, signal } from '@angular/core';
+import { TranslocoModule } from '@ngneat/transloco';
 
 @Component({
   selector: 'app-about-page',
+  imports : [TranslocoModule],
   standalone: true,
   templateUrl: './about-page.component.html',
   styleUrl: './about-page.component.css'
 })
 export class AboutPageComponent {
+
+   protected readonly hero = signal({
+    eyebrowKey: 'aboutPage.hero.eyebrow',
+    titleKey: 'aboutPage.hero.title',
+    descriptionKey: 'aboutPage.hero.description',
+    chips: [
+      { key: 'aboutPage.hero.chip1' },
+      { key: 'aboutPage.hero.chip2' },
+      { key: 'aboutPage.hero.chip3' }
+    ]
+  });
+
   protected readonly values = signal([
-    { title: 'Paz y dignidad', desc: 'La tecnología como puente para proteger la vida y la diversidad cultural.' },
-    { title: 'Ciencia abierta', desc: 'Trabajamos con datos, evidencia y experimentación colaborativa.' },
-    { title: 'Innovación sostenible', desc: 'Cada proyecto cuida el territorio y reduce la brecha climática.' }
+    { titleKey: 'aboutPage.values.peace.title', descKey: 'aboutPage.values.peace.description' },
+    { titleKey: 'aboutPage.values.science.title', descKey: 'aboutPage.values.science.description' },
+    { titleKey: 'aboutPage.values.innovation.title', descKey: 'aboutPage.values.innovation.description' }
   ]);
 
   protected readonly milestones = signal([
     {
       year: '2019',
-      label: 'Primeros pilotos',
-      detail: 'Arrancamos con clubes STEAM en colegios públicos de Antioquia.'
+      labelKey: 'aboutPage.milestones.2019.label',
+      detailKey: 'aboutPage.milestones.2019.detail'
     },
     {
       year: '2021',
-      label: 'Escalamiento comunitario',
-      detail: 'Co-creamos contenidos bilingües con comunidades afro e indígenas.'
+      labelKey: 'aboutPage.milestones.2021.label',
+      detailKey: 'aboutPage.milestones.2021.detail'
     },
     {
       year: '2024',
-      label: 'Laboratorios móviles',
-      detail: 'Desplegamos kits de robótica y pensamiento computacional en 11 departamentos.'
+      labelKey: 'aboutPage.milestones.2024.label',
+      detailKey: 'aboutPage.milestones.2024.detail'
     }
   ]);
 }

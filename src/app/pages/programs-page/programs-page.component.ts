@@ -1,50 +1,72 @@
 import { NgOptimizedImage } from '@angular/common';
 import { Component, signal } from '@angular/core';
+import { TranslocoModule } from '@ngneat/transloco';
 
 @Component({
   selector: 'app-programs-page',
   standalone: true,
-  imports: [NgOptimizedImage],
+  imports: [NgOptimizedImage , TranslocoModule],
   templateUrl: './programs-page.component.html',
   styleUrl: './programs-page.component.css'
 })
 export class ProgramsPageComponent {
+
+   protected readonly hero = signal({
+    eyebrowKey: 'programsPage.hero.eyebrow',
+    titleKey: 'programsPage.hero.title',
+    descriptionKey: 'programsPage.hero.description'
+  });
+
   protected readonly programs = signal([
-    {
-      name: 'Ciencia y Tecnología',
+     {
+      nameKey: 'programsPage.programs.science.name',
       image: 'assets/img/event-1.jpg',
-      summary: 'Laboratorios móviles, robótica y pensamiento computacional para primaria, secundaria y media.',
-      bullets: ['Robots educativos Thymio', 'Clubes STEAM con retos semanales', 'Kits listos para aula con guías docentes']
+      summaryKey: 'programsPage.programs.science.summary',
+      bulletKeys: [
+        'programsPage.programs.science.bullet1',
+        'programsPage.programs.science.bullet2',
+        'programsPage.programs.science.bullet3'
+      ]
     },
     {
-      name: 'Etnoeducación digital',
+      nameKey: 'programsPage.programs.ethno.name',
       image: 'assets/img/event-2.jpg',
-      summary: 'Tecnología que habla la lengua del territorio y protege saberes ancestrales.',
-      bullets: ['Diseño de contenidos bilingües', 'Proyectos con líderes comunitarios', 'Evaluación con enfoque diferencial']
+      summaryKey: 'programsPage.programs.ethno.summary',
+      bulletKeys: [
+        'programsPage.programs.ethno.bullet1',
+        'programsPage.programs.ethno.bullet2',
+        'programsPage.programs.ethno.bullet3'
+      ]
     },
     {
-      name: 'Talento y empleabilidad',
+      nameKey: 'programsPage.programs.talent.name',
       image: 'assets/img/blog-3.jpg',
-      summary: 'Trayectos para jóvenes y adultos que conectan con la economía digital y emprendimiento.',
-      bullets: ['Pensamiento computacional y datos', 'Retos con empresas aliadas', 'Mentorías y orientación laboral']
+      summaryKey: 'programsPage.programs.talent.summary',
+      bulletKeys: [
+        'programsPage.programs.talent.bullet1',
+        'programsPage.programs.talent.bullet2',
+        'programsPage.programs.talent.bullet3'
+      ]
     }
   ]);
 
   protected readonly extras = signal([
     {
-      title: 'Formación docente',
-      desc: 'Acompañamos a maestras y maestros para que la tecnología se quede en el aula.',
+      titleKey: 'programsPage.extras.training.title',
+      descKey: 'programsPage.extras.training.description',
       icon: '🎓'
     },
     {
-      title: 'Investigación + innovación',
-      desc: 'Medimos impacto y iteramos con comunidades para mantener pertinencia cultural.',
+      titleKey: 'programsPage.extras.research.title',
+      descKey: 'programsPage.extras.research.description',
       icon: '🧪'
     },
     {
-      title: 'Aliados y financiación',
-      desc: 'Articulamos empresas, gobiernos y academia para asegurar sostenibilidad.',
+      titleKey: 'programsPage.extras.partners.title',
+      descKey: 'programsPage.extras.partners.description',
       icon: '🤝'
     }
   ]);
+
+  protected readonly ctaButtonKey = signal('programsPage.cta.button');
 }

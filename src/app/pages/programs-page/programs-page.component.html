@@ -1,39 +1,39 @@
 <main class="page">
   <header class="page__header">
-    <p class="eyebrow">Portafolio</p>
-    <h1>Programas listos para desplegar en tu territorio</h1>
+    <p class="eyebrow">{{ hero().eyebrowKey | transloco }}</p>
+    <h1>{{ hero().titleKey | transloco }}</h1>
     <p class="muted">
-      Diseñamos experiencias que combinan ciencia, tecnología y cultura local. Selecciona el programa y activemos juntos la
-      siguiente cohorte.
+      {{ hero().descriptionKey | transloco }}
     </p>
   </header>
 
   <section class="grid">
-    @for (program of programs(); track program.name) {
+    @for (program of programs(); track program.nameKey) {
       <article class="program">
-        <img [ngSrc]="program.image" width="420" height="240" [alt]="program.name" />
+        <img [ngSrc]="program.image" width="420" height="240" [alt]="program.nameKey" />
         <div class="program__body">
-          <h2>{{ program.name }}</h2>
-          <p class="muted">{{ program.summary }}</p>
+          <h2>{{ program.nameKey | transloco}}</h2>
+          <p class="muted">{{ program.summaryKey |transloco }}</p>
           <ul>
-            @for (item of program.bullets; track item) {
-              <li>{{ item }}</li>
+            @for (item of program.bulletKeys; track item) {
+              <li>{{ item |transloco}}</li>
             }
           </ul>
-          <a class="btn" href="mailto:contacto@samval.org?subject=Quiero%20sumarme%20a%20{{ program.name }}">Agendar
-            demo</a>
+          <a class="btn" href="mailto:contacto@samval.org?subject=Quiero%20sumarme%20a%20{{ program.nameKey | transloco}}">
+            {{ctaButtonKey() |transloco}}
+          </a>
         </div>
       </article>
     }
   </section>
 
   <section class="extras">
-    @for (extra of extras(); track extra.title) {
+    @for (extra of extras(); track extra.titleKey) {
       <article class="extra">
-        <div class="extra__icon" aria-hidden="true">{{ extra.icon }}</div>
+        <div class="extra__icon" aria-hidden="true">{{ extra.icon|transloco }}</div>
         <div>
-          <h3>{{ extra.title }}</h3>
-          <p class="muted">{{ extra.desc }}</p>
+          <h3>{{ extra.titleKey|transloco }}</h3>
+          <p class="muted">{{ extra.descKey|transloco }}</p>
         </div>
       </article>
     }

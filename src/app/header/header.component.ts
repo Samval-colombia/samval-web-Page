@@ -14,7 +14,7 @@ import { LanguageService } from '../services/language.service';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent implements OnInit {
-  @Input() links: Array<{ label: string; path: string; exact?: boolean }> = [];
+  @Input() links: Array<{ labelKey: string; path: string; exact?: boolean }> = [];
   protected readonly menuOpen = signal(false);
   protected readonly scrolled = signal(false);
   private readonly platformId = inject(PLATFORM_ID);
@@ -24,9 +24,17 @@ export class HeaderComponent implements OnInit {
    languageService = inject(LanguageService);
   languageMenuOpen = signal(false);
 
+
+  protected readonly brandData = signal({
+    nameKey: 'header.brand.name',
+    taglineKey: 'header.brand.tagline'
+  });
+
+  protected readonly platformKey = signal('header.platform');
+  protected readonly homeKey = signal('header.nav.home');
+  protected readonly menuAriaKey = signal('header.menu');
+
   protected trackByPath = (_: number, item: { path: string }) => item.path;
-
-
 
   ngOnInit(): void {
     if (this.isBrowser) {

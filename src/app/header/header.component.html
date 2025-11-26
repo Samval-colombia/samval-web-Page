@@ -3,8 +3,8 @@
     <a class="brand" routerLink="/" (click)="closeMenu()">
       <img src="/assets/logo/onlyLogo.svg" alt="Fundación Samval" class="brand__logo" />
       <div>
-        <p class="brand__eyebrow">Fundación Samval</p>
-        <span class="brand__title">Tecnología que respeta el territorio</span>
+        <p class="brand__eyebrow">{{ brandData().nameKey | transloco }}</p>
+        <span class="brand__title">{{ brandData().taglineKey | transloco }}</span>
       </div>
     </a>
 
@@ -21,7 +21,7 @@
 
       <a class="pill" href="mailto:contacto@samval.org">
         <monitor-icon aria-hidden="true"></monitor-icon>
-        <span>Plataforma</span>
+        <span>{{ platformKey() | transloco }}</span>
       </a>
     </div>
 
@@ -32,7 +32,7 @@
           routerLinkActive="active"
           [routerLinkActiveOptions]="{ exact: true }"
           (click)="closeMenu()"
-          >Inicio</a
+          >{{ homeKey() | transloco }}</a
         >
       </li>
       @for (link of links; track link.path) {
@@ -42,7 +42,7 @@
             routerLinkActive="active"
             [routerLinkActiveOptions]="link.exact ? { exact: true } : { exact: false }"
             (click)="closeMenu()"
-            >{{ link.label }}</a
+            >{{ link.labelKey |transloco}}</a
           >
         </li>
       }

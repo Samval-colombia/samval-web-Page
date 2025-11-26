@@ -1,30 +1,45 @@
 import { Component, signal } from '@angular/core';
+import { TranslocoModule } from '@ngneat/transloco';
 
 @Component({
   selector: 'app-contact-page',
+  imports: [TranslocoModule],
   standalone: true,
   templateUrl: './contact-page.component.html',
   styleUrl: './contact-page.component.css'
 })
 export class ContactPageComponent {
+
+   protected readonly hero = signal({
+    eyebrowKey: 'contactPage.hero.eyebrow',
+    titleKey: 'contactPage.hero.title',
+    descriptionKey: 'contactPage.hero.description'
+  });
+
   protected readonly channels = signal([
-    {
-      title: 'Hablemos de tu territorio',
-      info: 'Agenda una videollamada para conocer tus metas educativas y adaptar el programa.',
+     {
+      titleKey: 'contactPage.channels.talk.title',
+      infoKey: 'contactPage.channels.talk.info',
       link: 'mailto:contacto@samval.org',
-      label: 'contacto@samval.org'
+      labelKey: 'contactPage.channels.talk.label'
     },
     {
-      title: 'Llámanos',
-      info: 'Atendemos aliados, docentes y entidades públicas.',
+      titleKey: 'contactPage.channels.call.title',
+      infoKey: 'contactPage.channels.call.info',
       link: 'tel:+573233207532',
-      label: '+57 323 320 7532'
+      labelKey: 'contactPage.channels.call.label'
     },
     {
-      title: 'Síguenos',
-      info: 'Historias en campo y lanzamientos desde nuestras redes.',
+      titleKey: 'contactPage.channels.follow.title',
+      infoKey: 'contactPage.channels.follow.info',
       link: 'https://www.instagram.com/samvalfundacion/',
-      label: '@samvalfundacion'
+      labelKey: 'contactPage.channels.follow.label'
     }
   ]);
+
+   protected readonly cta = signal({
+    titleKey: 'contactPage.cta.title',
+    descriptionKey: 'contactPage.cta.description',
+    buttonKey: 'contactPage.cta.button'
+  });
 }

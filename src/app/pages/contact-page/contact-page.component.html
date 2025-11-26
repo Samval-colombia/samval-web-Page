@@ -1,25 +1,25 @@
 <main class="page">
   <header class="intro">
-    <p class="eyebrow">Contacto</p>
-    <h1>Conversemos y activemos tu proyecto</h1>
-    <p class="muted">Cuéntanos tu reto educativo. Resolvemos en menos de 24 horas.</p>
+    <p class="eyebrow">{{ hero().eyebrowKey | transloco }}</p>
+    <h1>{{ hero().titleKey | transloco }}</h1>
+    <p class="muted">{{ hero().descriptionKey | transloco }}</p>
   </header>
 
   <section class="channels">
-    @for (channel of channels(); track channel.title) {
+    @for (channel of channels(); track channel.titleKey) {
       <article class="channel">
-        <h3>{{ channel.title }}</h3>
-        <p class="muted">{{ channel.info }}</p>
-        <a class="pill" [href]="channel.link">{{ channel.label }}</a>
+        <h3>{{ channel.titleKey | transloco }}</h3>
+        <p class="muted">{{ channel.infoKey | transloco }}</p>
+        <a class="pill" [href]="channel.link">{{ channel.labelKey | transloco }}</a>
       </article>
     }
   </section>
 
   <section class="cta">
     <div>
-      <h2>¿Listo para llevar innovación a tu comunidad?</h2>
-      <p class="muted">Programemos una sesión estratégica con nuestro equipo de campo y diseño curricular.</p>
+      <h2>{{ cta().titleKey | transloco }}</h2>
+      <p class="muted">{{ cta().descriptionKey | transloco }}</p>
     </div>
-    <a class="btn" href="mailto:contacto@samval.org?subject=Quiero%20impulsar%20un%20programa%20Samval">Agendar ahora</a>
+    <a class="btn" href="mailto:contacto@samval.org?subject=Quiero%20impulsar%20un%20programa%20Samval"> {{ cta().buttonKey | transloco }}</a>
   </section>
 </main>
