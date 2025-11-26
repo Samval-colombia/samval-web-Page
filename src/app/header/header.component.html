@@ -10,19 +10,28 @@
 
     <div class="nav__cta">
 
-       <button
-        class="lang-btn"
-        (click)="toggleLanguageMenu()"
-        [attr.aria-label]="'Cambiar idioma a ' + (currentLang() === 'es' ? 'inglés' : 'español')"
-        type="button">
-        <span class="lang-icon">🌐</span>
-        <span class="lang-text">{{ currentLang() === 'es' ? 'ES' : 'EN' }}</span>
-      </button>
 
       <a class="pill" href="mailto:contacto@samval.org">
         <monitor-icon aria-hidden="true"></monitor-icon>
         <span>{{ platformKey() | transloco }}</span>
       </a>
+
+
+       <div class="language-toggle">
+    <span class="lang-label" [class.active]="currentLang() === 'es'">ES</span>
+
+    <button
+      class="lang-switch"
+      [class.active]="currentLang() === 'en'"
+      (click)="toggleLanguage()"
+      [attr.aria-label]="currentLang() === 'es' ? ('header.language.changeToEnglish' | transloco) : ('header.language.changeToSpanish' | transloco)"
+      type="button">
+      <span class="lang-switch__track"></span>
+      <span class="lang-switch__thumb"></span>
+    </button>
+
+    <span class="lang-label" [class.active]="currentLang() === 'en'">EN</span>
+  </div>
     </div>
 
     <ul class="nav__links" [class.open]="menuOpen()">

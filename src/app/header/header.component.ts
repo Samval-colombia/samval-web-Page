@@ -14,21 +14,19 @@ import { LanguageService } from '../services/language.service';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent implements OnInit {
+
   @Input() links: Array<{ labelKey: string; path: string; exact?: boolean }> = [];
   protected readonly menuOpen = signal(false);
   protected readonly scrolled = signal(false);
   private readonly platformId = inject(PLATFORM_ID);
   private readonly isBrowser = isPlatformBrowser(this.platformId);
 
-  currentLang = signal<'es' | 'en'>('es');
-   languageService = inject(LanguageService);
+
+  protected readonly languageService = inject(LanguageService);
   languageMenuOpen = signal(false);
 
 
-  protected readonly brandData = signal({
-    nameKey: 'header.brand.name',
-    taglineKey: 'header.brand.tagline'
-  });
+
 
   protected readonly platformKey = signal('header.platform');
   protected readonly homeKey = signal('header.nav.home');
@@ -41,6 +39,15 @@ export class HeaderComponent implements OnInit {
       this.updateScrollState();
     }
   }
+
+   protected get currentLang() {
+    return this.languageService.currentLang;
+  }
+
+   protected readonly brandData = signal({
+    nameKey: 'header.brand.name',
+    taglineKey: 'header.brand.tagline'
+  });
 
   @HostListener('window:scroll')
   protected onWindowScroll(): void {
@@ -65,16 +72,8 @@ export class HeaderComponent implements OnInit {
   this.languageMenuOpen.update(v => !v);
 }
 
-changeLanguage(langCode: string) {
-  this.languageService.setLanguage(langCode);
-  this.languageMenuOpen.set(false);
-}
-
-@HostListener('document:click', ['$event'])
-onDocumentClick(event: MouseEvent) {
-  const target = event.target as HTMLElement;
-  if (!target.closest('.language-selector')) {
-    this.languageMenuOpen.set(false);
+ protected toggleLanguage(): void {
+    this.languageService.toggleLanguage();
   }
-}
+
 }

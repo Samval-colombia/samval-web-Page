@@ -158,9 +158,31 @@
   }
 
   .footer__links {
+    justify-content: start;
+    align-items: start;
     padding-left: 0;
   }
+
+   .footer__brand {
+    text-align: left;
+  }
+
+  .social {
+    justify-content: flex-start;
+  }
+
+  .footer__meta {
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+  .footer__links h4,
+  .footer__links p,
+  .footer__links ul {
+    text-align: left;
+  }
 }
+
 
 @media (max-width: 640px) {
   .footer {
@@ -169,6 +191,11 @@
 
   .footer__inner {
     padding: 0 12px 16px;
+    text-align: left;
+  }
+  .footer__brand,
+  .footer__links {
+    text-align: left;
   }
 
   .footer__meta {
@@ -180,6 +207,16 @@
 @media (min-width: 900px) {
   /* Align links column with start of brand text (logo width + gap) */
   .footer__links {
-    padding-left: 124px;
+    justify-content: start;
+    align-items: start;
+    padding-left: 0;
+  }
+}
+@media (max-width: 768px) {
+  /* Align links column with start of brand text (logo width + gap) */
+  .footer__links {
+    justify-content: start;
+    align-items: start;
+    padding-left: 0;
   }
 }
