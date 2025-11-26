@@ -6,19 +6,9 @@ import { isPlatformBrowser } from '@angular/common';
 
 @Injectable({ providedIn: 'root' })
 export class TranslocoHttpLoader implements TranslocoLoader {
-  private http = inject(HttpClient);
-  private platformId = inject(PLATFORM_ID);
+    private http = inject(HttpClient);
 
-  getTranslation(lang: string): Observable<Translation> {
-
-    if (!isPlatformBrowser(this.platformId)) {
-
-      return from(
-        import(`../assets/i18n/${lang}.json`).then(module => module.default)
-      );
-    }
-
-
+  getTranslation(lang: string) {
     return this.http.get<Translation>(`/assets/i18n/${lang}.json`);
   }
 }
