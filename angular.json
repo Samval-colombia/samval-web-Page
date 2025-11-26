@@ -34,7 +34,8 @@
             },
             "polyfills": [
               "@angular/localize/init"
-            ]
+            ],
+            "prerender": false
           },
           "configurations": {
             "production": {
@@ -50,12 +51,14 @@
                   "maximumError": "15kB"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "prerender": false
             },
             "development": {
               "optimization": false,
               "extractLicenses": false,
-              "sourceMap": true
+              "sourceMap": true,
+              "prerender": false
             }
           },
           "defaultConfiguration": "production"
