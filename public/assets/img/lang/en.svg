@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7410 3900">
+  <path fill="#b22234" d="M0 0h7410v3900H0z"></path>
+  <path stroke="#fff" stroke-width="300" d="M0 450h7410M0 1050h7410M0 1650h7410M0 2250h7410M0 2850h7410M0 3450h7410"></path>
+  <path fill="#3c3b6e" d="M0 0h2964v2100H0z"></path>
+  <g fill="#fff">
+    <g id="s18">
+      <g id="s9">
+        <path id="s" d="M247 90l70 215H0l183-133L0 39h317l-183 133L317 90z"></path>
+        <use href="#s" y="420"></use>
+        <use href="#s" y="840"></use>
+        <use href="#s" y="1260"></use>
+        <use href="#s" y="1680"></use>
+        <use href="#s" y="2100"></use>
+        <use href="#s" y="2520"></use>
+        <use href="#s" y="2940"></use>
+        <use href="#s" y="3360"></use>
+      </g>
+      <use href="#s9" x="494"></use>
+    </g>
+    <use href="#s18" x="988"></use>
+    <use href="#s18" x="1976"></use>
+  </g>
+</svg>

@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+
+:host {
+  display: block;
+  min-height: 100vh;
+  font-family: 'Quicksand', system-ui, -apple-system, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  position: relative;
+  --nav-height: 92px;
+}
+
+body {
+  margin: 0;
+}
+
+.gradient {
+  position: fixed;
+  inset: 0;
+  background: var(--background-glow);
+  filter: blur(80px);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.mesh {
+  position: fixed;
+  inset: 0;
+  background: var(--mesh-overlay);
+  mask-image: var(--mesh-mask);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.app-shell {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--nav-height) 20px 64px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+}
+
+@media (max-width: 900px) {
+  :host {
+    --nav-height: 88px;
+  }
+}
+
+@media (max-width: 640px) {
+  :host {
+    --nav-height: 84px;
+  }
+
+  .app-shell {
+    padding: calc(var(--nav-height) + 16px) 12px 48px;
+  }
+}

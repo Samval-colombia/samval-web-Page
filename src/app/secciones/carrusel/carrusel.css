@@ -1,9 +1,11 @@
+
 .hero-carousel {
   position: relative;
   width: 100%;
-  height: 100vh;
-  min-height: 600px;
-  max-height: 900px;
+  height: 70vh;
+  min-height: 500px;
+  max-height: 700px;
+  margin-top: 80px;
   overflow: hidden;
   background: #111111;
 
@@ -17,13 +19,11 @@
     height: 100%;
   }
 
-
   .carousel-slides {
     position: relative;
     width: 100%;
     height: 100%;
   }
-
 
   .carousel-slide {
     position: absolute;
@@ -34,9 +34,9 @@
     opacity: 0;
     visibility: hidden;
     transform: scale(1.1);
-    transition: opacity  0.6s ease-in-out,
-                transform  0.6s ease-in-out,
-                visibility  0.6s;
+    transition: opacity 0.6s ease-in-out,
+                transform 0.6s ease-in-out,
+                visibility 0.6s;
 
     &.active {
       opacity: 1;
@@ -76,7 +76,6 @@
       z-index: 1;
     }
 
-
     .slide-background {
       position: absolute;
       top: 0;
@@ -97,33 +96,38 @@
         left: 0;
         width: 100%;
         height: 100%;
+
         background: linear-gradient(
-          135deg,
-          rgba(17, 17, 17, 0.85) 0%,
-          rgba(17, 17, 17, 0.6) 50%,
-          rgba(17, 17, 17, 0.4) 100%
+          180deg,
+          rgba(17, 17, 17, 0.7) 0%,
+          rgba(17, 17, 17, 0.65) 50%,
+          rgba(17, 17, 17, 0.7) 100%
         );
       }
     }
-
 
     .slide-content {
       position: relative;
       height: 100%;
       display: flex;
       align-items: center;
+      justify-content: center;
       z-index: 3;
+      padding: 2rem 0;
     }
 
     .slide-text {
-      max-width: 700px;
+      max-width: 800px;
+      width: 100%;
+      padding: 0 2rem;
       color: #ffffff;
+      text-align: center;
 
       .slide-title {
-        font-size: 3.5rem;
+        font-size: 2.8rem;
         font-weight: 800;
         line-height: 1.2;
-        margin-bottom: 1rem;
+        margin: 0 auto 1rem;
         color: #ffffff;
         text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.5);
         opacity: 0;
@@ -131,20 +135,21 @@
       }
 
       .slide-subtitle {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         font-weight: 600;
         line-height: 1.4;
-        margin-bottom: 1.5rem;
-        color:  #777;
+        margin: 0 auto 1.5rem;
+        color: #777;
         text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
         opacity: 0;
         transform: translateY(30px);
       }
 
       .slide-description {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         line-height: 1.8;
-        margin-bottom: 2.5rem;
+        margin: 0 auto 2rem;
+        max-width: 650px;
         color: rgba(255, 255, 255, 0.95);
         text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
         opacity: 0;
@@ -154,6 +159,7 @@
       .btn {
         opacity: 0;
         transform: translateY(30px);
+
 
         i {
           margin-left: 0.5rem;
@@ -166,7 +172,6 @@
       }
     }
   }
-
 
   .carousel-control {
     position: absolute;
@@ -188,7 +193,7 @@
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 
     &:hover:not(:disabled) {
-      background:  #050505;
+      background: #050505;
       transform: translateY(-50%) scale(1.1);
       box-shadow: 0 6px 20px rgba(253, 190, 51, 0.5);
     }
@@ -211,10 +216,9 @@
     }
   }
 
-
   .carousel-indicators {
     position: absolute;
-    bottom: 3rem;
+    bottom: 2rem;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -237,7 +241,7 @@
       }
 
       &.active {
-        background:  #777;
+        background: #777;
         border-color: #ffffff;
         width: 40px;
         border-radius: 10px;
@@ -257,7 +261,6 @@
     }
   }
 
-
   .carousel-progress {
     position: absolute;
     bottom: 0;
@@ -269,7 +272,7 @@
 
     .progress-bar {
       height: 100%;
-      background:  #777;
+      background: #777;
       width: 0;
       transition: width 0.1s linear;
 
@@ -279,7 +282,6 @@
     }
   }
 }
-
 
 @keyframes slideInUp {
   from {
@@ -301,21 +303,30 @@
   }
 }
 
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
 
 @media (max-width: 1200px) {
   .hero-carousel {
+    height: 65vh;
+    max-height: 650px;
+
     .carousel-slide {
       .slide-text {
+        max-width: 700px;
+
         .slide-title {
-          font-size: 3rem;
+          font-size: 2.5rem;
         }
 
         .slide-subtitle {
-          font-size: 1.5rem;
+          font-size: 1.3rem;
         }
 
         .slide-description {
-          font-size: 1.1rem;
+          font-size: 1rem;
+          max-width: 600px;
         }
       }
     }
@@ -324,8 +335,10 @@
 
 @media (max-width: 992px) {
   .hero-carousel {
-    height: 80vh;
-    min-height: 500px;
+    height: 60vh;
+    min-height: 450px;
+    max-height: 600px;
+    margin-top: 70px;
 
     .carousel-control {
       width: 50px;
@@ -344,24 +357,26 @@
     .carousel-slide {
       .slide-text {
         max-width: 90%;
+        padding: 0 1.5rem;
 
         .slide-title {
-          font-size: 2.5rem;
+          font-size: 2.2rem;
         }
 
         .slide-subtitle {
-          font-size: 1.3rem;
+          font-size: 1.2rem;
         }
 
         .slide-description {
-          font-size: 1rem;
-          margin-bottom: 2rem;
+          font-size: 0.95rem;
+          margin-bottom: 1.5rem;
+          max-width: 550px;
         }
       }
     }
 
     .carousel-indicators {
-      bottom: 2rem;
+      bottom: 1.5rem;
       gap: 0.8rem;
 
       .indicator-dot {
@@ -378,8 +393,10 @@
 
 @media (max-width: 768px) {
   .hero-carousel {
-    height: 70vh;
-    min-height: 450px;
+    height: 55vh;
+    min-height: 400px;
+    max-height: 550px;
+    margin-top: 60px;
 
     .carousel-control {
       width: 40px;
@@ -397,27 +414,28 @@
 
     .carousel-slide {
       .slide-content {
-        align-items: flex-end;
-        padding-bottom: 5rem;
+        padding-bottom: 4rem;
       }
 
       .slide-text {
         max-width: 100%;
-        text-align: center;
+        padding: 0 1rem;
+
 
         .slide-title {
-          font-size: 2rem;
+          font-size: 1.8rem;
           margin-bottom: 0.8rem;
         }
 
         .slide-subtitle {
-          font-size: 1.1rem;
+          font-size: 1rem;
           margin-bottom: 1rem;
         }
 
         .slide-description {
-          font-size: 0.95rem;
-          margin-bottom: 1.5rem;
+          font-size: 0.9rem;
+          margin-bottom: 1.2rem;
+          max-width: 100%;
         }
 
         .btn {
@@ -428,7 +446,7 @@
     }
 
     .carousel-indicators {
-      bottom: 1.5rem;
+      bottom: 1.2rem;
       gap: 0.6rem;
 
       .indicator-dot {
@@ -445,8 +463,10 @@
 
 @media (max-width: 576px) {
   .hero-carousel {
-    height: 60vh;
-    min-height: 400px;
+    height: 50vh;
+    min-height: 350px;
+    max-height: 500px;
+    margin-top: 60px;
 
     .carousel-slide {
       .slide-background .slide-overlay {
@@ -458,13 +478,19 @@
         );
       }
 
+      .slide-content {
+        padding-bottom: 3rem;
+      }
+
       .slide-text {
+        padding: 0 0.75rem;
+
         .slide-title {
-          font-size: 1.6rem;
+          font-size: 1.5rem;
         }
 
         .slide-subtitle {
-          font-size: 1rem;
+          font-size: 0.95rem;
         }
 
         .slide-description {
@@ -489,6 +515,29 @@
   }
 }
 
+@media (max-width: 400px) {
+  .hero-carousel {
+    height: 45vh;
+    min-height: 320px;
+    max-height: 450px;
+
+    .carousel-slide {
+      .slide-text {
+        .slide-title {
+          font-size: 1.3rem;
+        }
+
+        .slide-subtitle {
+          font-size: 0.9rem;
+        }
+
+        .slide-description {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+}
 
 @media (prefers-reduced-motion: reduce) {
   .hero-carousel {
@@ -499,9 +548,9 @@
       .slide-subtitle,
       .slide-description,
       .btn {
-        animation: none !important;
-        opacity: 1 !important;
-        transform: none !important;
+        animation: none ;
+        opacity: 1 ;
+        transform: none ;
       }
     }
 
@@ -510,7 +559,7 @@
     }
 
     .progress-bar {
-      animation: none !important;
+      animation: none ;
     }
   }
 }

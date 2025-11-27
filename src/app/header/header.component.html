@@ -16,22 +16,22 @@
         <span>{{ platformKey() | transloco }}</span>
       </a>
 
+      <div class="language-dropdown desktop-lang">
+  <button
+    class="language-btn"
+    type="button"
+    (click)="toggleLanguageMenu()"
+  >
+    {{ currentLang() === 'es' ? 'ES' : 'EN' }}
+    <span class="arrow" [class.open]="languageMenuOpen()"></span>
+  </button>
 
-       <div class="language-toggle">
-    <span class="lang-label" [class.active]="currentLang() === 'es'">ES</span>
+  <ul class="language-menu" [class.open]="languageMenuOpen()">
+    <li (click)="changeLanguage('es')">ES</li>
+    <li (click)="changeLanguage('en')">EN</li>
+  </ul>
+</div>
 
-    <button
-      class="lang-switch"
-      [class.active]="currentLang() === 'en'"
-      (click)="toggleLanguage()"
-      [attr.aria-label]="currentLang() === 'es' ? ('header.language.changeToEnglish' | transloco) : ('header.language.changeToSpanish' | transloco)"
-      type="button">
-      <span class="lang-switch__track"></span>
-      <span class="lang-switch__thumb"></span>
-    </button>
-
-    <span class="lang-label" [class.active]="currentLang() === 'en'">EN</span>
-  </div>
     </div>
 
     <ul class="nav__links" [class.open]="menuOpen()">
@@ -55,6 +55,33 @@
           >
         </li>
       }
+
+      <hr>
+
+      <li class="mobile-platform">
+  <a class="pill" href="mailto:contacto@samval.org">
+    <monitor-icon aria-hidden="true"></monitor-icon>
+    <span>{{ platformKey() | transloco }}</span>
+  </a>
+</li>
+
+
+      <li class="mobile-lang">
+  <li class="mobile-lang">
+  <div class="language-dropdown">
+    <button class="language-btn" type="button" (click)="toggleLanguageMenu()">
+      {{ currentLang() === 'es' ? 'ES' : 'EN' }}
+      <span class="arrow" [class.open]="languageMenuOpen()"></span>
+    </button>
+
+    <ul class="language-menu" [class.open]="languageMenuOpen()">
+      <li (click)="changeLanguage('es')">ES</li>
+      <li (click)="changeLanguage('en')">EN</li>
+    </ul>
+  </div>
+</li>
+
+
     </ul>
 
     <button class="nav__toggle" type="button" (click)="toggleMenu()" aria-label="Abrir menú">
