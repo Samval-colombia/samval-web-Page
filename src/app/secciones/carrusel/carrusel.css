@@ -5,7 +5,8 @@
   height: 70vh;
   min-height: 500px;
   max-height: 700px;
-  margin-top: 80px;
+  margin-top: 0;
+  padding-top: 80px;
   overflow: hidden;
   background: #111111;
 
@@ -88,6 +89,7 @@
         height: 100%;
         object-fit: cover;
         object-position: center;
+        display: block;
       }
 
       .slide-overlay {
@@ -336,7 +338,8 @@
     height: 60vh;
     min-height: 450px;
     max-height: 600px;
-    margin-top: 70px;
+    margin-top: 0;
+    padding-top: 70px;
 
     .carousel-control {
       width: 50px;
@@ -394,7 +397,8 @@
     height: 55vh;
     min-height: 400px;
     max-height: 550px;
-    margin-top: 60px;
+    margin-top: 0;
+    padding-top: 60px;
 
     .carousel-control {
       width: 40px;
@@ -464,7 +468,8 @@
     height: 50vh;
     min-height: 350px;
     max-height: 500px;
-    margin-top: 60px;
+    margin-top: 0;
+    padding-top: 60px;
 
     .carousel-slide {
       .slide-background .slide-overlay {

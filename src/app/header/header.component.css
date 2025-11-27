@@ -24,10 +24,10 @@
   margin: 0 auto;
   padding: 0 20px;
   display: grid;
-  grid-template-columns: auto 1fr auto;
+  /* grid-template-columns: minmax(200px, auto) 1fr minmax(200px, auto); */
   grid-template-areas: 'brand links cta';
   align-items: center;
-  gap: 16px;
+
 }
 
 .brand {
@@ -73,6 +73,8 @@
   padding: 0;
   margin: 0;
   justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .nav__links a {
@@ -87,6 +89,7 @@
   background-position: 100% 0;
   -webkit-background-clip: text;
   -webkit-text-fill-color: currentColor;
+  white-space: nowrap;
 }
 
 .nav__links a:hover,
@@ -101,7 +104,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
 }
 
 .pill {
@@ -157,16 +160,17 @@
 .language-btn {
   display: flex;
   align-items: center;
-  gap: 6px;
-  padding: 8px 14px;
+  gap: 8px;
+  padding: 10px 14px;
   background: var(--cta-gradient);
   border: 1px solid var(--border);
-  border-radius: 12px;
+  border-radius: 999px;
   color: #fffdf9;
-  font-weight: 600;
+  font-weight: 700;
   cursor: pointer;
   transition: all 0.2s ease;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  height: auto;
 }
 
 .language-btn:hover {

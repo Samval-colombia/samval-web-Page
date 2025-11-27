@@ -50,22 +50,29 @@
 
 
 .about-grid {
+  /* ESTO ES EL GRID LAYOUT PRINCIPAL */
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr; /* Dos columnas de igual ancho */
   gap: 3rem;
-  align-items: center;
+  align-items: start;
 
   @media (max-width: 992px) {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* Una sola columna en tabletas y móviles */
     gap: 2rem;
   }
 }
 
 
 .about-image {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
     border-radius: 8px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   }
@@ -73,6 +80,7 @@
 
 
 .about-content {
+  /* Flexbox es ideal para apilar la descripción, misión y visión */
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -89,8 +97,8 @@
   }
 }
 
-
 .about-item {
+  /* Flexbox es ideal para alinear el icono y el texto */
   display: flex;
   gap: 1.5rem;
   padding: 1.5rem;
@@ -105,7 +113,7 @@
   }
 
   @media (max-width: 576px) {
-    flex-direction: column;
+    flex-direction: column; /* Apila el icono y el texto en pantallas pequeñas */
     gap: 1rem;
     padding: 1rem;
   }
@@ -130,7 +138,7 @@
   }
 }
 
-.item-content {
+.item-content { /* Clase renombrada para coincidir con el HTML */
   flex: 1;
 
   h3 {
