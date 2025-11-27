@@ -95,7 +95,7 @@
 }
 
 .footer__links a:hover {
-  color: var(--primary);
+ color: var(--primary);
 }
 
 .social {
@@ -119,7 +119,8 @@
 .social a:hover {
   transform: translateY(-2px);
   box-shadow: var(--shadow);
-  color: var(--primary);
+  color: #fff;
+  background-image: var(--cta-gradient);
   border-color: var(--primary);
 }
 

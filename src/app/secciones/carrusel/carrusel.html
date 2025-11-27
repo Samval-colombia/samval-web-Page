@@ -9,7 +9,7 @@
 >
   <div class="carousel-container">
 
-    <!-- Slides -->
+
     <div class="carousel-slides">
       @for (slide of slides; track slide.id; let i = $index) {
         <div
@@ -18,7 +18,7 @@
           [class.prev]="i === (currentIndex() - 1 + totalSlides()) % totalSlides()"
           [class.next]="i === (currentIndex() + 1) % totalSlides()"
         >
-          <!-- Background Image -->
+
           <div class="slide-background">
             <img
               [src]="slide.imageUrl"
@@ -28,7 +28,7 @@
             <div class="slide-overlay"></div>
           </div>
 
-          <!-- Content -->
+
           <div class="slide-content container">
             <div class="slide-text">
               <h1 class="slide-title" [class.animate]="i === currentIndex()">
@@ -67,7 +67,7 @@
       <i class="fas fa-chevron-right"></i>
     </button>
 
-    <!-- Indicators (Dots) -->
+
     <div class="carousel-indicators">
       @for (slide of slides; track slide.id; let i = $index) {
         <button
@@ -82,7 +82,7 @@
       }
     </div>
 
-    <!-- Progress Bar -->
+
     @if (!isPaused()) {
       <div class="carousel-progress">
         <div

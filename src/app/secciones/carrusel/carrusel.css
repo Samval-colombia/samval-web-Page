@@ -193,7 +193,7 @@
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 
     &:hover:not(:disabled) {
-      background: #050505;
+      background: var(--cta-gradient);
       transform: translateY(-50%) scale(1.1);
       box-shadow: 0 6px 20px rgba(253, 190, 51, 0.5);
     }
@@ -303,9 +303,7 @@
   }
 }
 
-/* ============================================
-   RESPONSIVE DESIGN
-   ============================================ */
+
 
 @media (max-width: 1200px) {
   .hero-carousel {
