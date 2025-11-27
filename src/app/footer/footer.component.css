@@ -121,7 +121,7 @@
   box-shadow: var(--shadow);
   color: #fff;
   background-image: var(--cta-gradient);
-  border-color: var(--primary);
+  /* border-color: var(--primary); */
 }
 
 .social svg {
