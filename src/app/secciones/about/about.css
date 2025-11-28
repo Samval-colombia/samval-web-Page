@@ -76,7 +76,7 @@
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  align-items: start;
+  align-items: center;
 }
 
 .about-item:hover {
@@ -87,7 +87,7 @@
 .item-icon {
   width: 60px;
   height: 60px;
-  /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
+  background: #636973;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -97,7 +97,7 @@
 
 .item-icon i {
   font-size: 24px;
-  /* color: white; */
+  color: white;
 }
 
 .item-content {
