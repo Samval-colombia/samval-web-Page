@@ -1,14 +1,12 @@
 <main class="page">
   <header class="page__header">
-    <p class="eyebrow">{{ hero().eyebrowKey | transloco }}</p>
-    <h1>{{ hero().titleKey | transloco }}</h1>
-    <p class="muted">
-      {{ hero().descriptionKey | transloco }}
-    </p>
+    <p class="eyebrow">{{  content()!.hero.eyebrowKey | transloco }}</p>
+   <h1 class="title">{{ content()!.hero.titleKey | transloco }}</h1>
+      <p class="description">{{ content()!.hero.descriptionKey | transloco }}</p>
   </header>
 
   <section class="grid">
-    @for (program of programs(); track program.nameKey) {
+    @for (program of content()?.programs; track program.nameKey) {
       <article class="program">
         <img [ngSrc]="program.image" width="420" height="240" [alt]="program.nameKey" />
         <div class="program__body">
@@ -20,7 +18,7 @@
             }
           </ul>
           <a class="btn" href="mailto:contacto@samval.org?subject=Quiero%20sumarme%20a%20{{ program.nameKey | transloco}}">
-            {{ctaButtonKey() |transloco}}
+            {{content()!.ctaButtonKey|transloco}}
           </a>
         </div>
       </article>
@@ -28,7 +26,7 @@
   </section>
 
   <section class="extras">
-    @for (extra of extras(); track extra.titleKey) {
+    @for (extra of content()?.extras; track extra.titleKey) {
       <article class="extra">
         <div class="extra__icon" aria-hidden="true">{{ extra.icon|transloco }}</div>
         <div>

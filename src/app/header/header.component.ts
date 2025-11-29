@@ -5,6 +5,7 @@ import { PLATFORM_ID } from '@angular/core';
 import { MonitorIcon } from '@ngverse/icons-lu';
 import { TranslocoModule } from '@ngneat/transloco';
 import { LanguageService } from '../services/language.service';
+import { LanguageStore } from '../shared/language.store';
 
 @Component({
   selector: 'app-header',
@@ -25,7 +26,9 @@ export class HeaderComponent implements OnInit {
   // Servicios inyectados
   private readonly platformId = inject(PLATFORM_ID);
   private readonly isBrowser = isPlatformBrowser(this.platformId);
-  protected readonly languageService = inject(LanguageService);
+
+  //Signal Store
+  protected readonly languageStore =inject(LanguageStore)
 
   // Signals para traducciones
   protected readonly platformKey = signal('header.platform');
@@ -38,7 +41,15 @@ export class HeaderComponent implements OnInit {
 
   // Getters
   protected get currentLang() {
-    return this.languageService.currentLang;
+    return this.languageStore.currentLang;
+  }
+
+  protected get isSpanish() {
+    return this.languageStore.isSpanish;
+  }
+
+  protected get currentLanguageInfo() {
+    return this.languageStore.currentLanguageInfo;
   }
 
   protected trackByPath = (_: number, item: { path: string }) => item.path;
@@ -112,7 +123,7 @@ export class HeaderComponent implements OnInit {
    * Cambiar idioma y cerrar el dropdown
    */
   protected changeLanguage(lang: 'es' | 'en'): void {
-    this.languageService.setLanguage(lang);
+    this.languageStore.setLanguage(lang);
     this.languageMenuOpen.set(false);
   }
 
@@ -132,10 +143,6 @@ export class HeaderComponent implements OnInit {
     });
   }
 
-  /**
-   * Método legacy para compatibilidad (si se usa en algún lugar)
-   */
-  protected toggleLanguage(): void {
-    this.languageService.toggleLanguage();
-  }
+
+
 }
