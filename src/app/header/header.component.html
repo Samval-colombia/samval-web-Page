@@ -1,5 +1,6 @@
 <nav class="nav" [class.open]="menuOpen()" [class.scrolled]="scrolled()">
   <div class="nav__inner">
+    <!-- Brand -->
     <a class="brand" routerLink="/" (click)="closeMenu()">
       <img src="/assets/logo/onlyLogo.svg" alt="Fundación Samval" class="brand__logo" />
       <div>
@@ -8,32 +9,38 @@
       </div>
     </a>
 
+    <!-- CTA + Language (Desktop) -->
     <div class="nav__cta">
-
-
       <a class="pill" href="mailto:contacto@samval.org">
         <monitor-icon aria-hidden="true"></monitor-icon>
         <span>{{ platformKey() | transloco }}</span>
       </a>
 
       <div class="language-dropdown desktop-lang">
-  <button
-    class="language-btn"
-    type="button"
-    (click)="toggleLanguageMenu()"
-  >
-    {{ currentLang() === 'es' ? 'ES' : 'EN' }}
-    <span class="arrow" [class.open]="languageMenuOpen()"></span>
-  </button>
+        <button
+          class="language-btn"
+          type="button"
+          (click)="toggleLanguageMenu()"
+          [attr.aria-label]="currentLang() === 'es' ? 'Cambiar idioma' : 'Change language'"
+        >
+          <span class="lang-code">{{ currentLang() === 'es' ? 'ES' : 'EN' }}</span>
+          <span class="arrow" [class.open]="languageMenuOpen()"></span>
+        </button>
 
-  <ul class="language-menu" [class.open]="languageMenuOpen()">
-    <li (click)="changeLanguage('es')">ES</li>
-    <li (click)="changeLanguage('en')">EN</li>
-  </ul>
-</div>
-
+        <ul class="language-menu" [class.open]="languageMenuOpen()">
+          <li (click)="changeLanguage('es')" [class.selected]="currentLang() === 'es'">
+            <span class="lang-label">Español</span>
+            <span class="check-mark" [class.visible]="currentLang() === 'es'">✓</span>
+          </li>
+          <li (click)="changeLanguage('en')" [class.selected]="currentLang() === 'en'">
+            <span class="lang-label">English</span>
+            <span class="check-mark" [class.visible]="currentLang() === 'en'">✓</span>
+          </li>
+        </ul>
+      </div>
     </div>
 
+    <!-- Navigation Links -->
     <ul class="nav__links" [class.open]="menuOpen()">
       <li>
         <a
@@ -41,8 +48,9 @@
           routerLinkActive="active"
           [routerLinkActiveOptions]="{ exact: true }"
           (click)="closeMenu()"
-          >{{ homeKey() | transloco }}</a
         >
+          {{ homeKey() | transloco }}
+        </a>
       </li>
       @for (link of links; track link.path) {
         <li>
@@ -51,41 +59,55 @@
             routerLinkActive="active"
             [routerLinkActiveOptions]="link.exact ? { exact: true } : { exact: false }"
             (click)="closeMenu()"
-            >{{ link.labelKey |transloco}}</a
           >
+            {{ link.labelKey | transloco }}
+          </a>
         </li>
       }
 
-      <hr>
+      <!-- Separador visual en mobile -->
+      <li class="nav__separator"></li>
 
+      <!-- Platform CTA (Mobile) -->
       <li class="mobile-platform">
-  <a class="pill" href="mailto:contacto@samval.org">
-    <monitor-icon aria-hidden="true"></monitor-icon>
-    <span>{{ platformKey() | transloco }}</span>
-  </a>
-</li>
+        <a class="pill" href="mailto:contacto@samval.org">
+          <monitor-icon aria-hidden="true"></monitor-icon>
+          <span>{{ platformKey() | transloco }}</span>
+        </a>
+      </li>
 
-
+      <!-- Language Dropdown (Mobile) -->
       <li class="mobile-lang">
-  <li class="mobile-lang">
-  <div class="language-dropdown">
-    <button class="language-btn" type="button" (click)="toggleLanguageMenu()">
-      {{ currentLang() === 'es' ? 'ES' : 'EN' }}
-      <span class="arrow" [class.open]="languageMenuOpen()"></span>
-    </button>
+        <div class="language-dropdown">
+          <button
+            class="language-btn"
+            type="button"
+            (click)="toggleLanguageMenu()"
+            [attr.aria-label]="currentLang() === 'es' ? 'Cambiar idioma' : 'Change language'"
+          >
+            <span class="lang-code">{{ currentLang() === 'es' ? 'ES' : 'EN' }}</span>
+            <span class="arrow" [class.open]="languageMenuOpen()"></span>
+          </button>
 
-    <ul class="language-menu" [class.open]="languageMenuOpen()">
-      <li (click)="changeLanguage('es')">ES</li>
-      <li (click)="changeLanguage('en')">EN</li>
+          <ul class="language-menu" [class.open]="languageMenuOpen()">
+            <li (click)="changeLanguage('es')" [class.selected]="currentLang() === 'es'">
+              <span class="lang-label">Español</span>
+              <span class="check-mark" [class.visible]="currentLang() === 'es'">✓</span>
+            </li>
+            <li (click)="changeLanguage('en')" [class.selected]="currentLang() === 'en'">
+              <span class="lang-label">English</span>
+              <span class="check-mark" [class.visible]="currentLang() === 'en'">✓</span>
+            </li>
+          </ul>
+        </div>
+      </li>
     </ul>
-  </div>
-</li>
 
-
-    </ul>
-
-    <button class="nav__toggle" type="button" (click)="toggleMenu()" aria-label="Abrir menú">
-      <span></span><span></span><span></span>
+    <!-- Hamburger Toggle -->
+    <button class="nav__toggle" type="button" (click)="toggleMenu()" [attr.aria-label]="menuAriaKey() | transloco">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
     </button>
   </div>
 </nav>
