@@ -56,12 +56,7 @@ export const ProgramsPageStore = signalStore(
     // Hay error
     hasError: computed(() => store.error() !== null),
 
-    // Tiempo desde última actualización
-    minutesSinceUpdate: computed(() => {
-      const lastUpdated = store.lastUpdated();
-      if (!lastUpdated) return null;
-      return Math.floor((Date.now() - lastUpdated.getTime()) / 60000);
-    })
+
   })),
 
   // Métodos (acciones)

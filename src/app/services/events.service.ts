@@ -54,11 +54,7 @@ export interface ProgramsPageContent {
 })
 export class eventsPageMapper {
 
-  /**
-   * Transforma respuesta de API a modelo interno
-   * @param apiData Datos desde la API
-   * @returns Modelo para usar en la aplicación
-   */
+
   fromApiToModel(apiData: ProgramsPageApiResponse): ProgramsPageContent {
     return {
       hero: {
@@ -81,11 +77,7 @@ export class eventsPageMapper {
     };
   }
 
-  /**
-   * Transforma modelo interno a formato de API
-   * @param model Modelo de la aplicación
-   * @returns Datos para enviar a la API
-   */
+
   fromModelToApi(model: ProgramsPageContent): ProgramsPageApiResponse {
     return {
       hero: {
