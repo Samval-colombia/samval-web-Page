@@ -120,3 +120,20 @@ h3 {
   color: var(--chip-color);
   font-size: 22px;
 }
+
+@media (max-width: 768px) {
+
+  .btn{
+  width: inherit;
+  text-decoration: none;
+  text-align: center;
+  padding: 11px 16px;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  font-weight: 700;
+  color: #fffdf9;
+  background: var(--cta-gradient);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+}
