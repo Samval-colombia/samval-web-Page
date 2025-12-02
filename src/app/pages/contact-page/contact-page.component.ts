@@ -1,5 +1,7 @@
 import { Component, signal } from '@angular/core';
 import { TranslocoModule } from '@ngneat/transloco';
+import { AboutPageStore } from '../../shared/about.store';
+import { ContactPageStore } from '../../shared/contact-page-store';
 
 @Component({
   selector: 'app-contact-page',
@@ -9,6 +11,11 @@ import { TranslocoModule } from '@ngneat/transloco';
   styleUrl: './contact-page.component.css'
 })
 export class ContactPageComponent {
+
+
+  protected readonly storeContact = signal(ContactPageStore)
+
+
 
    protected readonly hero = signal({
     eyebrowKey: 'contactPage.hero.eyebrow',

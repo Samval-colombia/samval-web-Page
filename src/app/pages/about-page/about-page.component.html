@@ -1,14 +1,16 @@
+
+
 <main class="page">
   <header class="hero">
     <div>
-      <p class="eyebrow">{{ hero().eyebrowKey | transloco }}</p>
-      <h1>{{ hero().titleKey | transloco }}</h1>
+      <p class="eyebrow">{{ store.hero()?.eyebrowKey| transloco }}</p>
+      <h1>{{ store.hero()?.titleKey | transloco }}</h1>
       <p class="muted">
-        {{ hero().descriptionKey | transloco }}
+        {{ store.hero()?.descriptionKey | transloco }}
       </p>
     </div>
     <div class="hero__panel">
-      @for ( chip of hero().chips; track chip.key) {
+      @for ( chip of store.hero()?.chips; track chip.key) {
 
         <p class="chip">{{ chip.key | transloco }}</p>
       }
@@ -17,7 +19,7 @@
   </header>
 
   <section class="values">
-    @for (value of values(); track value.titleKey) {
+    @for (value of store.values(); track value.titleKey) {
       <article class="value">
         <h3>{{ value.titleKey |transloco}}</h3>
         <p class="muted">{{ value.descKey |transloco}}</p>
@@ -26,7 +28,7 @@
   </section>
 
   <section class="timeline">
-    @for (item of milestones(); track item.year) {
+    @for (item of store.milestones(); track item.year) {
       <article class="milestone">
         <div class="year">{{ item.year }}</div>
         <div>
