@@ -1,4 +1,3 @@
-
 .hero-carousel {
   position: relative;
   width: 100%;
@@ -337,7 +336,6 @@
     min-height: 450px;
     max-height: 600px;
     margin-top: 0;
-    padding-top: 70px;
 
     .carousel-control {
       width: 50px;
@@ -392,11 +390,83 @@
 
 @media (max-width: 768px) {
   .hero-carousel {
-    height: 55vh;
-    min-height: 400px;
-    max-height: 550px;
+    height: 60vh;
+    min-height: 450px;
+    max-height: 600px;
     margin-top: 0;
-    padding-top: 60px;
+
+    .carousel-control {
+      width: 45px;
+      height: 45px;
+      font-size: 1.1rem;
+
+      &.prev {
+        left: 0.75rem;
+      }
+
+      &.next {
+        right: 0.75rem;
+      }
+    }
+
+    .carousel-slide {
+      .slide-content {
+        padding: 3rem 0;
+      }
+
+      .slide-text {
+        max-width: 100%;
+        padding: 0 1.25rem;
+
+        .slide-title {
+          font-size: 2rem;
+          margin-bottom: 1rem;
+          line-height: 1.3;
+        }
+
+        .slide-subtitle {
+          font-size: 1.15rem;
+          margin-bottom: 1.2rem;
+          line-height: 1.4;
+        }
+
+        .slide-description {
+          font-size: 0.95rem;
+          margin-bottom: 1.5rem;
+          line-height: 1.7;
+          max-width: 100%;
+        }
+
+        .btn {
+          padding: 0.85rem 2rem;
+          font-size: 0.95rem;
+        }
+      }
+    }
+
+    .carousel-indicators {
+      bottom: 1.5rem;
+      gap: 0.7rem;
+
+      .indicator-dot {
+        width: 11px;
+        height: 11px;
+
+        &.active {
+          width: 28px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-carousel {
+    height: 60vh;
+    min-height: 480px;
+    max-height: 600px;
+    margin-top: 0;
+    padding-top: 0;
 
     .carousel-control {
       width: 40px;
@@ -413,40 +483,54 @@
     }
 
     .carousel-slide {
+      .slide-background .slide-overlay {
+        background: linear-gradient(
+          to top,
+          rgba(17, 17, 17, 0.95) 0%,
+          rgba(17, 17, 17, 0.75) 50%,
+          rgba(17, 17, 17, 0.6) 100%
+        );
+      }
+
       .slide-content {
-        padding-bottom: 4rem;
+        padding: 2rem 0;
+        padding-top: 80px;
       }
 
       .slide-text {
-        max-width: 100%;
         padding: 0 1rem;
 
-
         .slide-title {
-          font-size: 1.8rem;
-          margin-bottom: 0.8rem;
+          font-size: 1.75rem;
+          margin-bottom: 1rem;
+          line-height: 1.3;
         }
 
         .slide-subtitle {
-          font-size: 1rem;
-          margin-bottom: 1rem;
+          font-size: 1.05rem;
+          margin-bottom: 1.2rem;
+          line-height: 1.4;
         }
 
         .slide-description {
           font-size: 0.9rem;
-          margin-bottom: 1.2rem;
-          max-width: 100%;
+          line-height: 1.7;
+          margin-bottom: 1.5rem;
         }
 
         .btn {
-          padding: 0.8rem 2rem;
+          padding: 0.75rem 1.75rem;
           font-size: 0.9rem;
+
+          i {
+            font-size: 0.8rem;
+          }
         }
       }
     }
 
     .carousel-indicators {
-      bottom: 1.2rem;
+      bottom: 1.5rem;
       gap: 0.6rem;
 
       .indicator-dot {
@@ -455,57 +539,6 @@
 
         &.active {
           width: 24px;
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 576px) {
-  .hero-carousel {
-    height: 50vh;
-    min-height: 350px;
-    max-height: 500px;
-    margin-top: 0;
-    padding-top: 60px;
-
-    .carousel-slide {
-      .slide-background .slide-overlay {
-        background: linear-gradient(
-          to top,
-          rgba(17, 17, 17, 0.95) 0%,
-          rgba(17, 17, 17, 0.7) 50%,
-          rgba(17, 17, 17, 0.5) 100%
-        );
-      }
-
-      .slide-content {
-        padding-bottom: 3rem;
-      }
-
-      .slide-text {
-        padding: 0 0.75rem;
-
-        .slide-title {
-          font-size: 1.5rem;
-        }
-
-        .slide-subtitle {
-          font-size: 0.95rem;
-        }
-
-        .slide-description {
-          font-size: 0.85rem;
-          line-height: 1.6;
-        }
-
-        .btn {
-          padding: 0.7rem 1.5rem;
-          font-size: 0.85rem;
-
-          i {
-            font-size: 0.75rem;
-          }
         }
       }
     }
@@ -518,24 +551,43 @@
 
 @media (max-width: 400px) {
   .hero-carousel {
-    height: 45vh;
-    min-height: 320px;
-    max-height: 450px;
+    height: 55vh;
+    min-height: 420px;
+    max-height: 500px;
 
     .carousel-slide {
+      .slide-content {
+        padding-top: 70px;
+      }
+
       .slide-text {
+        padding: 0 0.875rem;
+
         .slide-title {
-          font-size: 1.3rem;
+          font-size: 1.5rem;
+          margin-bottom: 0.875rem;
         }
 
         .slide-subtitle {
-          font-size: 0.9rem;
+          font-size: 0.975rem;
+          margin-bottom: 1rem;
         }
 
         .slide-description {
-          font-size: 0.8rem;
+          font-size: 0.85rem;
+          line-height: 1.65;
+          margin-bottom: 1.25rem;
+        }
+
+        .btn {
+          padding: 0.7rem 1.5rem;
+          font-size: 0.85rem;
         }
       }
+    }
+
+    .carousel-indicators {
+      bottom: 1.25rem;
     }
   }
 }
@@ -549,9 +601,9 @@
       .slide-subtitle,
       .slide-description,
       .btn {
-        animation: none ;
-        opacity: 1 ;
-        transform: none ;
+        animation: none !important;
+        opacity: 1 !important;
+        transform: none !important;
       }
     }
 
@@ -560,7 +612,7 @@
     }
 
     .progress-bar {
-      animation: none ;
+      animation: none !important;
     }
   }
 }

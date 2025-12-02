@@ -167,7 +167,7 @@
   "footer": {
     "tagline": "Educación, ciencia e innovación para la paz con enfoque territorial.",
     "location": "Ubicación",
-    "locationText" : "Calle 104 #51B-154 Ofi 17 · Castellana Campestre · Barranquilla, Colombia",
+    "locationText": "Calle 104 #51B-154 Ofi 17 · Castellana Campestre · Barranquilla, Colombia",
     "copyright": "Educación, ciencia e innovación con enfoque territorial",
     "social": {
       "facebook": "Facebook",
@@ -182,5 +182,76 @@
     "readMore": "Leer más",
     "learnMore": "Conoce más",
     "contact": "Contactar"
+  },
+  "login": {
+    "title": "Iniciar Sesión",
+    "subtitle": "Accede a tu cuenta de Fundación Samval",
+    "form": {
+      "username": "Usuario",
+      "usernamePlaceholder": "Ingresa tu usuario",
+      "password": "Contraseña",
+      "passwordPlaceholder": "Ingresa tu contraseña",
+      "showPassword": "Mostrar contraseña",
+      "hidePassword": "Ocultar contraseña",
+      "forgotPassword": "¿Olvidaste tu contraseña?",
+      "submit": "Iniciar Sesión",
+      "loggingIn": "Iniciando sesión..."
+    },
+    "errors": {
+      "usernameRequired": "El usuario es requerido",
+      "usernameMinLength": "El usuario debe tener al menos 3 caracteres",
+      "passwordRequired": "La contraseña es requerida",
+      "passwordMinLength": "La contraseña debe tener al menos 6 caracteres",
+      "invalidCredentials": "Usuario o contraseña incorrectos"
+    },
+    "footer": {
+      "noAccount": "¿No tienes una cuenta?",
+      "register": "Regístrate aquí"
+    }
+  },
+  "forgotPassword": {
+    "title": "Recuperar Contraseña",
+    "subtitle": "Ingresa tus datos para recuperar el acceso a tu cuenta. Selecciona tu colegio para continuar.",
+    "form": {
+      "identification": "Número de Identificación",
+      "identificationPlaceholder": "Ingresa tu número de identificación",
+      "username": "Usuario",
+      "usernamePlaceholder": "Ingresa tu nombre de usuario",
+      "school": "Colegio",
+      "selectSchool": "Selecciona tu colegio",
+      "submit": "Enviar Solicitud",
+      "sending": "Enviando...",
+      "backToLogin": "Volver al inicio de sesión"
+    },
+    "schools": {
+      "colegio1": "Colegio 1",
+      "colegio2": "Colegio 2",
+      "colegio3": "Colegio 3",
+      "colegio4": "Colegio 4",
+      "colegio5": "Colegio 5"
+    },
+    "schoolInfo": {
+      "colegio1": "Institución educativa ubicada en el norte de la ciudad, especializada en ciencias y tecnología.",
+      "colegio2": "Colegio con énfasis en humanidades y artes, ubicado en el centro histórico.",
+      "colegio3": "Institución técnica con programas de robótica y pensamiento computacional.",
+      "colegio4": "Colegio bilingüe con enfoque en idiomas y cultura internacional.",
+      "colegio5": "Institución rural con programas de etnoeducación y saberes ancestrales."
+    },
+    "errors": {
+      "identificationRequired": "El número de identificación es requerido",
+      "identificationMinLength": "El número de identificación debe tener al menos 6 dígitos",
+      "identificationMaxLength": "El número de identificación no puede exceder 20 dígitos",
+      "identificationPattern": "El número de identificación solo debe contener números",
+      "usernameRequired": "El usuario es requerido",
+      "usernameMinLength": "El usuario debe tener al menos 3 caracteres",
+      "schoolRequired": "Debes seleccionar tu colegio",
+      "invalidData": "Los datos ingresados no coinciden con ninguna cuenta registrada"
+    },
+    "success": {
+      "title": "¡Solicitud Enviada!",
+      "message": "Hemos procesado tu solicitud de recuperación exitosamente. Recibirás las instrucciones en tu correo registrado.",
+      "redirect": "Serás redirigido al inicio de sesión en unos momentos...",
+      "loginButton": "Ir al inicio de sesión"
+    }
   }
 }

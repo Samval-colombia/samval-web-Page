@@ -12,8 +12,8 @@
       "contact": "Contact"
     },
     "language": {
-      "changeToEnglish": "Switch to English",
-      "changeToSpanish": "Switch to Spanish"
+      "changeToEnglish": "Switch language to English",
+      "changeToSpanish": "Switch language to Spanish"
     },
     "menu": "Open menu"
   },
@@ -22,7 +22,7 @@
       "title": "Technology with territorial approach",
       "subtitle": "We transform education in vulnerable communities",
       "description": "Computational thinking, robotics, and innovation programs that respect the cultural identity of each territory.",
-      "button": "Learn about our programs"
+      "button": "Discover our programs"
     },
     "slide2": {
       "title": "Open and collaborative science",
@@ -38,23 +38,23 @@
     }
   },
   "about": {
-    "title": "Who are we?",
-    "subtitle": "A foundation that connects governments, academia, and businesses to make innovation a driver of peace",
+    "title": "Who we are?",
+    "subtitle": "A foundation that articulates governments, academia, and companies so that innovation becomes an engine of peace",
     "description": "We are a non-profit organization dedicated to bringing education in science, technology, and innovation to vulnerable communities. We work with a territorial approach that respects and enhances Colombia's cultural diversity.",
     "mission": {
       "title": "Our Mission",
-      "text": "To democratize access to STEM education through contextualized programs that strengthen local capacities and generate sustainable development opportunities in vulnerable territories."
+      "text": "Democratize access to STEAM education through contextualized programs that strengthen local capacities and generate sustainable development opportunities in vulnerable territories."
     },
     "vision": {
       "title": "Our Vision",
-      "text": "To be recognized as leaders in transformative education that connects innovation, territory, and peace, positively impacting over 100,000 people by 2030."
+      "text": "To be recognized as leaders in transformative education that connects innovation, territory, and peace, positively impacting more than 100,000 people by 2030."
     }
   },
   "aboutPage": {
     "hero": {
       "eyebrow": "Samval Foundation",
       "title": "We transform lives through education and technology",
-      "description": "We are a non-profit foundation that connects governments, academia, and businesses to make innovation a driver of peace, prosperity, and planet conservation.",
+      "description": "We are a non-profit foundation that articulates governments, academia, and companies so that innovation becomes an engine of peace, prosperity, and planet conservation.",
       "chip1": "+11 territories",
       "chip2": "Computational thinking",
       "chip3": "Inclusive robotics"
@@ -80,10 +80,10 @@
       },
       "2021": {
         "label": "Community scaling",
-        "detail": "We co-created bilingual content with Afro and Indigenous communities."
+        "detail": "We co-created bilingual content with Afro and indigenous communities."
       },
       "2024": {
-        "label": "Mobile labs",
+        "label": "Mobile laboratories",
         "detail": "We deployed robotics and computational thinking kits in 11 departments."
       }
     }
@@ -97,14 +97,14 @@
     "programs": {
       "science": {
         "name": "Science and Technology",
-        "summary": "Mobile labs, robotics, and computational thinking for elementary, middle, and high school.",
+        "summary": "Mobile laboratories, robotics, and computational thinking for elementary, middle, and high school.",
         "bullet1": "Thymio educational robots",
         "bullet2": "STEAM clubs with weekly challenges",
-        "bullet3": "Classroom-ready kits with teacher guides"
+        "bullet3": "Ready-to-use classroom kits with teacher guides"
       },
       "ethno": {
         "name": "Digital ethno-education",
-        "summary": "Technology that speaks the territory's language and protects ancestral knowledge.",
+        "summary": "Technology that speaks the language of the territory and protects ancestral knowledge.",
         "bullet1": "Bilingual content design",
         "bullet2": "Projects with community leaders",
         "bullet3": "Assessment with differential approach"
@@ -114,13 +114,13 @@
         "summary": "Pathways for youth and adults connecting with the digital economy and entrepreneurship.",
         "bullet1": "Computational thinking and data",
         "bullet2": "Challenges with partner companies",
-        "bullet3": "Mentorships and career guidance"
+        "bullet3": "Mentoring and career guidance"
       }
     },
     "extras": {
       "training": {
         "title": "Teacher training",
-        "description": "We support teachers so that technology stays in the classroom."
+        "description": "We accompany teachers so that technology stays in the classroom."
       },
       "research": {
         "title": "Research + innovation",
@@ -128,7 +128,7 @@
       },
       "partners": {
         "title": "Partners and funding",
-        "description": "We connect companies, governments, and academia to ensure sustainability."
+        "description": "We articulate companies, governments, and academia to ensure sustainability."
       }
     },
     "cta": {
@@ -154,21 +154,21 @@
       },
       "follow": {
         "title": "Follow us",
-        "info": "Field stories and launches from our social media.",
+        "info": "Field stories and launches from our networks.",
         "label": "@samvalfundacion"
       }
     },
     "cta": {
       "title": "Ready to bring innovation to your community?",
-      "description": "Let's schedule a strategic session with our field team and curricular design.",
+      "description": "Let's schedule a strategic session with our field and curricular design team.",
       "button": "Schedule now"
     }
   },
   "footer": {
     "tagline": "Education, science, and innovation for peace with territorial approach.",
     "location": "Location",
-    "locationText" :"Street 104 #51B-154 Ofi 17 · Castellana Campestre · Barranquilla, Colombia",
-    "copyright": "Education, science and innovation with territorial approach",
+    "locationText": "Calle 104 #51B-154 Ofi 17 · Castellana Campestre · Barranquilla, Colombia",
+    "copyright": "Education, science, and innovation with territorial approach",
     "social": {
       "facebook": "Facebook",
       "youtube": "YouTube",
@@ -182,5 +182,76 @@
     "readMore": "Read more",
     "learnMore": "Learn more",
     "contact": "Contact"
+  },
+  "login": {
+    "title": "Sign In",
+    "subtitle": "Access your Samval Foundation account",
+    "form": {
+      "username": "Username",
+      "usernamePlaceholder": "Enter your username",
+      "password": "Password",
+      "passwordPlaceholder": "Enter your password",
+      "showPassword": "Show password",
+      "hidePassword": "Hide password",
+      "forgotPassword": "Forgot your password?",
+      "submit": "Sign In",
+      "loggingIn": "Signing in..."
+    },
+    "errors": {
+      "usernameRequired": "Username is required",
+      "usernameMinLength": "Username must be at least 3 characters",
+      "passwordRequired": "Password is required",
+      "passwordMinLength": "Password must be at least 6 characters",
+      "invalidCredentials": "Invalid username or password"
+    },
+    "footer": {
+      "noAccount": "Don't have an account?",
+      "register": "Register here"
+    }
+  },
+  "forgotPassword": {
+    "title": "Password Recovery",
+    "subtitle": "Enter your information to recover access to your account. Select your school to continue.",
+    "form": {
+      "identification": "Identification Number",
+      "identificationPlaceholder": "Enter your identification number",
+      "username": "Username",
+      "usernamePlaceholder": "Enter your username",
+      "school": "School",
+      "selectSchool": "Select your school",
+      "submit": "Send Request",
+      "sending": "Sending...",
+      "backToLogin": "Back to sign in"
+    },
+    "schools": {
+      "colegio1": "School 1",
+      "colegio2": "School 2",
+      "colegio3": "School 3",
+      "colegio4": "School 4",
+      "colegio5": "School 5"
+    },
+    "schoolInfo": {
+      "colegio1": "Educational institution located in the north of the city, specialized in science and technology.",
+      "colegio2": "School with emphasis on humanities and arts, located in the historic center.",
+      "colegio3": "Technical institution with robotics and computational thinking programs.",
+      "colegio4": "Bilingual school with focus on languages and international culture.",
+      "colegio5": "Rural institution with ethno-education and ancestral knowledge programs."
+    },
+    "errors": {
+      "identificationRequired": "Identification number is required",
+      "identificationMinLength": "Identification number must have at least 6 digits",
+      "identificationMaxLength": "Identification number cannot exceed 20 digits",
+      "identificationPattern": "Identification number must contain only numbers",
+      "usernameRequired": "Username is required",
+      "usernameMinLength": "Username must be at least 3 characters",
+      "schoolRequired": "You must select your school",
+      "invalidData": "The entered information doesn't match any registered account"
+    },
+    "success": {
+      "title": "Request Sent!",
+      "message": "We've successfully processed your recovery request. You'll receive instructions at your registered email.",
+      "redirect": "You'll be redirected to sign in shortly...",
+      "loginButton": "Go to sign in"
+    }
   }
 }

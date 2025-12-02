@@ -1,6 +1,6 @@
 <nav class="nav" [class.open]="menuOpen()" [class.scrolled]="scrolled()">
   <div class="nav__inner">
-    <!-- Brand -->
+
     <a class="brand" routerLink="/" (click)="closeMenu()">
       <img src="/assets/logo/onlyLogo.svg" alt="Fundación Samval" class="brand__logo" />
       <div>
@@ -9,9 +9,9 @@
       </div>
     </a>
 
-    <!-- CTA + Language (Desktop) -->
+
     <div class="nav__cta">
-      <a class="pill" href="mailto:contacto@samval.org">
+      <a class="pill" routerLink="/login">
         <monitor-icon aria-hidden="true"></monitor-icon>
         <span>{{ platformKey() | transloco }}</span>
       </a>
@@ -70,7 +70,7 @@
 
       <!-- Platform CTA (Mobile) -->
       <li class="mobile-platform">
-        <a class="pill" href="mailto:contacto@samval.org">
+        <a class="pill" routerLink="/login">
           <monitor-icon aria-hidden="true"></monitor-icon>
           <span>{{ platformKey() | transloco }}</span>
         </a>
