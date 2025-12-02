@@ -422,13 +422,20 @@
   .mobile-platform .pill {
     width: auto;
     display: inline-flex;
+    align-items: center;
     justify-content: flex-start;
+    gap: 1rem;
     padding: 12px 16px;
     font-size: 15px;
     background: var(--cta-gradient);
     color: #fffdf9;
     border-radius: 12px;
   }
+
+ .mobile-platform .pill > * {
+  display: inline-flex;
+  align-items: center;
+}
 
   /* DROPDOWN DE IDIOMAS EN MOBILE */
   .mobile-lang .language-dropdown {
