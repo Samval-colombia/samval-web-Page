@@ -6,7 +6,7 @@ WORKDIR /app
 COPY package*.json ./
 
 # Install full dependency tree (includes devDeps for build tooling)
-RUN npm ci
+RUN npm ci --legacy-peer-deps
 
 COPY . .
 
@@ -24,7 +24,7 @@ WORKDIR /app
 
 COPY package*.json ./
 # Only prod deps needed at runtime
-RUN npm ci --omit=dev
+RUN npm ci --omit=dev --legacy-peer-deps
 
 # Bring in compiled assets
 COPY --from=build /app/dist ./dist

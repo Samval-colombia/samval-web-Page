@@ -129,16 +129,5 @@ export class AboutPageMapper {
     };
   }
 
-  validateApiData(apiData: any): boolean {
-    return !!(
-      apiData &&
-      apiData.hero &&
-      apiData.hero.eyebrow &&
-      apiData.hero.title &&
-      apiData.hero.description &&
-      Array.isArray(apiData.hero.chips) &&
-      Array.isArray(apiData.values) &&
-      Array.isArray(apiData.milestones)
-    );
-  }
+
 }
