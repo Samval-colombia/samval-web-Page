@@ -74,9 +74,18 @@ h1 {
   color: #fffdf9;
   background: var(--cta-gradient);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+
 }
 
 .btn:hover {
   transform: translateY(-2px);
   box-shadow: var(--pill-shadow);
+}
+
+@media (max-width : 900px){
+
+  .btn{
+     width: 100%;
+    text-align: center;
+  }
 }
