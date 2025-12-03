@@ -1,6 +1,7 @@
 .footer {
-  margin-top: 40px;
-  padding: 30px 0 16px;
+  margin-top: 32px;
+  margin-bottom: 0; /* Agregar esto explícitamente */
+  padding: 30px 0 0; /* Cambiar el padding inferior a 0 */
   border-top: 1px solid var(--border);
   background: var(--surface);
   color: var(--text);
@@ -14,12 +15,12 @@
   padding: 0 20px 18px;
   display: grid;
   grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
-  gap: 28px;
+  gap: 24px;
 }
 
 .footer__brand {
   display: grid;
-  gap: 12px;
+  gap: 16px;
   font-size: 14px;
   line-height: 1.45;
 }
@@ -27,7 +28,7 @@
 .footer__brand-logo {
   display: grid;
   grid-template-columns: auto 1fr;
-  gap: 14px;
+  gap: 12px;
   align-items: center;
 }
 
@@ -139,7 +140,7 @@
 .footer__meta {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 14px 20px 0;
+  padding: 14px 20px 16px;
   display: flex;
   align-items: center;
   gap: 10px;

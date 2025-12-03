@@ -3,7 +3,7 @@
    ============================================ */
 
 .login-container {
-  min-height: 100vh;
+  min-height: calc(100vh - 80px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -30,7 +30,7 @@
 .login-card {
   position: relative;
   width: 100%;
-  max-width: 440px;
+  max-width: 520px;
   padding: 20px;
   background: var(--surface-card);
   border-radius: var(--radius);
@@ -110,7 +110,7 @@
 .login-form {
   display: grid;
   gap: 20px;
-  min-width: 0; /* Previene overflow en grid */
+  min-width: 0;
 }
 
 /* ============================================

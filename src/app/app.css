@@ -39,7 +39,7 @@ body {
   z-index: 1;
   max-width: 1200px;
   margin: 0 auto;
-  padding: var(--nav-height) 20px 64px;
+  padding: var(--nav-height) 20px 32px;
   display: grid;
   grid-template-columns: minmax(0, 1fr);
 }
@@ -47,6 +47,10 @@ body {
 @media (max-width: 900px) {
   :host {
     --nav-height: 88px;
+  }
+
+  .app-shell{
+    padding: var(--nav-height) 16px 24px;
   }
 }
 
