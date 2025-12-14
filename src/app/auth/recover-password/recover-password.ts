@@ -1,7 +1,7 @@
-import { Component, OnInit, inject, signal } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
-import { Router, RouterLink } from '@angular/router';
+import { Router } from '@angular/router';
 import { TranslocoModule } from '@ngneat/transloco';
 
 
@@ -13,7 +13,7 @@ export interface School {
 
 @Component({
   selector: 'app-recover-password',
-  imports: [TranslocoModule , ReactiveFormsModule,RouterLink,CommonModule],
+  imports: [TranslocoModule, ReactiveFormsModule, CommonModule],
   templateUrl: './recover-password.html',
   styleUrl: './recover-password.css',
 })

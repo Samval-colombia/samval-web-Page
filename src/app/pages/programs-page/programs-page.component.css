@@ -78,19 +78,6 @@ h3 {
 
 .btn {
   width: fit-content;
-  text-decoration: none;
-  padding: 11px 16px;
-  border-radius: 12px;
-  border: 1px solid transparent;
-  font-weight: 700;
-  color: #fffdf9;
-  background: var(--cta-gradient);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.btn:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--pill-shadow);
 }
 
 .extras {
@@ -113,7 +100,7 @@ h3 {
 .extra__icon {
   width: 46px;
   height: 46px;
-  border-radius: 12px;
+  border-radius: var(--radius-sm);
   display: grid;
   place-items: center;
   background: var(--chip-bg);
@@ -123,18 +110,8 @@ h3 {
 
 
 @media (max-width: 768px) {
-
-  .btn{
-  width: inherit;
-  text-decoration: none;
-  text-align: center;
-  padding: 11px 16px;
-  border-radius: 12px;
-  border: 1px solid transparent;
-  font-weight: 700;
-  color: #fffdf9;
-  background: var(--cta-gradient);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  .btn {
+    width: 100%;
+    text-align: center;
   }
-
 }

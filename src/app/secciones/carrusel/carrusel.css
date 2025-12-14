@@ -6,6 +6,8 @@
   max-height: 700px;
   overflow: hidden;
   background: #111111;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
 
   &:focus {
     outline: none;
@@ -243,7 +245,7 @@
         background: #777;
         border-color: #ffffff;
         width: 40px;
-        border-radius: 10px;
+        border-radius: var(--radius-sm);
       }
 
       .sr-only {

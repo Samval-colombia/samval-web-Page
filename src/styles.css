@@ -68,6 +68,111 @@ app-root {
   display: contents;
 }
 
+/* Layout helpers */
+.page {
+  max-width: 1200px;
+  margin: 32px auto;
+  padding: 0 20px;
+  display: grid;
+  gap: clamp(18px, 3vw, 28px);
+}
+
+.page__header,
+.section,
+.card,
+.intro,
+.channel,
+.cta,
+.program,
+.extra {
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--surface-card);
+  box-shadow: var(--shadow);
+}
+
+.section {
+  padding: clamp(18px, 3vw, 26px);
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 700;
+  color: var(--text);
+  margin: 0;
+}
+
+.muted {
+  margin: 0;
+  color: var(--muted);
+}
+
+/* Botones CTA unificados */
+.btn,
+.pill,
+.language-btn,
+.cta .btn {
+  min-height: var(--btn-height);
+  padding: var(--btn-padding-y) var(--btn-padding-x);
+  border-radius: var(--btn-radius);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.btn {
+  width: 100%;
+}
+
+.btn--inline {
+  width: fit-content;
+}
+
+.btn--primary,
+.pill,
+.cta .btn {
+  background: var(--cta-gradient);
+  color: #fffdf9;
+  border: 1px solid transparent;
+  box-shadow: var(--button-shadow);
+}
+
+.btn--primary:hover:not(:disabled),
+.pill:hover,
+.cta .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--pill-shadow);
+}
+
+.btn--primary:active:not(:disabled),
+.pill:active,
+.cta .btn:active {
+  transform: translateY(0);
+}
+
+/* Form elements */
+input,
+select,
+textarea {
+  min-height: var(--btn-height);
+  padding: var(--btn-padding-y) var(--btn-padding-x);
+  border-radius: var(--btn-radius);
+  border: 1px solid var(--border);
+  background: #fff;
+  font-family: inherit;
+  font-size: 15px;
+  color: var(--text);
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid var(--accent-soft);
+  outline-offset: 1px;
+}
+
 .glass {
   background: var(--surface-glass);
   backdrop-filter: blur(10px);

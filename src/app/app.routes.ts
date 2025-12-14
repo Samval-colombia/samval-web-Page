@@ -1,5 +1,3 @@
-import { RecoverPassword } from './auth/recover-password/recover-password';
-
 import { Routes } from '@angular/router';
 
 

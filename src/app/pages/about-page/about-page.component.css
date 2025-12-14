@@ -80,7 +80,7 @@ h1 {
   gap: 12px;
   align-items: center;
   padding: 10px;
-  border-radius: 14px;
+  border-radius: var(--radius-sm);
   background: var(--surface-alt);
   border: 1px solid var(--border);
 }
@@ -88,7 +88,7 @@ h1 {
 .year {
   min-width: 72px;
   padding: 10px;
-  border-radius: 12px;
+  border-radius: var(--radius-sm);
   background: var(--chip-bg);
   color: var(--chip-color);
   font-weight: 800;
