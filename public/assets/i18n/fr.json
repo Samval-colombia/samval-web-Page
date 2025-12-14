@@ -1,0 +1,260 @@
+{
+  "header": {
+    "brand": {
+      "name": "Fondation Samval",
+      "tagline": "Technologie respectueuse du territoire"
+    },
+    "platform": "Plateforme",
+    "nav": {
+      "home": "Accueil",
+      "programs": "Programmes",
+      "foundation": "Fondation",
+      "contact": "Contact"
+    },
+    "language": {
+      "changeToEnglish": "Passer à l'anglais",
+      "changeToSpanish": "Passer à l'espagnol"
+    },
+    "menu": "Ouvrir le menu"
+  },
+  "hero": {
+    "slide1": {
+      "title": "Technologie à approche territoriale",
+      "subtitle": "Nous transformons l'éducation dans les communautés vulnérables",
+      "description": "Pensée informatique, robotique et innovation en respectant l'identité culturelle de chaque territoire.",
+      "button": "Découvrir nos programmes"
+    },
+    "slide2": {
+      "title": "Science ouverte et collaborative",
+      "subtitle": "Nous construisons avec preuves et expérimentation",
+      "description": "Données, recherche appliquée et design participatif avec communautés, gouvernements et universités.",
+      "button": "Explorer nos projets"
+    },
+    "slide3": {
+      "title": "Éducation qui protège les savoirs ancestraux",
+      "subtitle": "Ethno-éducation numérique pertinente culturellement",
+      "description": "Contenus bilingues et expériences d'apprentissage qui valorisent langues et traditions locales.",
+      "button": "Découvrir l'ethno-éducation"
+    }
+  },
+  "about": {
+    "title": "Qui sommes-nous ?",
+    "eyebrow": "Notre histoire",
+    "subtitle": "Une fondation qui relie gouvernements, universités et entreprises pour faire de l'innovation un moteur de paix",
+    "description": "Organisation à but non lucratif qui apporte éducation en science, technologie et innovation aux communautés vulnérables avec une approche territoriale respectueuse de la diversité culturelle.",
+    "mission": {
+      "title": "Notre mission",
+      "text": "Démocratiser l'accès à l'éducation STEAM par des programmes contextualisés qui renforcent les capacités locales et génèrent un développement durable."
+    },
+    "vision": {
+      "title": "Notre vision",
+      "text": "Être reconnus comme leaders de l'éducation transformante reliant innovation, territoire et paix, avec un impact sur plus de 100 000 personnes d'ici 2030."
+    }
+  },
+  "aboutPage": {
+    "hero": {
+      "eyebrow": "Fondation Samval",
+      "title": "Nous transformons des vies par l'éducation et la technologie",
+      "description": "Fondation à but non lucratif qui articule gouvernements, universités et entreprises pour que l'innovation soit moteur de paix, prospérité et planète.",
+      "chip1": "+5 territoires",
+      "chip2": "Pensée informatique",
+      "chip3": "Robotique inclusive"
+    },
+    "values": {
+      "peace": {
+        "title": "Paix et dignité",
+        "description": "La technologie comme pont pour protéger la vie et la diversité culturelle."
+      },
+      "science": {
+        "title": "Science ouverte",
+        "description": "Nous travaillons avec données, preuves et expérimentation collaborative."
+      },
+      "innovation": {
+        "title": "Innovation durable",
+        "description": "Chaque projet prend soin du territoire et réduit l'écart climatique."
+      }
+    },
+    "milestones": {
+      "2019": {
+        "label": "Premiers pilotes",
+        "detail": "Clubs STEAM dans des écoles publiques d'Antioquia."
+      },
+      "2021": {
+        "label": "Montée en puissance communautaire",
+        "detail": "Co-création de contenus bilingues avec communautés afro et autochtones."
+      },
+      "2024": {
+        "label": "Laboratoires mobiles",
+        "detail": "Déploiement de kits de robotique et de pensée informatique dans 11 départements."
+      }
+    }
+  },
+  "programsPage": {
+    "hero": {
+      "eyebrow": "Portefeuille",
+      "title": "Programmes prêts à déployer dans votre territoire",
+      "description": "Nous concevons des expériences mêlant science, technologie et culture locale. Choisissez un programme et lançons la prochaine cohorte."
+    },
+    "programs": {
+      "science": {
+        "name": "Science et Technologie",
+        "summary": "Laboratoires mobiles, robotique et pensée informatique pour primaire et secondaire.",
+        "bullet1": "Robots éducatifs Thymio",
+        "bullet2": "Clubs STEAM avec défis hebdomadaires",
+        "bullet3": "Kits prêts à l'emploi avec guides enseignants"
+      },
+      "ethno": {
+        "name": "Ethno-éducation numérique",
+        "summary": "Technologie qui parle la langue du territoire et protège les savoirs ancestraux.",
+        "bullet1": "Conception de contenus bilingues",
+        "bullet2": "Projets avec leaders communautaires",
+        "bullet3": "Évaluation avec approche différenciée"
+      },
+      "talent": {
+        "name": "Talent et employabilité",
+        "summary": "Parcours pour jeunes et adultes vers l'économie numérique et l'entrepreneuriat.",
+        "bullet1": "Pensée informatique et données",
+        "bullet2": "Défis avec entreprises partenaires",
+        "bullet3": "Mentorat et orientation professionnelle"
+      }
+    },
+    "extras": {
+      "training": {
+        "title": "Formation des enseignants",
+        "description": "Nous accompagnons les profs pour que la technologie reste en classe."
+      },
+      "research": {
+        "title": "Recherche + innovation",
+        "description": "Nous mesurons l'impact et itérons avec les communautés."
+      },
+      "partners": {
+        "title": "Partenaires et financement",
+        "description": "Nous articulons entreprises, gouvernements et universités pour la durabilité."
+      }
+    },
+    "cta": {
+      "button": "Planifier une démo"
+    }
+  },
+  "contactPage": {
+    "hero": {
+      "eyebrow": "Contact",
+      "title": "Parlons et activons votre projet",
+      "description": "Expliquez-nous votre défi éducatif. Réponse en moins de 24h."
+    },
+    "channels": {
+      "talk": {
+        "title": "Parlons de votre territoire",
+        "info": "Planifiez une visio pour adapter le programme.",
+        "label": "contact@samval.org"
+      },
+      "call": {
+        "title": "Appelez-nous",
+        "info": "Nous servons partenaires, enseignants et entités publiques.",
+        "label": "+57 323 320 7532"
+      },
+      "follow": {
+        "title": "Suivez-nous",
+        "info": "Histoires de terrain et lancements sur nos réseaux.",
+        "label": "@samvalfundacion"
+      }
+    },
+    "cta": {
+      "title": "Prêt à innover dans votre communauté ?",
+      "description": "Programmons une session stratégique avec notre équipe pédagogique.",
+      "button": "Planifier maintenant"
+    }
+  },
+  "footer": {
+    "brand": "Fondation Samval",
+    "tagline": "Éducation, science et innovation pour la paix avec approche territoriale.",
+    "location": "Localisation",
+    "locationText": "Calle 104 #51B-154 Ofi 17 · Castellana Campestre · Barranquilla, Colombie",
+    "email": "contact@samval.org",
+    "copyright": "Éducation, science et innovation à approche territoriale",
+    "social": {
+      "facebook": "Facebook",
+      "youtube": "YouTube",
+      "instagram": "Instagram",
+      "linkedin": "LinkedIn"
+    }
+  },
+  "common": {
+    "loading": "Chargement...",
+    "error": "Une erreur s'est produite",
+    "readMore": "En savoir plus",
+    "learnMore": "Découvrir",
+    "contact": "Contacter"
+  },
+  "login": {
+    "title": "Connexion",
+    "subtitle": "Accédez à votre compte Samval",
+    "form": {
+      "username": "Utilisateur",
+      "usernamePlaceholder": "Entrez votre utilisateur",
+      "password": "Mot de passe",
+      "passwordPlaceholder": "Entrez votre mot de passe",
+      "showPassword": "Afficher le mot de passe",
+      "hidePassword": "Masquer le mot de passe",
+      "forgotPassword": "Mot de passe oublié ?",
+      "submit": "Se connecter",
+      "loggingIn": "Connexion..."
+    },
+    "errors": {
+      "usernameRequired": "L'utilisateur est requis",
+      "usernameMinLength": "L'utilisateur doit avoir au moins 3 caractères",
+      "passwordRequired": "Le mot de passe est requis",
+      "passwordMinLength": "Le mot de passe doit avoir au moins 6 caractères",
+      "invalidCredentials": "Utilisateur ou mot de passe incorrect"
+    },
+    "footer": {
+      "noAccount": "Pas de compte ?",
+      "register": "Inscrivez-vous ici"
+    }
+  },
+  "forgotPassword": {
+    "title": "Récupérer le mot de passe",
+    "subtitle": "Entrez vos données pour récupérer l'accès à votre compte. Sélectionnez votre école.",
+    "form": {
+      "identification": "Numéro d'identification",
+      "identificationPlaceholder": "Entrez votre numéro",
+      "username": "Utilisateur",
+      "usernamePlaceholder": "Entrez votre utilisateur",
+      "school": "École",
+      "selectSchool": "Sélectionnez votre école",
+      "submit": "Envoyer la demande",
+      "sending": "Envoi...",
+      "backToLogin": "Retour à la connexion"
+    },
+    "schools": {
+      "colegio1": "École 1",
+      "colegio2": "École 2",
+      "colegio3": "École 3",
+      "colegio4": "École 4",
+      "colegio5": "École 5"
+    },
+    "schoolInfo": {
+      "colegio1": "Institution située au nord de la ville, spécialisée en sciences et technologie.",
+      "colegio2": "École axée sur les humanités et les arts, au centre historique.",
+      "colegio3": "Institution technique avec robotique et pensée informatique.",
+      "colegio4": "École bilingue orientée langues et culture internationale.",
+      "colegio5": "Institution rurale avec programmes d'ethno-éducation."
+    },
+    "errors": {
+      "identificationRequired": "Le numéro d'identification est requis",
+      "identificationMinLength": "Au moins 6 chiffres",
+      "identificationMaxLength": "Maximum 20 chiffres",
+      "identificationPattern": "Chiffres uniquement",
+      "usernameRequired": "L'utilisateur est requis",
+      "usernameMinLength": "Au moins 3 caractères",
+      "schoolRequired": "Vous devez sélectionner votre école",
+      "invalidData": "Les données ne correspondent à aucun compte"
+    },
+    "success": {
+      "title": "Demande envoyée !",
+      "message": "Nous avons traité votre demande. Vous recevrez les instructions par e-mail.",
+      "redirect": "Redirection vers la connexion...",
+      "loginButton": "Aller à la connexion"
+    }
+  }
+}

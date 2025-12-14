@@ -1,0 +1,260 @@
+{
+  "header": {
+    "brand": {
+      "name": "Samval Stiftung",
+      "tagline": "Technologie mit Respekt für das Territorium"
+    },
+    "platform": "Plattform",
+    "nav": {
+      "home": "Start",
+      "programs": "Programme",
+      "foundation": "Stiftung",
+      "contact": "Kontakt"
+    },
+    "language": {
+      "changeToEnglish": "Auf Englisch wechseln",
+      "changeToSpanish": "Auf Spanisch wechseln"
+    },
+    "menu": "Menü öffnen"
+  },
+  "hero": {
+    "slide1": {
+      "title": "Technologie mit territorialem Ansatz",
+      "subtitle": "Wir transformieren Bildung in benachteiligten Gemeinschaften",
+      "description": "Informatik, Robotik und Innovation unter Wahrung der kulturellen Identität jedes Territoriums.",
+      "button": "Programme ansehen"
+    },
+    "slide2": {
+      "title": "Offene und kollaborative Wissenschaft",
+      "subtitle": "Wir bauen mit Evidenz und Experimenten",
+      "description": "Daten, angewandte Forschung und partizipatives Design mit Gemeinschaften, Regierung und Hochschulen.",
+      "button": "Projekte entdecken"
+    },
+    "slide3": {
+      "title": "Bildung schützt Wissen",
+      "subtitle": "Digitale Ethno-Bildung mit kultureller Relevanz",
+      "description": "Zweisprachige Inhalte und Lernerfahrungen, die Sprachen und Traditionen stärken.",
+      "button": "Ethno-Bildung entdecken"
+    }
+  },
+  "about": {
+    "title": "Wer sind wir?",
+    "eyebrow": "Unsere Geschichte",
+    "subtitle": "Eine Stiftung, die Regierung, Hochschulen und Unternehmen verbindet, damit Innovation Motor des Friedens ist",
+    "description": "Gemeinnützige Organisation für Bildung in Wissenschaft, Technologie und Innovation in vulnerablen Gemeinschaften mit territorialem Ansatz.",
+    "mission": {
+      "title": "Unsere Mission",
+      "text": "Den Zugang zu STEAM-Bildung demokratisieren durch kontextualisierte Programme, die lokale Kapazitäten stärken und nachhaltige Entwicklung fördern."
+    },
+    "vision": {
+      "title": "Unsere Vision",
+      "text": "Als führend in transformierender Bildung anerkannt werden, Innovation, Territorium und Frieden zu verbinden und bis 2030 über 100.000 Menschen zu erreichen."
+    }
+  },
+  "aboutPage": {
+    "hero": {
+      "eyebrow": "Samval Stiftung",
+      "title": "Wir verwandeln Leben durch Bildung und Technologie",
+      "description": "Gemeinnützige Stiftung, die Regierung, Hochschulen und Unternehmen verbindet, damit Innovation Motor für Frieden, Wohlstand und den Planeten ist.",
+      "chip1": "+5 Territorien",
+      "chip2": "Informatikdenken",
+      "chip3": "Inklusive Robotik"
+    },
+    "values": {
+      "peace": {
+        "title": "Frieden und Würde",
+        "description": "Technologie als Brücke zum Schutz von Leben und kultureller Vielfalt."
+      },
+      "science": {
+        "title": "Offene Wissenschaft",
+        "description": "Wir arbeiten mit Daten, Evidenz und gemeinsamer Experimentation."
+      },
+      "innovation": {
+        "title": "Nachhaltige Innovation",
+        "description": "Jedes Projekt schützt das Territorium und verringert die Klimalücke."
+      }
+    },
+    "milestones": {
+      "2019": {
+        "label": "Erste Piloten",
+        "detail": "STEAM-Clubs in öffentlichen Schulen in Antioquia."
+      },
+      "2021": {
+        "label": "Community-Skalierung",
+        "detail": "Zweisprachige Inhalte mit afro- und indigene Gemeinschaften erstellt."
+      },
+      "2024": {
+        "label": "Mobile Labore",
+        "detail": "Robotik- und Informatik-Kits in 11 Departamentos bereitgestellt."
+      }
+    }
+  },
+  "programsPage": {
+    "hero": {
+      "eyebrow": "Portfolio",
+      "title": "Programme bereit für deinen Einsatz",
+      "description": "Erlebnisse aus Wissenschaft, Technologie und lokaler Kultur. Wähle ein Programm und starte die nächste Kohorte."
+    },
+    "programs": {
+      "science": {
+        "name": "Wissenschaft und Technologie",
+        "summary": "Mobile Labore, Robotik und Informatik für Grund- und Sekundarschule.",
+        "bullet1": "Thymio Bildungsroboter",
+        "bullet2": "STEAM-Clubs mit Wochen-Challenges",
+        "bullet3": "Kits mit Lehrerhandbuch"
+      },
+      "ethno": {
+        "name": "Digitale Ethno-Bildung",
+        "summary": "Technologie in der Sprache des Territoriums, die Wissen schützt.",
+        "bullet1": "Entwurf zweisprachiger Inhalte",
+        "bullet2": "Projekte mit Gemeindeführern",
+        "bullet3": "Bewertung mit Differenzialansatz"
+      },
+      "talent": {
+        "name": "Talent und Beschäftigungsfähigkeit",
+        "summary": "Wege für Jugendliche und Erwachsene zur digitalen Wirtschaft und Gründung.",
+        "bullet1": "Informatikdenken und Daten",
+        "bullet2": "Challenges mit Partnerunternehmen",
+        "bullet3": "Mentoring und Berufsberatung"
+      }
+    },
+    "extras": {
+      "training": {
+        "title": "Lehrerfortbildung",
+        "description": "Wir begleiten Lehrkräfte, damit Technologie im Unterricht bleibt."
+      },
+      "research": {
+        "title": "Forschung + Innovation",
+        "description": "Wir messen Wirkung und iterieren mit Gemeinschaften."
+      },
+      "partners": {
+        "title": "Partner und Finanzierung",
+        "description": "Wir verbinden Unternehmen, Regierung und Hochschulen für Nachhaltigkeit."
+      }
+    },
+    "cta": {
+      "button": "Demo planen"
+    }
+  },
+  "contactPage": {
+    "hero": {
+      "eyebrow": "Kontakt",
+      "title": "Lass uns dein Projekt aktivieren",
+      "description": "Erzähl uns deine Bildungsherausforderung. Antwort unter 24h."
+    },
+    "channels": {
+      "talk": {
+        "title": "Über dein Territorium sprechen",
+        "info": "Videocall planen, um Ziele anzupassen.",
+        "label": "contact@samval.org"
+      },
+      "call": {
+        "title": "Ruf uns an",
+        "info": "Wir unterstützen Partner, Lehrkräfte und Behörden.",
+        "label": "+57 323 320 7532"
+      },
+      "follow": {
+        "title": "Folge uns",
+        "info": "Stories aus dem Feld und Launches auf unseren Netzwerken.",
+        "label": "@samvalfundacion"
+      }
+    },
+    "cta": {
+      "title": "Bereit für Innovation in deiner Community?",
+      "description": "Strategie-Session mit unserem Team vereinbaren.",
+      "button": "Jetzt planen"
+    }
+  },
+  "footer": {
+    "brand": "Samval Stiftung",
+    "tagline": "Bildung, Wissenschaft und Innovation für Frieden mit territorialem Ansatz.",
+    "location": "Ort",
+    "locationText": "Calle 104 #51B-154 Ofi 17 · Castellana Campestre · Barranquilla, Kolumbien",
+    "email": "contact@samval.org",
+    "copyright": "Bildung, Wissenschaft und Innovation mit territorialem Ansatz",
+    "social": {
+      "facebook": "Facebook",
+      "youtube": "YouTube",
+      "instagram": "Instagram",
+      "linkedin": "LinkedIn"
+    }
+  },
+  "common": {
+    "loading": "Lädt...",
+    "error": "Ein Fehler ist aufgetreten",
+    "readMore": "Mehr erfahren",
+    "learnMore": "Mehr wissen",
+    "contact": "Kontakt"
+  },
+  "login": {
+    "title": "Anmelden",
+    "subtitle": "Melde dich bei deinem Samval-Konto an",
+    "form": {
+      "username": "Benutzer",
+      "usernamePlaceholder": "Benutzer eingeben",
+      "password": "Passwort",
+      "passwordPlaceholder": "Passwort eingeben",
+      "showPassword": "Passwort anzeigen",
+      "hidePassword": "Passwort verbergen",
+      "forgotPassword": "Passwort vergessen?",
+      "submit": "Anmelden",
+      "loggingIn": "Anmelden..."
+    },
+    "errors": {
+      "usernameRequired": "Benutzer ist erforderlich",
+      "usernameMinLength": "Mindestens 3 Zeichen",
+      "passwordRequired": "Passwort ist erforderlich",
+      "passwordMinLength": "Mindestens 6 Zeichen",
+      "invalidCredentials": "Benutzer oder Passwort falsch"
+    },
+    "footer": {
+      "noAccount": "Kein Konto?",
+      "register": "Hier registrieren"
+    }
+  },
+  "forgotPassword": {
+    "title": "Passwort wiederherstellen",
+    "subtitle": "Gib deine Daten ein und wähle deine Schule, um den Zugriff wiederherzustellen.",
+    "form": {
+      "identification": "Ausweisnummer",
+      "identificationPlaceholder": "Ausweisnummer eingeben",
+      "username": "Benutzer",
+      "usernamePlaceholder": "Benutzer eingeben",
+      "school": "Schule",
+      "selectSchool": "Schule auswählen",
+      "submit": "Anfrage senden",
+      "sending": "Senden...",
+      "backToLogin": "Zur Anmeldung zurück"
+    },
+    "schools": {
+      "colegio1": "Schule 1",
+      "colegio2": "Schule 2",
+      "colegio3": "Schule 3",
+      "colegio4": "Schule 4",
+      "colegio5": "Schule 5"
+    },
+    "schoolInfo": {
+      "colegio1": "Schule im Norden, Schwerpunkt Wissenschaft und Technik.",
+      "colegio2": "Schule mit Schwerpunkt Geisteswissenschaften und Kunst.",
+      "colegio3": "Technische Schule mit Robotik und Informatik.",
+      "colegio4": "Bilinguale Schule mit Sprachen und internationaler Kultur.",
+      "colegio5": "Ländliche Schule mit Ethno-Bildung."
+    },
+    "errors": {
+      "identificationRequired": "Ausweisnummer ist erforderlich",
+      "identificationMinLength": "Mindestens 6 Ziffern",
+      "identificationMaxLength": "Höchstens 20 Ziffern",
+      "identificationPattern": "Nur Zahlen",
+      "usernameRequired": "Benutzer ist erforderlich",
+      "usernameMinLength": "Mindestens 3 Zeichen",
+      "schoolRequired": "Schule auswählen",
+      "invalidData": "Die Daten passen zu keinem Konto"
+    },
+    "success": {
+      "title": "Anfrage gesendet!",
+      "message": "Wir haben deine Anfrage verarbeitet. Du erhältst Anweisungen per E-Mail.",
+      "redirect": "Weiterleitung zur Anmeldung...",
+      "loginButton": "Zur Anmeldung"
+    }
+  }
+}

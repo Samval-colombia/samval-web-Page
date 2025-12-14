@@ -9,12 +9,13 @@ import {
   withState
 } from '@ngrx/signals';
 import { TranslocoService } from '@ngneat/transloco';
-import { AVAILABLE_LANGUAGES, LANGUAGE_STORAGE_KEY, LanguageState } from '../models/language.interface';
+import { AVAILABLE_LANGUAGES, LANGUAGE_STORAGE_KEY, LanguageState, Language } from '../models/language.interface';
+type LanguageCode = Language['code'];
 
 export const LanguageStore = signalStore(
    { providedIn: 'root' },
 
-    withState<LanguageState>({
+  withState<LanguageState>({
     currentLang: 'es',
     availableLanguages: AVAILABLE_LANGUAGES
   }),
@@ -31,9 +32,12 @@ export const LanguageStore = signalStore(
     isEnglish: computed(() => store.currentLang() === 'en'),
 
     // Idioma alternativo (para toggle)
-    alternateLang: computed(() =>
-      store.currentLang() === 'es' ? 'en' : 'es'
-    )
+    alternateLang: computed(() => {
+      const all = store.availableLanguages().map(l => l.code);
+      const currentIndex = all.indexOf(store.currentLang());
+      const nextIndex = (currentIndex + 1) % all.length;
+      return all[nextIndex];
+    })
   })),
 
 
@@ -46,10 +50,10 @@ export const LanguageStore = signalStore(
       /**
        * Cambiar el idioma activo
        */
-      setLanguage(langCode: 'es' | 'en'): void {
+      setLanguage(langCode: LanguageCode): void {
         if (this._isValidLanguage(langCode)) {
           // Actualizar estado del store
-          patchState(store, { currentLang: langCode });
+          patchState(store, { currentLang: langCode as LanguageState['currentLang'] });
 
           // Actualizar Transloco
           translocoService.setActiveLang(langCode);
@@ -72,7 +76,7 @@ export const LanguageStore = signalStore(
       /**
        * Verificar si un código de idioma es válido
        */
-      _isValidLanguage(langCode: string): boolean {
+      _isValidLanguage(langCode: string): langCode is LanguageCode {
         return store.availableLanguages().some(lang => lang.code === langCode);
       },
 
@@ -83,15 +87,15 @@ export const LanguageStore = signalStore(
         if (!isBrowser) return;
 
         // Intentar obtener desde localStorage
-        const savedLang = localStorage.getItem(LANGUAGE_STORAGE_KEY) as 'es' | 'en' | null;
+        const savedLang = localStorage.getItem(LANGUAGE_STORAGE_KEY) as LanguageCode | null;
 
         if (savedLang && this._isValidLanguage(savedLang)) {
           this.setLanguage(savedLang);
         } else {
           // Usar idioma del navegador
-          const browserLang = navigator.language.split('-')[0];
-          const lang = browserLang === 'es' ? 'es' : 'en';
-          this.setLanguage(lang);
+          const browserLang = navigator.language.split('-')[0] as string;
+          const match = store.availableLanguages().find(lang => lang.code === browserLang);
+          this.setLanguage((match ? match.code : 'es') as LanguageCode);
         }
       }
     };

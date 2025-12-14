@@ -6,7 +6,7 @@ export interface Language {
 }
 
 export interface LanguageState {
-  currentLang: 'es' | 'en';
+  currentLang: 'es' | 'en' | 'fr' | 'de' | 'it';
   availableLanguages: Language[];
 }
 
@@ -24,5 +24,23 @@ export const AVAILABLE_LANGUAGES: Language[] = [
     name: 'English',
     nativeName: 'English',
     flag: '🇬🇧'
+  },
+  {
+    code: 'fr',
+    name: 'French',
+    nativeName: 'Français',
+    flag: '🇫🇷'
+  },
+  {
+    code: 'de',
+    name: 'German',
+    nativeName: 'Deutsch',
+    flag: '🇩🇪'
+  },
+  {
+    code: 'it',
+    name: 'Italian',
+    nativeName: 'Italiano',
+    flag: '🇮🇹'
   }
 ];

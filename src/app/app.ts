@@ -20,12 +20,12 @@ export class App {
 
   protected readonly footerData = {
     brandLogoSrc: '/assets/logo/withName.svg',
-    brandAlt: 'Samval',
+    brandAlt: 'footer.brand',
     taglineKey: 'footer.tagline',
     locationHeadingKey: 'footer.location',
-    locationText: 'Calle 104 #51B-154 Ofi 17 · Castellana Campestre · Barranquilla, Colombia',
+    locationText: 'footer.locationText',
+    emailKey: 'footer.email',
     phone: '3233207532',
-    email: 'fundacionsamval@gmail.com',
     copyrightKey: 'footer.copyright',
     socialLinks: [
       { label: 'FB', url: 'https://www.samval.org/', aria: 'Facebook', icon: 'facebook' as const },

@@ -3,7 +3,7 @@ import { isPlatformBrowser } from '@angular/common';
 import { TranslocoService } from '@ngneat/transloco';
 
 export interface Language {
-  code: string;
+  code: 'es' | 'en' | 'fr' | 'de' | 'it';
   name: string;
   flag: string;
   nativeName: string;
@@ -19,22 +19,15 @@ export class LanguageService {
 
   // Idiomas disponibles
   readonly availableLanguages: Language[] = [
-    {
-      code: 'es',
-      name: 'Spanish',
-      nativeName: 'Español',
-      flag: '🇪🇸'
-    },
-    {
-      code: 'en',
-      name: 'English',
-      nativeName: 'English',
-      flag: '🇬🇧'
-    }
+    { code: 'es', name: 'Spanish', nativeName: 'Español', flag: '🇪🇸' },
+    { code: 'en', name: 'English', nativeName: 'English', flag: '🇬🇧' },
+    { code: 'fr', name: 'French', nativeName: 'Français', flag: '🇫🇷' },
+    { code: 'de', name: 'German', nativeName: 'Deutsch', flag: '🇩🇪' },
+    { code: 'it', name: 'Italian', nativeName: 'Italiano', flag: '🇮🇹' }
   ];
 
   // Signal reactivo para el idioma actual
-  currentLang = signal<'es' | 'en'>('es');
+  currentLang = signal<Language['code']>('es');
 
   constructor() {
     // Inicializar el idioma desde localStorage o usar el default
@@ -55,24 +48,24 @@ export class LanguageService {
   private initializeLanguage(): void {
     if (this.isBrowser) {
       // Intentar obtener desde localStorage
-      const savedLang = localStorage.getItem(LANGUAGE_STORAGE_KEY) as 'es' | 'en' | null;
+      const savedLang = localStorage.getItem(LANGUAGE_STORAGE_KEY) as Language['code'] | null;
 
       if (savedLang && this.isValidLanguage(savedLang)) {
         this.setLanguage(savedLang);
       } else {
         // Si no hay idioma guardado, usar el idioma del navegador
         const browserLang = navigator.language.split('-')[0];
-        const lang = browserLang === 'es' ? 'es' : 'en';
-        this.setLanguage(lang);
+        const match = this.availableLanguages.find(l => l.code === browserLang);
+        this.setLanguage(match ? match.code : 'es');
       }
     }
   }
 
   /**
    * Cambiar el idioma activo
-   * @param langCode Código del idioma (es, en)
+   * @param langCode Código del idioma
    */
-  setLanguage(langCode: 'es' | 'en'): void {
+  setLanguage(langCode: Language['code']): void {
     if (this.isValidLanguage(langCode)) {
       this.currentLang.set(langCode);
       this.translocoService.setActiveLang(langCode);
@@ -83,14 +76,15 @@ export class LanguageService {
    * Alternar entre idiomas disponibles
    */
   toggleLanguage(): void {
-    const newLang = this.currentLang() === 'es' ? 'en' : 'es';
-    this.setLanguage(newLang);
+    const idx = this.availableLanguages.findIndex(l => l.code === this.currentLang());
+    const next = (idx + 1) % this.availableLanguages.length;
+    this.setLanguage(this.availableLanguages[next].code);
   }
 
   /**
    * Obtener el código del idioma actual
    */
-  getCurrentLanguage(): 'es' | 'en' {
+  getCurrentLanguage(): Language['code'] {
     return this.currentLang();
   }
 

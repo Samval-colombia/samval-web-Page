@@ -27,7 +27,7 @@ export class ContactPageComponent {
      {
       titleKey: 'contactPage.channels.talk.title',
       infoKey: 'contactPage.channels.talk.info',
-      link: 'mailto:contacto@samval.org',
+      link: 'mailto:contact@samval.org',
       labelKey: 'contactPage.channels.talk.label'
     },
     {

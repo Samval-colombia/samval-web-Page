@@ -4,8 +4,8 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 import { PLATFORM_ID } from '@angular/core';
 import { MonitorIcon } from '@ngverse/icons-lu';
 import { TranslocoModule } from '@ngneat/transloco';
-import { LanguageService } from '../services/language.service';
 import { LanguageStore } from '../shared/language.store';
+import { Language } from '../models/language.interface';
 
 @Component({
   selector: 'app-header',
@@ -42,6 +42,10 @@ export class HeaderComponent implements OnInit {
   // Getters
   protected get currentLang() {
     return this.languageStore.currentLang;
+  }
+
+  protected get availableLanguages() {
+    return this.languageStore.availableLanguages;
   }
 
   protected get isSpanish() {
@@ -122,7 +126,7 @@ export class HeaderComponent implements OnInit {
   /**
    * Cambiar idioma y cerrar el dropdown
    */
-  protected changeLanguage(lang: 'es' | 'en'): void {
+  protected changeLanguage(lang: Language['code']): void {
     this.languageStore.setLanguage(lang);
     this.languageMenuOpen.set(false);
   }

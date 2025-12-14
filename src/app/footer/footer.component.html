@@ -39,7 +39,7 @@
           <h4>{{ data.locationHeadingKey |transloco}}</h4>
           <p>{{ data.locationText |transloco}}</p>
           <p><a [href]="'tel:' + data.phone">{{ data.phone }}</a></p>
-          <p><a [href]="'mailto:' + data.email">{{ data.email }}</a></p>
+          <p><a [href]="'mailto:' + (data.emailKey | transloco)">{{ data.emailKey | transloco }}</a></p>
         </section>
       </div>
     </div>

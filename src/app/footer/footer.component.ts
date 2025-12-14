@@ -21,7 +21,7 @@ export interface FooterData {
   socialLinks: Array<{ label: string; url: string; aria: string; icon: 'facebook' | 'youtube' | 'instagram' | 'linkedin' }>;
   locationHeadingKey: string;
   locationText: string;
+  emailKey: string;
   phone: string;
-  email: string;
   copyrightKey : string
 }

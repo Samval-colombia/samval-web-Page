@@ -1,0 +1,260 @@
+{
+  "header": {
+    "brand": {
+      "name": "Fondazione Samval",
+      "tagline": "Tecnologia che rispetta il territorio"
+    },
+    "platform": "Piattaforma",
+    "nav": {
+      "home": "Home",
+      "programs": "Programmi",
+      "foundation": "Fondazione",
+      "contact": "Contatto"
+    },
+    "language": {
+      "changeToEnglish": "Passa all'inglese",
+      "changeToSpanish": "Passa allo spagnolo"
+    },
+    "menu": "Apri menu"
+  },
+  "hero": {
+    "slide1": {
+      "title": "Tecnologia con approccio territoriale",
+      "subtitle": "Trasformiamo l'educazione nelle comunità vulnerabili",
+      "description": "Pensiero computazionale, robotica e innovazione rispettando l'identità culturale di ogni territorio.",
+      "button": "Scopri i programmi"
+    },
+    "slide2": {
+      "title": "Scienza aperta e collaborativa",
+      "subtitle": "Costruiamo con prove ed esperimenti",
+      "description": "Dati, ricerca applicata e design partecipativo con comunità, governi e accademia.",
+      "button": "Esplora i progetti"
+    },
+    "slide3": {
+      "title": "Educazione che protegge i saperi",
+      "subtitle": "Etno-educazione digitale con pertinenza culturale",
+      "description": "Contenuti bilingui ed esperienze che valorizzano lingue e tradizioni locali.",
+      "button": "Scopri l'etno-educazione"
+    }
+  },
+  "about": {
+    "title": "Chi siamo?",
+    "eyebrow": "La nostra storia",
+    "subtitle": "Una fondazione che unisce governi, università e imprese perché l'innovazione sia motore di pace",
+    "description": "Organizzazione non profit che porta educazione in scienza, tecnologia e innovazione alle comunità vulnerabili con approccio territoriale.",
+    "mission": {
+      "title": "La nostra missione",
+      "text": "Democratizzare l'accesso all'educazione STEAM con programmi contestualizzati che rafforzano le capacità locali e lo sviluppo sostenibile."
+    },
+    "vision": {
+      "title": "La nostra visione",
+      "text": "Essere riconosciuti come leader nell'educazione trasformativa che unisce innovazione, territorio e pace, impattando oltre 100.000 persone entro il 2030."
+    }
+  },
+  "aboutPage": {
+    "hero": {
+      "eyebrow": "Fondazione Samval",
+      "title": "Trasformiamo vite con educazione e tecnologia",
+      "description": "Fondazione non profit che articola governi, accademia e imprese perché l'innovazione sia motore di pace, prosperità e pianeta.",
+      "chip1": "+5 territori",
+      "chip2": "Pensiero computazionale",
+      "chip3": "Robotica inclusiva"
+    },
+    "values": {
+      "peace": {
+        "title": "Pace e dignità",
+        "description": "La tecnologia come ponte per proteggere vita e diversità culturale."
+      },
+      "science": {
+        "title": "Scienza aperta",
+        "description": "Lavoriamo con dati, evidenze ed esperimenti collaborativi."
+      },
+      "innovation": {
+        "title": "Innovazione sostenibile",
+        "description": "Ogni progetto tutela il territorio e riduce il gap climatico."
+      }
+    },
+    "milestones": {
+      "2019": {
+        "label": "Primi piloti",
+        "detail": "Club STEAM in scuole pubbliche in Antioquia."
+      },
+      "2021": {
+        "label": "Scala comunitaria",
+        "detail": "Contenuti bilingui co-creati con comunità afro e indigene."
+      },
+      "2024": {
+        "label": "Laboratori mobili",
+        "detail": "Kit di robotica e pensiero computazionale in 11 dipartimenti."
+      }
+    }
+  },
+  "programsPage": {
+    "hero": {
+      "eyebrow": "Portafoglio",
+      "title": "Programmi pronti per il tuo territorio",
+      "description": "Esperienze che uniscono scienza, tecnologia e cultura locale. Scegli un programma e avviamo la prossima coorte."
+    },
+    "programs": {
+      "science": {
+        "name": "Scienza e Tecnologia",
+        "summary": "Laboratori mobili, robotica e pensiero computazionale per primaria e secondaria.",
+        "bullet1": "Robot educativi Thymio",
+        "bullet2": "Club STEAM con sfide settimanali",
+        "bullet3": "Kit pronti per l'aula con guide docente"
+      },
+      "ethno": {
+        "name": "Etno-educazione digitale",
+        "summary": "Tecnologia nella lingua del territorio che protegge i saperi ancestrali.",
+        "bullet1": "Contenuti bilingui",
+        "bullet2": "Progetti con leader comunitari",
+        "bullet3": "Valutazione con approccio differenziato"
+      },
+      "talent": {
+        "name": "Talento ed occupabilità",
+        "summary": "Percorsi per giovani e adulti verso economia digitale ed imprenditorialità.",
+        "bullet1": "Pensiero computazionale e dati",
+        "bullet2": "Sfide con aziende partner",
+        "bullet3": "Mentorship e orientamento"
+      }
+    },
+    "extras": {
+      "training": {
+        "title": "Formazione docenti",
+        "description": "Accompagniamo gli insegnanti perché la tecnologia resti in classe."
+      },
+      "research": {
+        "title": "Ricerca + innovazione",
+        "description": "Misuriamo l'impatto e iteriamo con le comunità."
+      },
+      "partners": {
+        "title": "Partner e finanziamento",
+        "description": "Connettiamo aziende, governo e accademia per la sostenibilità."
+      }
+    },
+    "cta": {
+      "button": "Prenota una demo"
+    }
+  },
+  "contactPage": {
+    "hero": {
+      "eyebrow": "Contatto",
+      "title": "Parliamo e attiviamo il tuo progetto",
+      "description": "Raccontaci la tua sfida educativa. Risposta in meno di 24 ore."
+    },
+    "channels": {
+      "talk": {
+        "title": "Parliamo del tuo territorio",
+        "info": "Prenota una videochiamata per adattare il programma.",
+        "label": "contact@samval.org"
+      },
+      "call": {
+        "title": "Chiamaci",
+        "info": "Supportiamo partner, docenti ed enti pubblici.",
+        "label": "+57 323 320 7532"
+      },
+      "follow": {
+        "title": "Seguici",
+        "info": "Storie dal campo e novità sui nostri social.",
+        "label": "@samvalfundacion"
+      }
+    },
+    "cta": {
+      "title": "Pronto a portare innovazione nella tua comunità?",
+      "description": "Programmiamo una sessione strategica con il nostro team didattico.",
+      "button": "Prenota ora"
+    }
+  },
+  "footer": {
+    "brand": "Fondazione Samval",
+    "tagline": "Educazione, scienza e innovazione per la pace con approccio territoriale.",
+    "location": "Posizione",
+    "locationText": "Calle 104 #51B-154 Ofi 17 · Castellana Campestre · Barranquilla, Colombia",
+    "email": "contact@samval.org",
+    "copyright": "Educazione, scienza e innovazione con approccio territoriale",
+    "social": {
+      "facebook": "Facebook",
+      "youtube": "YouTube",
+      "instagram": "Instagram",
+      "linkedin": "LinkedIn"
+    }
+  },
+  "common": {
+    "loading": "Caricamento...",
+    "error": "Si è verificato un errore",
+    "readMore": "Leggi di più",
+    "learnMore": "Scopri di più",
+    "contact": "Contatta"
+  },
+  "login": {
+    "title": "Accedi",
+    "subtitle": "Accedi al tuo account Samval",
+    "form": {
+      "username": "Utente",
+      "usernamePlaceholder": "Inserisci il tuo utente",
+      "password": "Password",
+      "passwordPlaceholder": "Inserisci la tua password",
+      "showPassword": "Mostra password",
+      "hidePassword": "Nascondi password",
+      "forgotPassword": "Password dimenticata?",
+      "submit": "Accedi",
+      "loggingIn": "Accesso..."
+    },
+    "errors": {
+      "usernameRequired": "L'utente è obbligatorio",
+      "usernameMinLength": "Almeno 3 caratteri",
+      "passwordRequired": "La password è obbligatoria",
+      "passwordMinLength": "Almeno 6 caratteri",
+      "invalidCredentials": "Utente o password errati"
+    },
+    "footer": {
+      "noAccount": "Non hai un account?",
+      "register": "Registrati qui"
+    }
+  },
+  "forgotPassword": {
+    "title": "Recupero password",
+    "subtitle": "Inserisci i tuoi dati e seleziona la scuola per recuperare l'accesso.",
+    "form": {
+      "identification": "Numero di identificazione",
+      "identificationPlaceholder": "Inserisci il numero",
+      "username": "Utente",
+      "usernamePlaceholder": "Inserisci il tuo utente",
+      "school": "Scuola",
+      "selectSchool": "Seleziona la scuola",
+      "submit": "Invia richiesta",
+      "sending": "Invio...",
+      "backToLogin": "Torna al login"
+    },
+    "schools": {
+      "colegio1": "Scuola 1",
+      "colegio2": "Scuola 2",
+      "colegio3": "Scuola 3",
+      "colegio4": "Scuola 4",
+      "colegio5": "Scuola 5"
+    },
+    "schoolInfo": {
+      "colegio1": "Istituto nel nord, specializzato in scienze e tecnologia.",
+      "colegio2": "Scuola focalizzata su umanità e arti.",
+      "colegio3": "Istituto tecnico con robotica e pensiero computazionale.",
+      "colegio4": "Scuola bilingue orientata a lingue e cultura internazionale.",
+      "colegio5": "Scuola rurale con programmi di etno-educazione."
+    },
+    "errors": {
+      "identificationRequired": "Il numero di identificazione è obbligatorio",
+      "identificationMinLength": "Almeno 6 cifre",
+      "identificationMaxLength": "Massimo 20 cifre",
+      "identificationPattern": "Solo numeri",
+      "usernameRequired": "L'utente è obbligatorio",
+      "usernameMinLength": "Almeno 3 caratteri",
+      "schoolRequired": "Seleziona la tua scuola",
+      "invalidData": "I dati non corrispondono a nessun account"
+    },
+    "success": {
+      "title": "Richiesta inviata!",
+      "message": "Richiesta elaborata. Riceverai le istruzioni via email.",
+      "redirect": "Verrai reindirizzato al login...",
+      "loginButton": "Vai al login"
+    }
+  }
+}

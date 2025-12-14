@@ -39,6 +39,7 @@
   },
   "about": {
     "title": "Who we are?",
+    "eyebrow": "Our history",
     "subtitle": "A foundation that articulates governments, academia, and companies so that innovation becomes an engine of peace",
     "description": "We are a non-profit organization dedicated to bringing education in science, technology, and innovation to vulnerable communities. We work with a territorial approach that respects and enhances Colombia's cultural diversity.",
     "mission": {
@@ -145,7 +146,7 @@
       "talk": {
         "title": "Let's talk about your territory",
         "info": "Schedule a video call to learn about your educational goals and adapt the program.",
-        "label": "contacto@samval.org"
+        "label": "contact@samval.org"
       },
       "call": {
         "title": "Call us",
@@ -165,9 +166,12 @@
     }
   },
   "footer": {
+    "brand": "Samval Foundation",
+    "address": "Address",
     "tagline": "Education, science, and innovation for peace with territorial approach.",
     "location": "Location",
     "locationText": "Calle 104 #51B-154 Ofi 17 · Castellana Campestre · Barranquilla, Colombia",
+    "email": "contact@samval.org",
     "copyright": "Education, science, and innovation with territorial approach",
     "social": {
       "facebook": "Facebook",

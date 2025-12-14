@@ -59,6 +59,7 @@
   height: 100%;
   object-fit: cover;
   display: block;
+  grid-area: 1 / 1;
 }
 
 .about-content {

@@ -39,6 +39,7 @@
   },
   "about": {
     "title": "¿Quiénes somos?",
+    "eyebrow": "Nuestra historia",
     "subtitle": "Una fundación que articula gobiernos, academia y empresas para que la innovación sea motor de paz",
     "description": "Somos una organización sin ánimo de lucro dedicada a llevar educación en ciencia, tecnología e innovación a comunidades en situación de vulnerabilidad. Trabajamos con un enfoque territorial que respeta y potencia la diversidad cultural de Colombia.",
     "mission": {
@@ -145,7 +146,7 @@
       "talk": {
         "title": "Hablemos de tu territorio",
         "info": "Agenda una videollamada para conocer tus metas educativas y adaptar el programa.",
-        "label": "contacto@samval.org"
+        "label": "contact@samval.org"
       },
       "call": {
         "title": "Llámanos",
@@ -165,9 +166,11 @@
     }
   },
   "footer": {
+    "brand": "Fundación Samval",
     "tagline": "Educación, ciencia e innovación para la paz con enfoque territorial.",
     "location": "Ubicación",
     "locationText": "Calle 104 #51B-154 Ofi 17 · Castellana Campestre · Barranquilla, Colombia",
+    "email": "contact@samval.org",
     "copyright": "Educación, ciencia e innovación con enfoque territorial",
     "social": {
       "facebook": "Facebook",

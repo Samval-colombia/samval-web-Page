@@ -23,19 +23,17 @@
           (click)="toggleLanguageMenu()"
           [attr.aria-label]="currentLang() === 'es' ? 'Cambiar idioma' : 'Change language'"
         >
-          <span class="lang-code">{{ currentLang() === 'es' ? 'ES' : 'EN' }}</span>
+          <span class="lang-code">{{ currentLang().toUpperCase() }}</span>
           <span class="arrow" [class.open]="languageMenuOpen()"></span>
         </button>
 
         <ul class="language-menu" [class.open]="languageMenuOpen()">
-          <li (click)="changeLanguage('es')" [class.selected]="currentLang() === 'es'">
-            <span class="lang-label">Español</span>
-            <span class="check-mark" [class.visible]="currentLang() === 'es'">✓</span>
-          </li>
-          <li (click)="changeLanguage('en')" [class.selected]="currentLang() === 'en'">
-            <span class="lang-label">English</span>
-            <span class="check-mark" [class.visible]="currentLang() === 'en'">✓</span>
-          </li>
+          @for (lang of availableLanguages(); track lang.code) {
+            <li (click)="changeLanguage(lang.code)" [class.selected]="currentLang() === lang.code">
+              <span class="lang-label">{{ lang.nativeName }}</span>
+              <span class="check-mark" [class.visible]="currentLang() === lang.code">✓</span>
+            </li>
+          }
         </ul>
       </div>
     </div>
@@ -85,19 +83,17 @@
             (click)="toggleLanguageMenu()"
             [attr.aria-label]="currentLang() === 'es' ? 'Cambiar idioma' : 'Change language'"
           >
-            <span class="lang-code">{{ currentLang() === 'es' ? 'ES' : 'EN' }}</span>
+            <span class="lang-code">{{ currentLang().toUpperCase() }}</span>
             <span class="arrow" [class.open]="languageMenuOpen()"></span>
           </button>
 
           <ul class="language-menu" [class.open]="languageMenuOpen()">
-            <li (click)="changeLanguage('es')" [class.selected]="currentLang() === 'es'">
-              <span class="lang-label">Español</span>
-              <span class="check-mark" [class.visible]="currentLang() === 'es'">✓</span>
-            </li>
-            <li (click)="changeLanguage('en')" [class.selected]="currentLang() === 'en'">
-              <span class="lang-label">English</span>
-              <span class="check-mark" [class.visible]="currentLang() === 'en'">✓</span>
-            </li>
+            @for (lang of availableLanguages(); track lang.code) {
+              <li (click)="changeLanguage(lang.code)" [class.selected]="currentLang() === lang.code">
+                <span class="lang-label">{{ lang.nativeName }}</span>
+                <span class="check-mark" [class.visible]="currentLang() === lang.code">✓</span>
+              </li>
+            }
           </ul>
         </div>
       </li>
