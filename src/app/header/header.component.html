@@ -1,7 +1,7 @@
 <nav class="nav" [class.open]="menuOpen()" [class.scrolled]="scrolled()">
   <div class="nav__inner">
 
-    <a class="brand" routerLink="/" (click)="closeMenu()">
+    <a class="brand" [routerLink]="['/', currentLang()]" (click)="closeMenu()">
       <img src="/assets/logo/onlyLogo.svg" alt="Fundación Samval" class="brand__logo" />
       <div>
         <p class="brand__eyebrow">{{ brandData().nameKey | transloco }}</p>
@@ -11,7 +11,7 @@
 
 
     <div class="nav__cta">
-      <a class="pill" routerLink="/login">
+      <a class="pill" [routerLink]="['/', currentLang(), 'login']">
         <monitor-icon aria-hidden="true"></monitor-icon>
         <span>{{ platformKey() | transloco }}</span>
       </a>
@@ -42,7 +42,7 @@
     <ul class="nav__links" [class.open]="menuOpen()">
       <li>
         <a
-          routerLink="/"
+          [routerLink]="['/', currentLang()]"
           routerLinkActive="active"
           [routerLinkActiveOptions]="{ exact: true }"
           (click)="closeMenu()"
@@ -53,7 +53,7 @@
       @for (link of links; track link.path) {
         <li>
           <a
-            [routerLink]="link.path"
+            [routerLink]="['/', currentLang(), link.path]"
             routerLinkActive="active"
             [routerLinkActiveOptions]="link.exact ? { exact: true } : { exact: false }"
             (click)="closeMenu()"
@@ -68,7 +68,7 @@
 
       <!-- Platform CTA (Mobile) -->
       <li class="mobile-platform">
-        <a class="pill" routerLink="/login">
+        <a class="pill" [routerLink]="['/', currentLang(), 'login']">
           <monitor-icon aria-hidden="true"></monitor-icon>
           <span>{{ platformKey() | transloco }}</span>
         </a>

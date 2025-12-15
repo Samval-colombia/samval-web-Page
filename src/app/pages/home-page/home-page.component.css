@@ -2,3 +2,101 @@
   display: grid;
   gap: clamp(32px, 4vw, 56px);
 }
+
+.cp-section {
+  padding: clamp(24px, 4vw, 34px);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface-card);
+  box-shadow: var(--shadow);
+  display: grid;
+  gap: clamp(18px, 3vw, 26px);
+}
+
+.cp-lede {
+  display: grid;
+  gap: 12px;
+}
+
+.cp-6c {
+  display: grid;
+  gap: 10px;
+}
+
+.cp-6c .strong {
+  font-weight: 700;
+  color: var(--text);
+}
+
+.cp-6c-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.cp-6c-tags .chip {
+  padding: 8px 12px;
+  border-radius: var(--radius-pill);
+  background: var(--chip-bg);
+  color: var(--chip-color);
+  font-weight: 700;
+  border: 1px solid var(--border);
+}
+
+.cp-block {
+  display: grid;
+  gap: 10px;
+  padding: 16px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  box-shadow: var(--shadow-soft);
+}
+
+.cp-header {
+  display: grid;
+  gap: 6px;
+}
+
+.cp-block h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.cp-block ul,
+.cp-block ol {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--text);
+  display: grid;
+  gap: 6px;
+}
+
+.cp-block.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  align-items: stretch;
+  text-align: center;
+  justify-items: center;
+  gap: 12px;
+  padding: 18px;
+}
+
+.stat-number {
+  margin: 0 0 4px;
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--primary);
+}
+
+.stat-label {
+  margin: 2px 0 0;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+@media (min-width: 900px) {
+  .cp-section {
+    padding: 28px;
+  }
+}

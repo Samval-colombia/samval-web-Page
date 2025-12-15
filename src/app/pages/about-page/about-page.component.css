@@ -1,25 +1,31 @@
 .page {
-  margin-top: 32px;
+  margin: 32px auto 0;
+  max-width: 1080px;
+  padding: 0 16px;
   display: grid;
-  gap: 16px;
+  gap: 18px;
 }
 
 .hero {
-  padding: 18px;
+  padding: clamp(18px, 3vw, 24px);
   border-radius: var(--radius);
   border: 1px solid var(--border);
   background: var(--surface-glass);
   box-shadow: var(--shadow);
   display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 16px;
-  align-items: center;
+  grid-template-columns: 1fr;
+  gap: clamp(14px, 2vw, 24px);
+  align-items: start;
+}
+
+.hero__copy {
+  display: grid;
+  gap: 12px;
+  max-width: 720px;
 }
 
 .hero__panel {
-  display: grid;
-  gap: 8px;
-  justify-items: start;
+  display: none;
 }
 
 .eyebrow {
@@ -40,24 +46,55 @@ h1 {
   color: var(--muted);
 }
 
+.small {
+  font-size: 13px;
+}
+
 .chip {
-  margin: 0;
-  padding: 10px 12px;
-  border-radius: 999px;
+  padding: 12px 14px;
+  border-radius: var(--radius-sm);
   border: 1px solid var(--border);
-  background: var(--chip-bg);
-  color: var(--chip-color);
+  background: var(--surface-card);
+  box-shadow: var(--shadow);
+}
+
+.chip__label {
   font-weight: 700;
+  color: var(--text);
+}
+
+.hero__actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.hero__chips {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
 }
 
 .values {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 14px;
+  align-items: start;
+}
+
+.section-header {
+  display: grid;
+  gap: 6px;
+}
+
+.section-header h2 {
+  margin: 0;
+  font-size: clamp(24px, 4vw, 32px);
 }
 
 .value {
-  padding: 14px;
+  padding: 16px;
   border-radius: var(--radius);
   border: 1px solid var(--border);
   background: var(--surface-card);
@@ -68,7 +105,7 @@ h1 {
   border-radius: var(--radius);
   border: 1px solid var(--border);
   background: var(--surface-card);
-  padding: 14px;
+  padding: 12px;
   display: grid;
   gap: 10px;
   box-shadow: var(--shadow);
@@ -95,8 +132,61 @@ h1 {
   text-align: center;
 }
 
+.hero__card {
+  border-radius: var(--radius);
+  padding: 16px;
+  background: linear-gradient(135deg, color-mix(in srgb, var(--primary) 10%, transparent), var(--surface-card));
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  display: grid;
+  gap: 8px;
+  width: 100%;
+}
+
+.card__title {
+  margin: 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--primary);
+}
+
+.card__body {
+  margin: 0;
+  color: var(--text);
+  line-height: 1.5;
+}
+
+.cta-panel {
+  margin-top: 4px;
+  padding: clamp(16px, 3vw, 22px);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--surface-glass);
+  box-shadow: var(--shadow);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  align-items: start;
+}
+
+.cta-panel h3 {
+  margin: 0 0 4px;
+  font-size: clamp(22px, 3vw, 28px);
+}
+
+.cta-actions {
+  display: grid;
+  gap: 6px;
+  justify-items: start;
+}
+
 @media (max-width: 640px) {
   .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-panel {
     grid-template-columns: 1fr;
   }
 }

@@ -1,4 +1,83 @@
 <div class="page-grid">
-<app-carrusel></app-carrusel>
-<app-about></app-about>
+  <app-carrusel></app-carrusel>
+
+  <section class="cp-section cp-lede">
+    <p class="eyebrow">{{ 'cp.eyebrow' | transloco }}</p>
+    <h2>{{ 'cp.title' | transloco }}</h2>
+    <p class="muted">{{ 'cp.subtitle' | transloco }}</p>
+
+    <div class="cp-6c">
+      <p class="muted strong">{{ 'cp.sixC.title' | transloco }}</p>
+      <div class="cp-6c-tags">
+        <span class="chip">{{ 'cp.sixC.c1.label' | transloco }}</span>
+        <span class="chip">{{ 'cp.sixC.c2.label' | transloco }}</span>
+        <span class="chip">{{ 'cp.sixC.c3.label' | transloco }}</span>
+        <span class="chip">{{ 'cp.sixC.c4.label' | transloco }}</span>
+        <span class="chip">{{ 'cp.sixC.c5.label' | transloco }}</span>
+        <span class="chip">{{ 'cp.sixC.c6.label' | transloco }}</span>
+      </div>
+      <p class="muted">{{ 'cp.sixC.lede' | transloco }}</p>
+    </div>
+  </section>
+
+  <section class="cp-section cp-block">
+    <div class="cp-header">
+      <p class="eyebrow">{{ 'cp.block1.eyebrow' | transloco }}</p>
+      <h3>{{ 'cp.block1.title' | transloco }}</h3>
+      <p class="muted">{{ 'cp.block1.body' | transloco }}</p>
+    </div>
+    <ul>
+      <li>{{ 'cp.block1.item1' | transloco }}</li>
+      <li>{{ 'cp.block1.item2' | transloco }}</li>
+      <li>{{ 'cp.block1.item3' | transloco }}</li>
+    </ul>
+  </section>
+
+  <section class="cp-section cp-block">
+    <div class="cp-header">
+      <p class="eyebrow">{{ 'cp.block2.eyebrow' | transloco }}</p>
+      <h3>{{ 'cp.block2.title' | transloco }}</h3>
+      <p class="muted">{{ 'cp.block2.body' | transloco }}</p>
+    </div>
+    <ol>
+      <li>{{ 'cp.block2.step1' | transloco }}</li>
+      <li>{{ 'cp.block2.step2' | transloco }}</li>
+      <li>{{ 'cp.block2.step3' | transloco }}</li>
+    </ol>
+  </section>
+
+  <section class="cp-section cp-block">
+    <div class="cp-header">
+      <p class="eyebrow">{{ 'cp.block3.eyebrow' | transloco }}</p>
+      <h3>{{ 'cp.block3.title' | transloco }}</h3>
+      <p class="muted">{{ 'cp.block3.body' | transloco }}</p>
+    </div>
+    <ul>
+      <li>{{ 'cp.block3.item1' | transloco }}</li>
+      <li>{{ 'cp.block3.item2' | transloco }}</li>
+      <li>{{ 'cp.block3.item3' | transloco }}</li>
+    </ul>
+  </section>
+
+  <section class="cp-section cp-block stats">
+    <div class="cp-header">
+      <p class="eyebrow">{{ 'cp.stats.eyebrow' | transloco }}</p>
+      <h3>{{ 'cp.stats.title' | transloco }}</h3>
+      <p class="muted">{{ 'cp.stats.subtitle' | transloco }}</p>
+    </div>
+    <div>
+      <p class="stat-number">3</p>
+      <p class="stat-label">{{ 'cp.stats.phases' | transloco }}</p>
+    </div>
+    <div>
+      <p class="stat-number">12</p>
+      <p class="stat-label">{{ 'cp.stats.skills' | transloco }}</p>
+    </div>
+    <div>
+      <p class="stat-number">100%</p>
+      <p class="stat-label">{{ 'cp.stats.practice' | transloco }}</p>
+    </div>
+  </section>
+
+  <app-about></app-about>
 </div>

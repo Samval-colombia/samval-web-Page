@@ -1,41 +1,79 @@
 
 
 <main class="page">
-  <header class="hero">
-    <div>
-      <p class="eyebrow">{{ store.hero()?.eyebrowKey| transloco }}</p>
+  <section class="hero">
+    <div class="hero__copy">
+      <p class="eyebrow">{{ store.hero()?.eyebrowKey | transloco }}</p>
       <h1>{{ store.hero()?.titleKey | transloco }}</h1>
-      <p class="muted">
-        {{ store.hero()?.descriptionKey | transloco }}
-      </p>
+      <p class="muted">{{ store.hero()?.descriptionKey | transloco }}</p>
+
+      <div class="hero__actions">
+        <a class="btn btn--primary btn--inline" routerLink="../contacto">
+          {{ 'aboutPage.cta.button' | transloco }}
+        </a>
+        <span class="muted small">{{ 'aboutPage.cta.note' | transloco }}</span>
+      </div>
+
+      <div class="hero__chips">
+        @for (chip of store.hero()?.chips; track chip.key) {
+          <div class="chip">
+            <span class="chip__label">{{ chip.key | transloco }}</span>
+          </div>
+        }
+      </div>
     </div>
-    <div class="hero__panel">
-      @for ( chip of store.hero()?.chips; track chip.key) {
 
-        <p class="chip">{{ chip.key | transloco }}</p>
-      }
-
+    <div class="hero__card">
+      <p class="card__title">{{ 'aboutPage.hero.cardTitle' | transloco }}</p>
+      <p class="card__body">{{ 'aboutPage.hero.cardBody' | transloco }}</p>
     </div>
-  </header>
-
-  <section class="values">
-    @for (value of store.values(); track value.titleKey) {
-      <article class="value">
-        <h3>{{ value.titleKey |transloco}}</h3>
-        <p class="muted">{{ value.descKey |transloco}}</p>
-      </article>
-    }
   </section>
 
-  <section class="timeline">
-    @for (item of store.milestones(); track item.year) {
-      <article class="milestone">
-        <div class="year">{{ item.year }}</div>
-        <div>
-          <h4>{{ item.labelKey | transloco}}</h4>
-          <p class="muted">{{ item.detailKey |transloco}}</p>
-        </div>
-      </article>
-    }
+  <section class="section">
+    <div class="section-header">
+      <p class="eyebrow">{{ 'aboutPage.values.eyebrow' | transloco }}</p>
+      <h2>{{ 'aboutPage.values.title' | transloco }}</h2>
+      <p class="muted">{{ 'aboutPage.values.subtitle' | transloco }}</p>
+    </div>
+
+    <div class="values">
+      @for (value of store.values(); track value.titleKey) {
+        <article class="value">
+          <h3>{{ value.titleKey | transloco }}</h3>
+          <p class="muted">{{ value.descKey | transloco }}</p>
+        </article>
+      }
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-header">
+      <p class="eyebrow">{{ 'aboutPage.milestones.eyebrow' | transloco }}</p>
+      <h2>{{ 'aboutPage.milestones.title' | transloco }}</h2>
+      <p class="muted">{{ 'aboutPage.milestones.subtitle' | transloco }}</p>
+    </div>
+
+    <div class="timeline">
+      @for (item of store.milestones(); track item.year) {
+        <article class="milestone">
+          <div class="year">{{ item.year }}</div>
+          <div>
+            <h4>{{ item.labelKey | transloco }}</h4>
+            <p class="muted">{{ item.detailKey | transloco }}</p>
+          </div>
+        </article>
+      }
+    </div>
+  </section>
+
+  <section class="cta-panel">
+    <div>
+      <p class="eyebrow">{{ 'aboutPage.cta.eyebrow' | transloco }}</p>
+      <h3>{{ 'aboutPage.cta.title' | transloco }}</h3>
+      <p class="muted">{{ 'aboutPage.cta.description' | transloco }}</p>
+    </div>
+    <a class="btn btn--primary" routerLink="../contacto">
+      {{ 'aboutPage.cta.button' | transloco }}
+    </a>
   </section>
 </main>

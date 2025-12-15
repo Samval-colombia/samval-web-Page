@@ -1,6 +1,6 @@
 import { Component, HostListener, Input, OnInit, inject, signal } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
-import { RouterLink, RouterLinkActive } from '@angular/router';
+import { Router, RouterLink, RouterLinkActive } from '@angular/router';
 import { PLATFORM_ID } from '@angular/core';
 import { MonitorIcon } from '@ngverse/icons-lu';
 import { TranslocoModule } from '@ngneat/transloco';
@@ -26,6 +26,7 @@ export class HeaderComponent implements OnInit {
   // Servicios inyectados
   private readonly platformId = inject(PLATFORM_ID);
   private readonly isBrowser = isPlatformBrowser(this.platformId);
+  private readonly router = inject(Router);
 
   //Signal Store
   protected readonly languageStore =inject(LanguageStore)
@@ -127,8 +128,27 @@ export class HeaderComponent implements OnInit {
    * Cambiar idioma y cerrar el dropdown
    */
   protected changeLanguage(lang: Language['code']): void {
+    if (this.currentLang() === lang) {
+      this.languageMenuOpen.set(false);
+      return;
+    }
+
+    // Cambiar idioma en estado + Transloco
     this.languageStore.setLanguage(lang);
+
+    // Reemplazar el prefijo de idioma en la URL actual
+    const tree = this.router.parseUrl(this.router.url);
+    const primary = tree.root.children['primary'];
+    const segments = primary?.segments ?? [];
+
+    const nextSegments = segments.length
+      ? [lang, ...segments.slice(1).map((s) => s.path)]
+      : [lang];
+
+    this.router.navigate(['/', ...nextSegments], { replaceUrl: true });
+
     this.languageMenuOpen.set(false);
+    this.menuOpen.set(false);
   }
 
   /**

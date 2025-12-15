@@ -1,11 +1,12 @@
 import { Component, signal } from '@angular/core';
 import { Carrusel } from '../../secciones/carrusel/carrusel';
 import { About } from '../../secciones/about/about';
+import { TranslocoModule } from '@ngneat/transloco';
 
 @Component({
   selector: 'app-home-page',
   standalone: true,
-  imports: [Carrusel,About],
+  imports: [Carrusel, About, TranslocoModule],
   templateUrl: './home-page.component.html',
   styleUrl: './home-page.component.css'
 })

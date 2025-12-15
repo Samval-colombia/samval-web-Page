@@ -37,6 +37,54 @@
       "button": "Découvrir l'ethno-éducation"
     }
   },
+  "cp": {
+    "eyebrow": "Pensée computationnelle",
+    "title": "Le pont entre résoudre des problèmes et apprendre à programmer",
+    "subtitle": "Dès 5 ans nous formons à la logique et aux algorithmes : d'abord sans écrans avec robotique tangible, puis avec code guidé.",
+    "sixC": {
+      "title": "Nous intégrons les 6C dans chaque projet",
+      "lede": "Les 6C sont notre lentille pour observer le processus ; le protagoniste est la pensée informatique : penser, créer et coder avec intention.",
+      "c1": { "label": "Communication", "body": "Expliquer idées, décisions et apprentissages : ce que j'ai fait, pourquoi et ce que j'ai appris en résolvant un défi." },
+      "c2": { "label": "Collaboration", "body": "Travailler avec d'autres de façon organisée : rôles, coordination, écoute et construction collective." },
+      "c3": { "label": "Création d'artefacts", "body": "Produire des résultats tangibles qui montrent l'apprentissage : algorithmes, trajets, prototypes ou explications claires." },
+      "c4": { "label": "Créativité", "body": "Tester plusieurs solutions, comparer des stratégies et justifier les choix en acceptant l'erreur comme partie du processus." },
+      "c5": { "label": "Conduite personnelle", "body": "Gérer les erreurs, donner et recevoir du feedback, respecter les idées des autres et agir avec responsabilité technique." },
+      "c6": { "label": "Communauté", "body": "Construire une culture d'apprentissage partagé : montrer son travail, valoriser celui des autres et apprendre collectivement." },
+      "footer": "Avec les 6C, la pensée informatique forme des élèves autonomes, réfléchis, collaboratifs et conscients de leurs apprentissages et de la cohabitation."
+    },
+    "block1": {
+      "eyebrow": "Processus complet",
+      "title": "Nous enseignons la programmation dès 5 ans",
+      "body": "La pensée informatique donne un langage commun aux enseignants et aux élèves et grandit avec eux : du visuel aux langages professionnels.",
+      "item1": "Décompose les problèmes complexes en étapes claires.",
+      "item2": "Utilise des motifs et l'abstraction pour réutiliser des solutions.",
+      "item3": "Avec les plus jeunes nous utilisons des langages visuels sans lecture ni écriture ; en grandissant ils passent à JavaScript, Python, C++ et Go."
+    },
+    "block2": {
+      "eyebrow": "Du défi au code",
+      "title": "Sans écran pour commencer",
+      "body": "Nous utilisons la robotique éducative et un parcours léger en écrans : Thymio avec LED, sons et capteurs maintient le focus sur la logique avant le code.",
+      "step1": "Penser : comprendre le problème et définir entrées/sorties (LED, sons, mouvement).",
+      "step2": "Planifier : séquences avec cartes et pseudocode puis chargement sur le robot.",
+      "step3": "Coder et tester : passer au code, déboguer et observer la réponse physique."
+    },
+    "block3": {
+      "eyebrow": "Territoire et culture",
+      "title": "Activités respectueuses et contextualisées",
+      "body": "Nous concevons des défis avec langues, histoires et métiers locaux pour que la technologie garde l'identité et crée de la fierté communautaire.",
+      "item1": "Co-créer avec enseignants et leaders pour adapter exemples et symboles.",
+      "item2": "Utiliser matériaux et scénarios du territoire avant le robot ou l'écran.",
+      "item3": "Documenter en langage simple pour que les familles participent."
+    },
+    "stats": {
+      "eyebrow": "Indicateurs",
+      "title": "Ce que nous mesurons",
+      "subtitle": "Nous suivons comment les élèves pensent, testent et se relient au territoire.",
+      "phases": "Itérations minimales par défi",
+      "skills": "Activités sans écran dès la première semaine",
+      "practice": "Projets contextualisés avec ressources locales"
+    }
+  },
   "about": {
     "title": "Qui sommes-nous ?",
     "eyebrow": "Notre histoire",
@@ -54,39 +102,54 @@
   "aboutPage": {
     "hero": {
       "eyebrow": "Fondation Samval",
-      "title": "Nous transformons des vies par l'éducation et la technologie",
-      "description": "Fondation à but non lucratif qui articule gouvernements, universités et entreprises pour que l'innovation soit moteur de paix, prospérité et planète.",
-      "chip1": "+5 territoires",
-      "chip2": "Pensée informatique",
-      "chip3": "Robotique inclusive"
+      "title": "Innovation ancrée dans le territoire",
+      "description": "Nous co-concevons des expériences STEAM avec enseignants et communautés pour que la technologie crée des opportunités locales.",
+      "chip1": "5 territoires en cours",
+      "chip2": "Programmes actifs en 6 semaines",
+      "chip3": "Mentorat et kits inclus",
+      "cardTitle": "Modèle prêt à déployer",
+      "cardBody": "Co-design avec leaders locaux, formation enseignante et mesure d'impact pour que l'investissement laisse des capacités."
     },
     "values": {
+      "eyebrow": "Comment nous agissons",
+      "title": "Trois piliers pour rester cohérents",
+      "subtitle": "Nous écoutons, prototypons puis passons à l'échelle avec des partenaires.",
       "peace": {
-        "title": "Paix et dignité",
-        "description": "La technologie comme pont pour protéger la vie et la diversité culturelle."
+        "title": "Pertinence culturelle",
+        "description": "Défis et exemples dans la langue et le contexte locaux pour préserver l'identité."
       },
       "science": {
-        "title": "Science ouverte",
-        "description": "Nous travaillons avec données, preuves et expérimentation collaborative."
+        "title": "Exécution mesurable",
+        "description": "Pilotes courts, OKR clairs et rapports simples pour les directions."
       },
       "innovation": {
-        "title": "Innovation durable",
-        "description": "Chaque projet prend soin du territoire et réduit l'écart climatique."
+        "title": "Accompagnement proche",
+        "description": "Facilitateurs locaux et support continu pour que la technologie reste en classe."
       }
     },
     "milestones": {
+      "eyebrow": "Évolution",
+      "title": "Nous itérons avec des preuves",
+      "subtitle": "Chaque cohorte nous apprend quelque chose sur le terrain.",
       "2019": {
-        "label": "Premiers pilotes",
-        "detail": "Clubs STEAM dans des écoles publiques d'Antioquia."
+        "label": "Pilotes ruraux",
+        "detail": "Clubs STEAM avec kits de base pour valider la méthode."
       },
       "2021": {
-        "label": "Montée en puissance communautaire",
-        "detail": "Co-création de contenus bilingues avec communautés afro et autochtones."
+        "label": "Contenus bilingues",
+        "detail": "Enseignants et leaders co-créent des défis dans leur propre langue."
       },
       "2024": {
-        "label": "Laboratoires mobiles",
-        "detail": "Déploiement de kits de robotique et de pensée informatique dans 11 départements."
+        "label": "Labos mobiles",
+        "detail": "Déploiement rapide actif dans 5 départements."
       }
+    },
+    "cta": {
+      "eyebrow": "Prêt·e à commencer ?",
+      "title": "Planifions le déploiement dans votre territoire",
+      "description": "En 45 minutes nous alignons objectifs, cohortes et budget estimé.",
+      "button": "Planifier un appel",
+      "note": "Réponse en moins de 24 h."
     }
   },
   "programsPage": {

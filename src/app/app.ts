@@ -13,9 +13,9 @@ import { FooterComponent, FooterData } from './footer/footer.component';
 })
 export class App {
   protected readonly navLinks = [
-    { labelKey: 'header.nav.programs', path: '/programas' },
-    { labelKey: 'header.nav.foundation', path: '/fundacion' },
-    { labelKey: 'header.nav.contact', path: '/contacto' }
+    { labelKey: 'header.nav.programs', path: 'programas' },
+    { labelKey: 'header.nav.foundation', path: 'fundacion' },
+    { labelKey: 'header.nav.contact', path: 'contacto' }
   ];
 
   protected readonly footerData = {

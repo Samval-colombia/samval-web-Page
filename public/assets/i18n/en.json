@@ -37,6 +37,54 @@
       "button": "Discover ethno-education"
     }
   },
+  "cp": {
+    "eyebrow": "Computational thinking",
+    "title": "The bridge between problem solving and learning to code",
+    "subtitle": "From age 5 we teach logic and algorithms: screen-light with tangible robotics first, then guided code.",
+    "sixC": {
+      "title": "We weave the 6Cs into every project",
+      "lede": "The 6Cs are our lens on the process; the spotlight stays on computational thinking—thinking, creating, and coding with purpose.",
+      "c1": {"label": "Communication", "body": "Explain ideas, decisions and learnings: what was done, why, and what was learned when solving a challenge."},
+      "c2": {"label": "Collaboration", "body": "Work with others in an organized way: roles, coordination, listening, and building together."},
+      "c3": {"label": "Artifact creation", "body": "Produce tangible outputs that show learning: algorithms, paths, prototypes or clear explanations."},
+      "c4": {"label": "Creativity", "body": "Try multiple solutions, compare strategies and justify choices, embracing error as part of the process."},
+      "c5": {"label": "Personal conduct", "body": "Handle mistakes, give and receive feedback, respect others’ ideas, and act responsibly in technical work."},
+      "c6": {"label": "Community", "body": "Build a culture of shared learning: show your work, value others’, and learn collectively."},
+      "footer": "With the 6Cs, computational thinking shapes autonomous, reflective, collaborative learners aware of how they learn and coexist."
+    },
+    "block1": {
+      "eyebrow": "End-to-end process",
+      "title": "We teach coding from age 5",
+      "body": "Computational thinking scales with the learner: a shared logic from visual tools up to professional languages.",
+      "item1": "Breaks complex problems into clear steps.",
+      "item2": "Uses patterns and abstraction to reuse solutions.",
+      "item3": "With young kids we use visual languages that require no reading or writing; as they grow they move to JavaScript, Python, C++, and Go."
+    },
+    "block2": {
+      "eyebrow": "From challenge to code",
+      "title": "Screen-free to start",
+      "body": "We use educational robotics and a screen-light curriculum: Thymio with LEDs, sounds, sensors keeps focus on logic before code.",
+      "step1": "Think: define inputs/outputs the robot shows (LEDs, sound, movement).",
+      "step2": "Plan: sequence with cards and pseudocode, then send to the robot.",
+      "step3": "Code & test: move to code, debug, and see the physical response."
+    },
+    "block3": {
+      "eyebrow": "Territory and culture",
+      "title": "Culturally respectful activities",
+      "body": "We design challenges with local languages, stories, and trades so technology keeps identity alive and builds community pride.",
+      "item1": "Co-create with teachers and local leaders to adapt examples and symbols.",
+      "item2": "Use materials and scenarios from the territory before moving to robots or screens.",
+      "item3": "Document in plain language so families can join."
+    },
+    "stats": {
+      "eyebrow": "Indicators",
+      "title": "What we measure",
+      "subtitle": "We track how students think, test, and connect to place.",
+      "phases": "Minimum iterations per challenge",
+      "skills": "Screen-free activities in week one",
+      "practice": "Projects grounded in local materials"
+    }
+  },
   "about": {
     "title": "Who we are?",
     "eyebrow": "Our history",
@@ -54,39 +102,54 @@
   "aboutPage": {
     "hero": {
       "eyebrow": "Samval Foundation",
-      "title": "We transform lives through education and technology",
-      "description": "We are a non-profit foundation that articulates governments, academia, and companies so that innovation becomes an engine of peace, prosperity, and planet conservation.",
-      "chip1": "+5 territories",
-      "chip2": "Computational thinking",
-      "chip3": "Inclusive robotics"
+      "title": "Innovation rooted in place",
+      "description": "We design STEAM experiences with teachers and communities so technology creates local opportunity.",
+      "chip1": "5 territories underway",
+      "chip2": "Programs live in 6 weeks",
+      "chip3": "Mentors and kits included",
+      "cardTitle": "Ready-to-deploy model",
+      "cardBody": "Co-design with local leaders, teacher training, and impact tracking so your investment leaves capacity."
     },
     "values": {
+      "eyebrow": "How we do it",
+      "title": "Three anchors that keep us coherent",
+      "subtitle": "We listen, prototype, then scale with partners.",
       "peace": {
-        "title": "Peace and dignity",
-        "description": "Technology as a bridge to protect life and cultural diversity."
+        "title": "Cultural relevance",
+        "description": "Challenges and examples in local language and context to protect identity."
       },
       "science": {
-        "title": "Open science",
-        "description": "We work with data, evidence, and collaborative experimentation."
+        "title": "Measurable delivery",
+        "description": "Short pilots, clear OKRs, and simple reports for leadership teams."
       },
       "innovation": {
-        "title": "Sustainable innovation",
-        "description": "Every project cares for the territory and reduces the climate gap."
+        "title": "Close accompaniment",
+        "description": "Local facilitators and ongoing support so technology stays in the classroom."
       }
     },
     "milestones": {
+      "eyebrow": "Evolution",
+      "title": "We iterate with evidence",
+      "subtitle": "We learn in the field with every cohort.",
       "2019": {
-        "label": "First pilots",
-        "detail": "We started with STEAM clubs in public schools in Antioquia."
+        "label": "Rural pilots",
+        "detail": "STEAM clubs with basic kits to validate the methodology."
       },
       "2021": {
-        "label": "Community scaling",
-        "detail": "We co-created bilingual content with Afro and indigenous communities."
+        "label": "Bilingual content",
+        "detail": "Teachers and community leaders co-create challenges in their own language."
       },
       "2024": {
-        "label": "Mobile laboratories",
-        "detail": "We deployed robotics and computational thinking kits in 11 departments."
+        "label": "Mobile labs",
+        "detail": "Fast deployment route active in 5 departments."
       }
+    },
+    "cta": {
+      "eyebrow": "Ready to start?",
+      "title": "Let’s plan deployment in your territory",
+      "description": "In 45 minutes we align goals, cohorts, and an estimated budget.",
+      "button": "Book a call",
+      "note": "We reply within 24 hours."
     }
   },
   "programsPage": {
